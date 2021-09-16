@@ -8,14 +8,17 @@ Pocket Caddie is an Airtable and React build where the user is able to add multi
 
 ## Wireframes
 
-<!-- Description goes here -->
+Desktop View
 
-<!-- Link to images go here -->
-![Wireframe for mainpage, results, details, and breakpoint styling](linktoimg "Wireframes for mainpage, results, and details, plus breakpoint styling.")
+![Desktop wireframe for mainpage, player/course, details, and edit pages](https://i.imgur.com/yJIXh6X.png "Desktop wireframe for mainpage, player/course, details, and edit pages.")
+
+Mobile View
+
+![Mobile wireframe for mainpage, player/course, details, and edit pages](https://i.imgur.com/m3J6Ipn.png "Mobile wireframe for mainpage, player/course, details, and edit pages.")
 
 ## Component Hierarchy
 
-![imageAlt](link "tagname")
+![Component hierarchy](https://i.imgur.com/FrZPla4.png "Component hierarchy")
 
 ## API and Data Sample
 
