@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getCourses } from "../services";
+import { Link } from "react-router-dom";
 
 
 export default function Courses() {
@@ -20,8 +21,10 @@ export default function Courses() {
         <div className="grid grid-cols-2">
             {courses.map((course) => (
                 <div className="grid grid-cols-1 justify-items-center">
-                    <img className="max-h-30" src={course.fields?.courseImage} key={course.id} alt="course-scorecard"/>
+                    <Link to="/courses/:id">
+                    <img className="max-h-20" src={course.fields?.courseImage} key={course.id} alt="course-scorecard"/>
                     <h3>{course.fields?.courseName}</h3>
+                    </Link>
                 </div>
             ))};
         </div>

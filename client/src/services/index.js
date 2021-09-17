@@ -5,7 +5,6 @@ const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 
 const playerURL = `https://api.airtable.com/v0/${airtableBase}/players`;
 const courseURL = `https://api.airtable.com/v0/${airtableBase}/courses`;
-const yardageURL = `https://api.airtable.com/v0/${airtableBase}/yardages`;
 
 const config = {
     headers: {
@@ -44,6 +43,15 @@ export const getCourses = async() => {
     try {
         const res = await axios.get(courseURL, config);
         return res.data.records;
+    } catch(error) {
+        console.log(error);
+    };
+};
+
+export const fetchPlayerDetails = async(id) => {
+    try {
+        const res = await axios.get(`${playerURL}/${id}`, config);
+        return res.data;
     } catch(error) {
         console.log(error);
     };

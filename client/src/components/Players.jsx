@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getPlayers } from "../services";
+import { Link } from "react-router-dom";
 
 
 export default function Players() {
@@ -23,8 +24,10 @@ export default function Players() {
             <div className="grid grid-cols-2">
                 {players.map((player) => (
                     <div className="grid grid-cols-1 justify-items-center">
-                        <img className="max-h-30" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
+                        <Link to={`/players/${player.id}`}>
+                        <img className="max-h-20" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
                         <h3>{player.fields?.playerName}</h3>
+                        </Link>
                     </div>
                 ))};
             </div>
