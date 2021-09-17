@@ -10,7 +10,7 @@ const yardageURL = `https://api.airtable.com/v0/${airtableBase}/yardages`;
 const config = {
     headers: {
         Authorization: `Bearer ${airtableKey}`,
-    }
+    },
 };
 
 export const addPlayer = async(fields) => {
@@ -19,7 +19,7 @@ export const addPlayer = async(fields) => {
     return res.data;
     } catch(error) {
         console.log(error);
-    }
+    };
 };
 
 export const addCourse = async(fields) => {
@@ -28,5 +28,14 @@ export const addCourse = async(fields) => {
     return res.data;
     } catch(error) {
         console.log(error);
-    }
+    };
+};
+
+export const getPlayers = async() => {
+    try {
+        const res = await axios.get(playerURL, config);
+        return res.data.records;
+    } catch(error) {
+        console.log(error);
+    };
 };
