@@ -2,7 +2,7 @@ import { Route } from "react-router-dom";
 import Players from "./Players";
 import Courses from "./Courses";
 import AddPlayer from "./AddPlayer";
-import AddCourse from "./AddPlayer";
+import AddCourse from "./AddCourse";
 import { ToastContainer } from "react-toastify";
 
 

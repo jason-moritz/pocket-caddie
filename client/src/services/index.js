@@ -11,7 +11,8 @@ const config = {
     }
 };
 
-export const createPlayer = async(fields) => {
+export const addNew = async(fields) => {
     const res = await axios.post(URL, { fields }, config);
     return res.data;
 };
+

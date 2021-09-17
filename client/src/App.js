@@ -5,9 +5,13 @@ import Routes from "./components/Routes";
 
 function App() {
   return (
-    <div className="App bg-green-300 text-indigo-900">
-      <Navbar />
+    <div className="App bg-green-300 text-indigo-900 max-h-full">
+      <div>
+        <Navbar />
+      </div>
+      <div className="h-full">
       <Routes />
+      </div>
     </div>
   );
 }
