@@ -47,7 +47,7 @@ Mobile View
 
 - Add round scores for players and add associations with courses in Airtable.
 - Add handicap calculator using previous 5 round scores.
-- profit??
+- Add club suggestion page.
 
 ## Project Schedule
 
