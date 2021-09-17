@@ -56,3 +56,12 @@ export const fetchPlayerDetails = async(id) => {
         console.log(error);
     };
 };
+
+export const fetchCourseDetails = async(id) => {
+    try {
+        const res = await axios.get(`${courseURL}/${id}`, config);
+        return res.data.fields;
+    } catch(error) {
+        console.log(error);
+    };
+};
