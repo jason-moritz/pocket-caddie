@@ -51,37 +51,45 @@ Mobile View
 
 ## Project Schedule
 
-| Day      | Deliverable                                | Status   |
-| -------- | ------------------------------------------ | -------- |
-| Sept 17  | Proposal Approval / Airtable Setup         | Incomplete |
-| Sept 18-19   | Component Creation / Get, Set, Update, Delete Data | Incomplete |
-| Sept 20-21   | CSS Styling / Responsive Design            | Incomplete |
-| Sept 22-23   | Post MVP                               | Incomplete |
-| Sept 24   | Presentations                              | Incomplete |
+| Day          | Deliverable                                | Status   |
+| ------------ | ------------------------------------------ | -------- |
+| Sept 17      | Proposal approval / Airtable Setup         | Incomplete |
+| Sept 18-19   | CRUD component logic / Route & Link logic  | Incomplete |
+| Sept 20-21   | CSS styling / Responsive design            | Incomplete |
+| Sept 22-23   | Post MVP                                   | Incomplete |
+| Sept 24      | Presentations                              | Incomplete |
 
 ## Timeframes
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Airtable setup            |    H     |     .5hrs      |      1hr      |     1hr     |
-| Clickable icons           |    H     |      1hrs      |      1hr      |     1hr     |
-| Data population pg 1      |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Form creation pg 2        |    H     |      2hrs      |     1 hr      |    1 hr     |
-| Form creation pg 3        |    H     |      2hrs      |     1 hr      |     1hr     |
-| Data creation/update pg 1 |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data creation/update pg 2 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data creation/update pg 3 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data deletion pg 1        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 2        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 3        |    H     |      2hrs      |      1hr      |     1hr     |
-| Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+| Proposal Approval         |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Airtable setup            |    H     |      1hr       |           |         |
+| App.js and Routes logic   |    H     |      1hr       |           |         |
+| Navbar pg 1               |    H     |      1hr       |           |         |
+| Axios POST logic          |    H     |      2hrs      |           |         |
+| Form creation pg 2        |    H     |      2hrs      |           |         |
+| Form creation pg 3        |    H     |      2hrs      |           |         |
+| Axios GET logic           |    H     |      2hrs      |           |         |
+| List creation pg  4 & 5   |    H     |      3hrs      |           |         |
+| Details creation pg 6 & 7 |    H     |      3hrs      |           |         |
+| Axios PUT logic           |    H     |      2hrs      |           |         |
+| Edit creation pg 8        |    H     |      2hrs      |           |         |
+| Edit creation pg 9 & 10   |    H     |      3hrs      |           |         |
+| Axios DELETE logic        |    H     |      2hrs      |           |         |
+| Data deletion pg 4 & 5    |    H     |      2hrs      |           |         |
+| Data deletion pg 6 & 7    |    H     |      2hrs      |           |         |
+| Component CSS pg 1        |    H     |      2hrs      |           |         |
+| Component CSS pg 2        |    H     |      2hrs      |           |         |
+| Component CSS pg 3        |    H     |      2hrs      |           |         |
+| Component CSS pg 4        |    H     |      2hrs      |           |         |
+| Component CSS pg 5        |    H     |      2hrs      |           |         |
+| Component CSS pg 6        |    H     |      2hrs      |           |         |
+| Component CSS pg 7        |    H     |      2hrs      |           |         |
+| Component CSS pg 8        |    H     |      2hrs      |           |         |
+| Component CSS pg 9        |    H     |      2hrs      |           |         |
+| Component CSS pg 10       |    H     |      2hrs      |           |         |
+| Total                     |    H     |    52hrs     |          |         |
 
 ## SWOT Analysis
 
