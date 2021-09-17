@@ -33,7 +33,7 @@ export default function EditPlayer() {
 
         const res = await editPlayer(id, fields);
         toast(`You have editted ${playerName}'s info!`);
-        history.push("/");
+        history.push(`/players/${id}`);
     }
     return (
         <div>
