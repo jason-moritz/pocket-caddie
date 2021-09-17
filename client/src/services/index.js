@@ -39,3 +39,12 @@ export const getPlayers = async() => {
         console.log(error);
     };
 };
+
+export const getCourses = async() => {
+    try {
+        const res = await axios.get(courseURL, config);
+        return res.data.records;
+    } catch(error) {
+        console.log(error);
+    };
+};

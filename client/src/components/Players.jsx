@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getPlayers } from "../services";
 
+
 export default function Players() {
     const [players, setPlayers] = useState([]);
 
