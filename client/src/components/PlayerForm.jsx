@@ -1,5 +1,5 @@
 export default function PlayerForm(props) {
-    const { playerName, setPlayerName, playerImage, setPlayerImage, handicap, setHandicap, handleSubmit } = props;
+    const { playerName, setPlayerName, playerImage, setPlayerImage, handicap, setHandicap, handleSubmit, title } = props;
 
     return (
         <form className="grid grid-cols-1 max-w-5xl" onSubmit={handleSubmit}>
@@ -9,7 +9,7 @@ export default function PlayerForm(props) {
             <input value={playerImage} onChange={e => setPlayerImage(e.target.value)} />
             <label>Handicap</label>
             <input value={handicap} onChange={e => setHandicap(e.target.value)} />
-            <button>Add Player</button>
+            <button>{title}</button>
         </form>
     )
 }

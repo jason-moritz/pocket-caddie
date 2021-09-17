@@ -65,3 +65,21 @@ export const fetchCourseDetails = async(id) => {
         console.log(error);
     };
 };
+
+export const editPlayer = async(id, fields) => {
+    try {
+        const res = await axios.put(`${playerURL}/${id}`, { fields }, config);
+    return res.data;
+    } catch(error) {
+        console.log(error);
+    };
+};
+
+export const editCourse = async(id, fields) => {
+    try {
+        const res = await axios.put(`${courseURL}/${id}`, { fields }, config);
+    return res.data;
+    } catch(error) {
+        console.log(error);
+    };
+};

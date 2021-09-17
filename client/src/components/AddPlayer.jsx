@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 export default function AddPlayer() {
     const [playerName, setPlayerName] = useState("");
     const [playerImage, setPlayerImage] = useState("");
-    const [handicap, setHandicap] = useState(0);
+    const [handicap, setHandicap] = useState("");
     const history = useHistory();
 
     const fields = {
@@ -38,6 +38,7 @@ export default function AddPlayer() {
                 handicap={handicap} 
                 setHandicap={setHandicap} 
                 handleSubmit={handleSubmit} 
+                title="Add New Player"
             />
         </div>
     )
