@@ -51,7 +51,7 @@ export const getCourses = async() => {
 export const fetchPlayerDetails = async(id) => {
     try {
         const res = await axios.get(`${playerURL}/${id}`, config);
-        return res.data;
+        return res.data.fields;
     } catch(error) {
         console.log(error);
     };

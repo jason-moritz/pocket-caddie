@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import DisplayYardages from "./DisplayYardages";
 import { fetchPlayerDetails } from "../services";
 
 
@@ -17,14 +18,14 @@ export default function PlayerDetail() {
     if (!playerDetails) return <h2>Loading</h2>
 
     return (
-        <div>
+        <div className="grid grid-cols-2">
             <div>
-                <img src={playerDetails.fields?.playerImage} alt="profile-pic" />
-                <h2>{playerDetails.fields?.playerName}</h2>
-                <h4>Handicap: {playerDetails.fields?.handicap}</h4>
+                <img src={playerDetails?.playerImage} alt="profile-pic" />
+                <h2>{playerDetails?.playerName}</h2>
+                <h4>Handicap: {playerDetails?.handicap}</h4>
             </div>
             <div>
-
+                <DisplayYardages />
             </div>
         </div>
     )
