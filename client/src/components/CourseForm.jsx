@@ -3,8 +3,9 @@ export default function CourseForm(props) {
 
     return (
         <form className="grid grid-cols-1 max-w-5xl" onSubmit={handleSubmit}>
+            <h2>Add a new course!</h2>
             <label>Course Name</label>
-            <input className="bg-transparent border-2 border-indigo-900" value={courseName} onChange={e => setCourseName(e.target.value)} />
+            <input value={courseName} onChange={e => setCourseName(e.target.value)} />
             <label>Photo</label>
             <input value={courseImage} onChange={e => setCourseImage(e.target.value)} />
             <label>Rating</label>

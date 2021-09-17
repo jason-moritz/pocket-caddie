@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { addNew } from "../services";
+import { addPlayer } from "../services";
 import { toast } from "react-toastify";
 import PlayerForm from "./PlayerForm";
 import "react-toastify/dist/ReactToastify.css";
@@ -12,23 +12,20 @@ export default function AddPlayer() {
     const [handicap, setHandicap] = useState(0);
     const history = useHistory();
 
-    
+    const fields = {
+        playerName,
+        playerImage,
+        handicap,
+    };
 
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const fields = {
-            playerName,
-            playerImage,
-            handicap,
-        };
-
-        const res = await addNew(fields);
+        const res = await addPlayer(fields);
         console.log(res);
         toast(`You have added ${playerName}!`);
         history.push("/");
     }
-
 
     return (
         <div>

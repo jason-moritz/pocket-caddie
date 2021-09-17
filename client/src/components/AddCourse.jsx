@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { addNew } from "../services";
+import { addCourse } from "../services";
 import { toast } from "react-toastify";
-import CourseForm from "./PlayerForm";
+import CourseForm from "./CourseForm";
 import "react-toastify/dist/ReactToastify.css";
 
 
 export default function AddCourse() {
     const [courseName, setCourseName] = useState("");
     const [courseImage, setCourseImage] = useState("");
-    const [rating, setRating] = useState(null);
-    const [slope, setSlope] = useState(null);
+    const [rating, setRating] = useState("");
+    const [slope, setSlope] = useState("");
     const history = useHistory();
 
     const fields = {
@@ -23,11 +23,10 @@ export default function AddCourse() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const res = await addNew(fields);
+        const res = await addCourse(fields);
         toast(`You have added ${courseName}!`);
         history.push("/");
     }
-
 
     return (
         <div>
@@ -40,6 +39,7 @@ export default function AddCourse() {
                 setRating={setRating} 
                 slope={slope} 
                 setSlope={setSlope}
+                handleSubmit={handleSubmit}
             /> 
         </div>
     )
