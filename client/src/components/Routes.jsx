@@ -5,8 +5,8 @@ import AddPlayer from "./AddPlayer";
 import AddCourse from "./AddCourse";
 import PlayerDetail from "./PlayerDetail";
 import CourseDetail from "./CourseDetail";
-// import EditPlayer from "./EditPlayer";
-// import EditCourse from "./EditCourse";
+import EditPlayer from "./EditPlayer";
+import EditCourse from "./EditCourse";
 // import EditYardage from "./Yardage";
 import { ToastContainer } from "react-toastify";
 
@@ -34,6 +34,12 @@ export default function Routes() {
             </Route>
             <Route exact path="/addcourse">
                 <AddCourse />
+            </Route>
+            <Route exact path="/players/:id/edit">
+                <EditPlayer />
+            </Route>
+            <Route exact path="/courses/:id/edit">
+                <EditCourse />
             </Route>
 
             <ToastContainer />

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import DisplayYardages from "./DisplayYardages";
 import { fetchPlayerDetails } from "../services";
 
@@ -23,6 +23,9 @@ export default function PlayerDetail() {
                 <img src={playerDetails?.playerImage} alt="profile-pic" />
                 <h2>{playerDetails?.playerName}</h2>
                 <h4>Handicap: {playerDetails?.handicap}</h4>
+                <Link key={id} to={`/players/${id}/edit`}>
+                    <button>Edit Player Info</button>
+                </Link>
             </div>
             <div>
                 <DisplayYardages />

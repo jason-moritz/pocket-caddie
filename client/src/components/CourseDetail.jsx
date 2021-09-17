@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { fetchCourseDetails } from "../services";
 
 export default function CourseDetail() {
@@ -21,6 +21,7 @@ export default function CourseDetail() {
             <img src={courseDetails?.courseImage} alt="score-card" />
             <h4>Rating: {courseDetails?.rating}</h4>
             <h4>Slope: {courseDetails?.slope}</h4>
+            <Link key={id} to={`/courses/${id}/edit`}><button>Edit Course Info</button></Link>
         </div>
     )
 }
