@@ -31,7 +31,16 @@ export default function AddCourse() {
 
     return (
         <div>
-            Add course list
+            <CourseForm 
+                courseName={courseName} 
+                setCourseName={setCourseName} 
+                courseImage={courseImage} 
+                setCourseImage={setCourseImage} 
+                rating={rating} 
+                setRating={setRating} 
+                slope={slope} 
+                setSlope={setSlope}
+            /> 
         </div>
     )
 }

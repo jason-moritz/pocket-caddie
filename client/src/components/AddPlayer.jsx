@@ -9,19 +9,22 @@ import "react-toastify/dist/ReactToastify.css";
 export default function AddPlayer() {
     const [playerName, setPlayerName] = useState("");
     const [playerImage, setPlayerImage] = useState("");
-    const [handicap, setHandicap] = useState(null);
+    const [handicap, setHandicap] = useState(0);
     const history = useHistory();
 
-    const fields = {
-        playerName,
-        playerImage,
-        handicap,
-    }
+    
 
     const handleSubmit = async(e) => {
         e.preventDefault();
 
+        const fields = {
+            playerName,
+            playerImage,
+            handicap,
+        };
+
         const res = await addNew(fields);
+        console.log(res);
         toast(`You have added ${playerName}!`);
         history.push("/");
     }

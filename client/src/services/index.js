@@ -12,7 +12,12 @@ const config = {
 };
 
 export const addNew = async(fields) => {
-    const res = await axios.post(URL, { fields }, config);
+    try {
+        const res = await axios.post(URL, { fields }, config);
     return res.data;
+    } catch(error) {
+        console.log(error);
+    }
 };
 
+// a;slkdjf

@@ -8,7 +8,7 @@ export default function PlayerForm(props) {
             <label>Photo</label>
             <input value={playerImage} onChange={e => setPlayerImage(e.target.value)} />
             <label>Handicap</label>
-            <input value={handicap} onChange={e => setHandicap(e.target.value)} />
+            <input value={handicap} onChange={e => setHandicap(parseInt(e.target.value))} />
             <button>Add Player</button>
         </form>
     )
