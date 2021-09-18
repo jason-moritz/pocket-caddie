@@ -1,13 +1,13 @@
 import { Route } from "react-router-dom";
-import Players from "./Players";
-import Courses from "./Courses";
+import DisplayPlayers from "./DisplayPlayers";
+import DisplayCourses from "./DisplayCourses";
 import AddPlayer from "./AddPlayer";
 import AddCourse from "./AddCourse";
-import PlayerDetail from "./PlayerDetail";
-import CourseDetail from "./CourseDetail";
+import DetailPlayer from "./DetailPlayer";
+import DetailCourse from "./DetailCourse";
 import EditPlayer from "./EditPlayer";
 import EditCourse from "./EditCourse";
-// import EditYardage from "./Yardage";
+import EditYardages from "./EditYardages";
 import { ToastContainer } from "react-toastify";
 
 
@@ -18,16 +18,17 @@ export default function Routes() {
     return (
         <div>
             <Route exact path="/players">
-                <Players />
-            </Route>
-            <Route exact path="/players/:id">
-                <PlayerDetail />
+                <DisplayPlayers />
             </Route>
             <Route exact path="/courses">
-                <Courses />
+                <DisplayCourses />
             </Route>
+            <Route exact path="/players/:id">
+                <DetailPlayer />
+            </Route>
+            
             <Route exact path="/courses/:id">
-                <CourseDetail />
+                <DetailCourse />
             </Route>
             <Route exact path="/addplayer">
                 <AddPlayer />
@@ -41,7 +42,9 @@ export default function Routes() {
             <Route exact path="/courses/:id/edit">
                 <EditCourse />
             </Route>
-
+            <Route exact path="/players/:id/yardages">
+                <EditYardages />
+            </Route>
             <ToastContainer />
         </div>
     )

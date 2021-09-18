@@ -31,6 +31,7 @@ export default function PlayerDetail() {
             </div>
             <div>
                 <DisplayYardages />
+                <Link key={id} to={`/players/${id}/yardages`}>Edit Yardages</Link>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchCourseDetails, editCourse } from "../services";
-import CourseForm from "./CourseForm";
+import FormCourse from "./FormCourse";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -43,7 +43,7 @@ export default function EditCourse() {
 
     return (
         <div>
-            <CourseForm 
+            <FormCourse 
                 courseName={courseName} 
                 setCourseName={setCourseName} 
                 courseImage={courseImage} 

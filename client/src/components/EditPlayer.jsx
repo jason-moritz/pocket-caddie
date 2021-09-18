@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchPlayerDetails, editPlayer } from "../services";
-import PlayerForm from "./PlayerForm";
+import FormPlayer from "./FormPlayer";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -37,7 +37,7 @@ export default function EditPlayer() {
     }
     return (
         <div>
-            <PlayerForm
+            <FormPlayer
                 playerName={playerName} 
                 setPlayerName={setPlayerName} 
                 playerImage={playerImage}

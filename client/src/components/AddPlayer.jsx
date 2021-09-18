@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { addPlayer } from "../services";
 import { toast } from "react-toastify";
-import PlayerForm from "./PlayerForm";
+import FormPlayer from "./FormPlayer";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -30,7 +30,7 @@ export default function AddPlayer() {
     return (
         <div>
             <h2>Add a new player!</h2>
-            <PlayerForm 
+            <FormPlayer 
                 playerName={playerName} 
                 setPlayerName={setPlayerName} 
                 playerImage={playerImage}
