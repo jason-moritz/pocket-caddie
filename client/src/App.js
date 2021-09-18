@@ -4,7 +4,7 @@ import Routes from "./components/Routes";
 
 function App() {
   return (
-    <div className="App bg-green-300 text-indigo-900 max-h-full max-w-screen-xl m-auto">
+    <div className="App bg-gray-900 text-gray-100 max-h-full max-w-screen-xl m-auto">
       <div>
         <Navbar />
       </div>
