@@ -30,7 +30,7 @@ export default function EditCourse() {
             setSlope(res.slope);
         };
         getDetails();
-    }, []);
+    }, [id]);
 
     const handleSubmit = async(e) => {
         e.preventDefault();

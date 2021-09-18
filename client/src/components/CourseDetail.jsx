@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchCourseDetails } from "../services";
+import DeleteButton from "./DeleteButton";
 
 
 export default function CourseDetail() {
@@ -12,7 +13,7 @@ export default function CourseDetail() {
             setCourseDetails(await fetchCourseDetails(id));
         };
         getDetails();
-    }, []);
+    }, [id]);
 
     if (!courseDetails) return <h2>Loading</h2>
 
@@ -25,6 +26,7 @@ export default function CourseDetail() {
             <Link key={id} to={`/courses/${id}/edit`}>
                 <button>Edit Course Info</button>
             </Link>
+            <DeleteButton id={id} group="courses" title={courseDetails?.courseName} />
         </div>
     )
 }

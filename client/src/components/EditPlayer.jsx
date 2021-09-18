@@ -26,7 +26,7 @@ export default function EditPlayer() {
             setHandicap(res.handicap);
         };
         getDetails();
-    }, []);
+    }, [id]);
 
     const handleSubmit = async(e) => {
         e.preventDefault();

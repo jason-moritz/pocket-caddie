@@ -25,11 +25,11 @@ export default function Players() {
                 {players.map((player) => (
                     <div className="grid grid-cols-1 justify-items-center">
                         <Link to={`/players/${player.id}`}>
-                        <img className="max-h-20" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
+                        <img className="max-h-20  rounded-full" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
                         <h3>{player.fields?.playerName}</h3>
                         </Link>
                     </div>
-                ))};
+                ))}
             </div>
         </div>
     )

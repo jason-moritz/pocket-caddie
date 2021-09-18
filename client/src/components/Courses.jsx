@@ -26,7 +26,7 @@ export default function Courses() {
                     <h3>{course.fields?.courseName}</h3>
                     </Link>
                 </div>
-            ))};
+            ))}
         </div>
     </div>
     )

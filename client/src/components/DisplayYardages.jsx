@@ -12,7 +12,7 @@ export default function DisplayYardages() {
             setYardages(await fetchPlayerDetails(id));
         };
         getYardages();
-    }, []);
+    }, [id]);
 
     if (!yardages) return <h2>Loading</h2>
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import DisplayYardages from "./DisplayYardages";
+import DeleteButton from "./DeleteButton";
 import { fetchPlayerDetails } from "../services";
 
 
@@ -13,7 +14,7 @@ export default function PlayerDetail() {
             setPlayerDetails(await fetchPlayerDetails(id));
         };
         getDetails();
-    }, []);
+    }, [id]);
 
     if (!playerDetails) return <h2>Loading</h2>
 
@@ -26,6 +27,7 @@ export default function PlayerDetail() {
                 <Link key={id} to={`/players/${id}/edit`}>
                     <button>Edit Player Info</button>
                 </Link>
+                <DeleteButton id={id} group="players" title={playerDetails?.playerName} />
             </div>
             <div>
                 <DisplayYardages />
