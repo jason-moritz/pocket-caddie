@@ -1,4 +1,5 @@
 import { Route } from "react-router-dom";
+import Home from "./Home";
 import DisplayPlayers from "./DisplayPlayers";
 import DisplayCourses from "./DisplayCourses";
 import AddPlayer from "./AddPlayer";
@@ -17,6 +18,9 @@ export default function Routes() {
 
     return (
         <div>
+            <Route exact path="/">
+                <Home />
+            </Route>
             <Route exact path="/players">
                 <DisplayPlayers />
             </Route>

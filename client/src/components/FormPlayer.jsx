@@ -2,7 +2,7 @@ export default function PlayerForm(props) {
     const { playerName, setPlayerName, playerImage, setPlayerImage, handicap, setHandicap, handleSubmit, title } = props;
 
     return (
-        <form className="grid grid-cols-1 max-w-5xl" onSubmit={handleSubmit}>
+        <form className="grid grid-cols-1 max-w-5xl text-gray-900" onSubmit={handleSubmit}>
             <label>Player Name</label>
             <input value={playerName} onChange={e => setPlayerName(e.target.value)} />
             <label>Photo</label>

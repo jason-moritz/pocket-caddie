@@ -2,7 +2,7 @@ export default function FormYardages(props) {
     const { lw, setLw, sw, setSw, aw, setAw, pw, setPw, nineir, setNineir, eightir, setEightir, sevenir, setSevenir, sixir, setSixir, fiveir, setFiveir, fourir, setFourir, threeir, setThreeir, twoir, setTwoir, fivewd, setFivewd, threewd, setThreewd, hybrid, setHybrid, driver, setDriver, handleSubmit, title } = props;
     
     return (
-        <form className="grid grid-cols-1 max-w-5xl" onSubmit={handleSubmit}>
+        <form className="grid grid-cols-1 max-w-5xl text-gray-900" onSubmit={handleSubmit}>
             <label>LW</label>
             <input value={lw} onChange={e => setLw(e.target.value)} />
             <label>SW</label>
