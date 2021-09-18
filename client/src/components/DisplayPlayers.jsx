@@ -23,10 +23,14 @@ export default function Players() {
             <h1>Players</h1>
             <div className="grid grid-cols-2">
                 {players.map((player) => (
-                    <div className="grid grid-cols-1 justify-items-center">
-                        <Link to={`/players/${player.id}`}>
-                        <img className="max-h-20  rounded-full" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
-                        <h3>{player.fields?.playerName}</h3>
+                    <div className="flex flex-col justify-items-center">
+                        <Link class="flex flex-col items-center pt-2" to={`/players/${player.id}`}>
+                            <div className="block h-14 w-14 rounded-full overflow-hidden">
+                                <img className="h-full w-full object-cover" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
+                            </div>
+                            <div>
+                                <h3>{player.fields?.playerName}</h3>
+                            </div>
                         </Link>
                     </div>
                 ))}
