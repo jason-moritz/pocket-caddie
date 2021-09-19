@@ -29,7 +29,8 @@ export default function AddCourse() {
     }
 
     return (
-        <div>
+        <div className="flex flex-col items-center">
+            <h2 className="text-center m-5">Add a new course!</h2>
             <FormCourse 
                 courseName={courseName} 
                 setCourseName={setCourseName} 
@@ -40,6 +41,7 @@ export default function AddCourse() {
                 slope={slope} 
                 setSlope={setSlope}
                 handleSubmit={handleSubmit}
+                title="Add Course"
             /> 
         </div>
     )

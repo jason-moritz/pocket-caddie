@@ -38,7 +38,7 @@ export default function AddPlayer() {
                 handicap={handicap} 
                 setHandicap={setHandicap} 
                 handleSubmit={handleSubmit} 
-                title="Add New Player"
+                title="Add Player"
             />
         </div>
     )

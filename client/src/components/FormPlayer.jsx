@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export default function PlayerForm(props) {
     const { playerName, setPlayerName, playerImage, setPlayerImage, handicap, setHandicap, handleSubmit, title } = props;
     const [toggle, setToggle] = useState(0);
@@ -18,8 +19,6 @@ export default function PlayerForm(props) {
         setToggle(0);
     };
     
-    console.log(toggle);
-
     return (
         <form className=" text-gray-100 w-screen" onSubmit={playerName !== "" ? handleSubmit : handleToggle}>
             <div className="flex justify-center">
