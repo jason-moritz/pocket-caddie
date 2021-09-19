@@ -156,9 +156,10 @@ Airtable is returning data for an array of players.
 ## SWOT Analysis
 
 ### Strengths:
-
+I have a solid idea of how to structure the logic for this project to keep my main files fairly legible and clean. 
 ### Weaknesses:
-
+I want to challenge myself by using Tailwind CSS to style this project. I am also not super confident with how to design this app so that it's responsive without repetetive code.
 ### Opportunities:
-
+This is a great chance to learn a useful styling framework, as well as making a full CRUD application from scratch.
 ### Threats:
+There could be potential issues with how my airtable is setup. In order to accomplish my post-mvp, I will need to also learn how to utilize associations.
