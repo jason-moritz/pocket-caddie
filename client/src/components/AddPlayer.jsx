@@ -28,9 +28,9 @@ export default function AddPlayer() {
     }
 
     return (
-        <div>
-            <h2>Add a new player!</h2>
-            <FormPlayer 
+        <div className="flex flex-col items-center">
+            <h2 className="text-center m-5">Add a new player!</h2>
+            <FormPlayer
                 playerName={playerName} 
                 setPlayerName={setPlayerName} 
                 playerImage={playerImage}

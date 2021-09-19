@@ -10,12 +10,12 @@ export default function Navbar() {
 
     return (
         <header> 
-            <div className="flex place-content-between  px-4 py-3 font-semibold">
-                <Link to="/">
-                    <div>Pocket Caddie</div>
+            <div className="flex place-content-between content-center px-4 py-3 ">
+                <Link className="flex items-center" to="/">
+                    <div className="hover:text-gray-300 text-lg ">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end">
-                    <button onClick={handleClick} class="h-6 w-6 fill-current text-gray-300 hover: text-gray-100 focus:text-gray-100 focus:outline-none">
+                    <button onClick={handleClick} class="h-8 w-8 fill-current hover: text-gray-300 focus:text-gray-100 focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {toggle === false ?
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
