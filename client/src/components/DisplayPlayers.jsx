@@ -26,7 +26,7 @@ export default function Players() {
                     <>
                         <Link class="flex flex-col items-center pt-2" to={`/players/${player.id}`}>
                             <div className="block h-14 w-14 rounded-full overflow-hidden">
-                                <img className="h-full w-full object-cover" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
+                                <img className="h-full w-full object-cover object-center" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
                             </div>
                             <div>
                                 <h3>{player.fields?.playerName}</h3>
