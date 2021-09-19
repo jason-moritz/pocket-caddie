@@ -31,7 +31,6 @@ export default function AddPlayer() {
         <div className="flex flex-col items-center">
             <h2 className="text-center m-5">Add a new player!</h2>
             <FormPlayer
-                className="flex w-3/4"
                 playerName={playerName} 
                 setPlayerName={setPlayerName} 
                 playerImage={playerImage}
