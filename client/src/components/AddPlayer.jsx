@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { addPlayer } from "../services";
 import { toast } from "react-toastify";
 import FormPlayer from "./FormPlayer";
-import BackButton from "./BackButton";
+import ButtonBack from "./ButtonBack";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -29,7 +29,7 @@ export default function AddPlayer() {
 
     return (
         <div className="text-gray-100">
-            <BackButton />
+            <ButtonBack />
             <div className="flex flex-col items-center">
                 <h2 className="text-center mb-5 text-4xl">Add a new player!</h2>
                 <FormPlayer

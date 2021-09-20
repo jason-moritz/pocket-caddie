@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getPlayers } from "../services";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
+import ButtonBack from "./ButtonBack";
 
 
 export default function Players() {
@@ -19,7 +19,7 @@ export default function Players() {
 
     return (
         <div>
-            <BackButton />
+            <ButtonBack />
             <div className="object-center text-center text-gray-100 mt-5">
                 <h1 className="text-4xl">Players</h1>
                 <div className="flex flex-col place-items-center md:flex-row md:justify-center">

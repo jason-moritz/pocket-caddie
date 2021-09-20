@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getCourses } from "../services";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
+import ButtonBack from "./ButtonBack";
 
 
 export default function Courses() {
@@ -18,7 +18,7 @@ export default function Courses() {
 
     return (
         <div>
-            <BackButton />
+            <ButtonBack />
             <div className="object-center text-center text-gray-100 mt-5">
                 <h1 className="text-4xl">Courses</h1>
                 <div className="flex flex-col flex-wrap">

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchCourseDetails } from "../services";
-import DeleteButton from "./DeleteButton";
-import BackButton from "./BackButton";
+import ButtonDelete from "./ButtonDelete";
+import ButtonBack from "./ButtonBack";
+import ButtonEdit from "./ButtonEdit";
 
 
 export default function CourseDetail() {
@@ -27,7 +28,7 @@ export default function CourseDetail() {
 
     return (
         <div>
-            <BackButton />
+            <ButtonBack />
             <div className="flex flex-col text-gray-100 p-4">
                 <div className="text-center">
                     <h2 className="text-xl">{courseDetails?.courseName}</h2>
@@ -61,15 +62,11 @@ export default function CourseDetail() {
                     <div className="flex w-2/4 max-w-xs justify-center">
                         <div className="mr-2 mb-2">
                             <Link key={id} to={`/courses/${id}/edit`}>
-                                <button className="h-8 w-8 transform hover:scale-125 text-green-lt hover:text-green-dk  focus:text-green-dk focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                                    </svg>
-                                </button>
+                                <ButtonEdit />
                             </Link>
                         </div>
                         <div className="ml-2 mb-2">
-                            <DeleteButton id={id} group="courses" title={courseDetails?.courseName} />
+                            <ButtonDelete id={id} group="courses" title={courseDetails?.courseName} />
                         </div>
                     </div>
                 </div>

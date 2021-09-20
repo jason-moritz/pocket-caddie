@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-export default function DeleteButton(props) {
+export default function ButtonDelete(props) {
     const { group, title, id } = props;
     const history = useHistory();
 

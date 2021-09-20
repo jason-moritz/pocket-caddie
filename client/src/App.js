@@ -6,7 +6,7 @@ import Routes from "./components/Routes";
 function App() {
   return (
 
-    <div className="App flex-col bg-gray-dk font-kanit h-screen min-h-screen">
+    <div className="App flex-col  font-kanit h-screen min-h-screen">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
       </div>
       <div>
-        <div className="mt-5">
+        <div className="mt-5 max-h-full">
           <Routes />
         </div>
       </div>

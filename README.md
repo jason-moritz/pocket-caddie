@@ -117,7 +117,7 @@ Airtable is returning data for an array of players.
 | ------------ | ------------------------------------------ | -------- |
 | Sept 17      | Proposal approval / Airtable Setup         | Complete |
 | Sept 18-19   | CRUD component logic / Route & Link logic  | Complete |
-| Sept 20-21   | CSS styling / Responsive design            | Incomplete |
+| Sept 20-21   | CSS styling / Responsive design            | Complete |
 | Sept 22-23   | Post MVP                                   | Incomplete |
 | Sept 24      | Presentations                              | Incomplete |
 
@@ -141,17 +141,17 @@ Airtable is returning data for an array of players.
 | Axios DELETE logic        |    H     |      2hrs      |      .5hrs    |    13hrs    |
 | Data deletion pg 4 & 5    |    H     |      2hrs      |      .5hrs    |    13.5hrs  |
 | Data deletion pg 6 & 7    |    H     |      2hrs      |      .5hrs    |    14hrs    |
-| Component CSS pg 1        |    H     |      2hrs      |           |         |
-| Component CSS pg 2        |    H     |      2hrs      |           |         |
-| Component CSS pg 3        |    H     |      2hrs      |           |         |
-| Component CSS pg 4        |    H     |      2hrs      |           |         |
-| Component CSS pg 5        |    H     |      2hrs      |           |         |
-| Component CSS pg 6        |    H     |      2hrs      |           |         |
-| Component CSS pg 7        |    H     |      2hrs      |           |         |
-| Component CSS pg 8        |    H     |      2hrs      |           |         |
-| Component CSS pg 9        |    H     |      2hrs      |           |         |
-| Component CSS pg 10       |    H     |      2hrs      |           |         |
-| Total                     |    H     |    52hrs     |          |         |
+| Component CSS pg 1        |    H     |      2hrs      |      6hrs     |    20hrs    |
+| Component CSS pg 2        |    H     |      2hrs      |      1.5hrs   |    21.5hrs  |
+| Component CSS pg 3        |    H     |      2hrs      |      .5hrs    |    22hrs    |
+| Component CSS pg 4        |    H     |      2hrs      |      2hrs     |    24hrs    |
+| Component CSS pg 5        |    H     |      2hrs      |      .5hrs    |    20.5hrs  |
+| Component CSS pg 6        |    H     |      2hrs      |      4hrs     |    24.5hrs  |
+| Component CSS pg 7        |    H     |      2hrs      |      .5hrs    |    25hrs    |
+| Component CSS pg 8        |    H     |      2hrs      |      1hr      |    26hrs    |
+| Component CSS pg 9        |    H     |      2hrs      |      1hr      |    27hrs    |
+| Component CSS pg 10       |    H     |      2hrs      |      1hr      |    28hrs    |
+| Total                     |    H     |    52hrs     |          |    28hrs     |
 
 ## SWOT Analysis
 

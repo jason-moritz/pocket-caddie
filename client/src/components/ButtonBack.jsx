@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-export default function BackButton() {
+
+export default function ButtonBack() {
     return (
         <>
             <div className="mt-5 ml-5">

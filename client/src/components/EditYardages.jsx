@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchPlayerDetails, editPlayer } from "../services";
 import FormYardages from "./FormYardages";
-import BackButton from "./BackButton";
+import ButtonBack from "./ButtonBack";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -80,7 +80,7 @@ export default function EditYardages() {
 
     return (
         <div>
-            <BackButton />
+            <ButtonBack />
             <div>
             <FormYardages
                 lw={lw}
