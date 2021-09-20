@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { addPlayer } from "../services";
 import { toast } from "react-toastify";
 import FormPlayer from "./FormPlayer";
+import BackButton from "./BackButton";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -27,18 +28,21 @@ export default function AddPlayer() {
     }
 
     return (
-        <div className="flex flex-col items-center text-gray-100">
-            <h2 className="text-center mb-5 text-4xl">Add a new player!</h2>
-            <FormPlayer
-                playerName={playerName} 
-                setPlayerName={setPlayerName} 
-                playerImage={playerImage}
-                setPlayerImage={setPlayerImage} 
-                handicap={handicap} 
-                setHandicap={setHandicap} 
-                handleSubmit={handleSubmit} 
-                title="Add Player"
-            />
+        <div className="text-gray-100">
+            <BackButton />
+            <div className="flex flex-col items-center">
+                <h2 className="text-center mb-5 text-4xl">Add a new player!</h2>
+                <FormPlayer
+                    playerName={playerName} 
+                    setPlayerName={setPlayerName} 
+                    playerImage={playerImage}
+                    setPlayerImage={setPlayerImage} 
+                    handicap={handicap} 
+                    setHandicap={setHandicap} 
+                    handleSubmit={handleSubmit} 
+                    title="Add Player"
+                />
+            </div>
         </div>
     )
 }

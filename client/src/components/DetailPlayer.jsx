@@ -29,26 +29,26 @@ export default function PlayerDetail() {
     return (
         <div className="flex flex-col">
             <div className="flex flex-col-wrap">
-                <div className="p-4 h-2/4 w-2/4 max-h-80 max-w-xs overflow-hidden">
+                <div className="p-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />
                 </div>
-                <div className="flex flex-col h-2/4 w-2/4 mt-8 pl-4 text-xl text-gray-100">
-                    <h2>{playerDetails?.playerName}</h2>
-                    <h4>Handicap: {playerDetails?.handicap}</h4>
+                <div className="flex flex-col mt-8 pl-4 items-center  text-gray-100">
+                    <h2 className="text-5xl">{playerDetails?.playerName}</h2>
+                    <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
                 </div>
             </div>
             <div className="flex w-full border-b-4 border-gray-100 rounded-md">
-                <div className="flex w-1/2 place-content-center">
-                    <div>
+                <div className="flex w-2/4 max-w-xs justify-center">
+                    <div className="mr-2 mb-2">
                         <Link key={id} to={`/players/${id}/edit`}>
-                            <button className="h-8 w-8 transform hover:scale-125 text-green-lt hover:text-green-dk  focus:text-green-dk focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                                </svg>
-                            </button>
+                                <button className="h-8 w-8 transform hover:scale-125 text-green-lt hover:text-green-dk  focus:text-green-dk focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                    </svg>
+                                </button>
                         </Link>
                     </div>
-                    <div>
+                    <div className="ml-2 mb-2">
                         <DeleteButton id={id} group="players" title={playerDetails?.playerName} />
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export default function PlayerDetail() {
                 </button>
             </div>
             {toggle === true ? 
-                <div>
+                <div className="flex flex-col place-items-center">
                     <DisplayYardages />
                     <div className="w-full text-gray-100">
                         <div className="text-center transform hover:scale-125  hover:text-gray-300  focus:text-gray-300 focus:outline-none">

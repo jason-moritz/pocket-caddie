@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { addCourse } from "../services";
 import { toast } from "react-toastify";
 import FormCourse from "./FormCourse";
+import BackButton from "./BackButton";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -29,20 +30,23 @@ export default function AddCourse() {
     }
 
     return (
-        <div className="flex flex-col items-center text-gray-100">
-            <h2 className="text-center mb-5 text-4xl">Add a new course!</h2>
-            <FormCourse 
-                courseName={courseName} 
-                setCourseName={setCourseName} 
-                courseImage={courseImage} 
-                setCourseImage={setCourseImage} 
-                rating={rating} 
-                setRating={setRating} 
-                slope={slope} 
-                setSlope={setSlope}
-                handleSubmit={handleSubmit}
-                title="Add Course"
-            /> 
+        <div className="text-gray-100">
+            <BackButton />
+            <div className="flex flex-col items-center">
+                <h2 className="text-center mb-5 text-4xl">Add a new course!</h2>
+                <FormCourse 
+                    courseName={courseName} 
+                    setCourseName={setCourseName} 
+                    courseImage={courseImage} 
+                    setCourseImage={setCourseImage} 
+                    rating={rating} 
+                    setRating={setRating} 
+                    slope={slope} 
+                    setSlope={setSlope}
+                    handleSubmit={handleSubmit}
+                    title="Add Course"
+                /> 
+            </div>
         </div>
     )
 }

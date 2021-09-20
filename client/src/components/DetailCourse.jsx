@@ -56,7 +56,7 @@ export default function CourseDetail() {
             </div>
             <div className="flex w-full border-b-4 border-gray-100 rounded-md">
                 <div className="flex w-1/2 place-content-center">
-                    <div>
+                    <div className="mr-2">
                         <Link key={id} to={`/courses/${id}/edit`}>
                             <button className="h-8 w-8 transform hover:scale-125 text-green-lt hover:text-green-dk  focus:text-green-dk focus:outline-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -65,7 +65,7 @@ export default function CourseDetail() {
                             </button>
                         </Link>
                     </div>
-                    <div>
+                    <div className="ml-2">
                         <DeleteButton id={id} group="courses" title={courseDetails?.courseName} />
                     </div>
                 </div>
