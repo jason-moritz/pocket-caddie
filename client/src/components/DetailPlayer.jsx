@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import DisplayYardages from "./DisplayYardages";
 import DeleteButton from "./DeleteButton";
+import BackButton from "./BackButton";
 import { fetchPlayerDetails } from "../services";
 
 
@@ -27,7 +28,8 @@ export default function PlayerDetail() {
     if (!playerDetails) return <h2>Loading</h2>
 
     return (
-        <div className="flex flex-col">
+        <div>
+            <BackButton />
             <div className="flex flex-col-wrap">
                 <div className="p-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />

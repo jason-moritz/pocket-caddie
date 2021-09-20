@@ -33,7 +33,7 @@ export default function PlayerForm(props) {
                     <label>Handicap</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={handicap} onChange={e => setHandicap(e.target.value)} />
                     <div className="flex justify-center">
-                        <button className="  hover:text-gray-300 click:text-gray-300">{title}</button>
+                        <button className=" hover:text-gray-300 click:text-gray-300">{title}</button>
                     </div>
                 </div>
             </div>
