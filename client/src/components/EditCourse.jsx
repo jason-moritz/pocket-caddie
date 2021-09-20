@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchCourseDetails, editCourse } from "../services";
-import FormCourse from "./FormCourse";
+import FormCourse from "../forms/FormCourse";
+import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -41,20 +42,23 @@ export default function EditCourse() {
     }
 
     return (
-        <div className="flex flex-col items-center text-gray-100">
-            <h2 className="text-center mb-5 text-4xl">Edit {courseName}</h2>
-            <FormCourse 
-                courseName={courseName} 
-                setCourseName={setCourseName} 
-                courseImage={courseImage} 
-                setCourseImage={setCourseImage} 
-                rating={rating} 
-                setRating={setRating} 
-                slope={slope} 
-                setSlope={setSlope}
-                handleSubmit={handleSubmit}
-                title="Edit Course Info"
-            /> 
+        <div>
+            <ButtonBack location={`/courses/${id}`} />
+            <div className="flex flex-col items-center text-gray-100">
+                <h2 className="text-center mb-5 text-4xl">Edit Course Info</h2>
+                <FormCourse 
+                    courseName={courseName} 
+                    setCourseName={setCourseName} 
+                    courseImage={courseImage} 
+                    setCourseImage={setCourseImage} 
+                    rating={rating} 
+                    setRating={setRating} 
+                    slope={slope} 
+                    setSlope={setSlope}
+                    handleSubmit={handleSubmit}
+                    title="Submit"
+                /> 
+            </div>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getCourses } from "../services";
 import { Link } from "react-router-dom";
-import ButtonBack from "./ButtonBack";
+import ButtonBack from "../buttons/ButtonBack";
 
 
 export default function Courses() {
@@ -18,7 +18,7 @@ export default function Courses() {
 
     return (
         <div>
-            <ButtonBack />
+            <ButtonBack location="/" />
             <div className="object-center text-center text-gray-100 mt-5">
                 <h1 className="text-4xl">Courses</h1>
                 <div className="flex flex-col flex-wrap">
@@ -32,9 +32,6 @@ export default function Courses() {
                             </Link>
                         </div>
                     ))}
-                </div>
-                <div className="bottom-0 mt-5 hover:text-indigo-200 transform hover:scale-125">
-                    <Link to="/">Go Back</Link>
                 </div>
             </div>
         </div>

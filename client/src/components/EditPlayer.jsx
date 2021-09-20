@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchPlayerDetails, editPlayer } from "../services";
-import FormPlayer from "./FormPlayer";
+import FormPlayer from "../forms/FormPlayer";
+import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -38,18 +39,21 @@ export default function EditPlayer() {
     };
     
     return (
-        <div className="flex flex-col items-center text-gray-100">
-        <h2 className="text-center mb-5 text-4xl">Edit {playerName}'s Info</h2>
-            <FormPlayer
-                playerName={playerName} 
-                setPlayerName={setPlayerName} 
-                playerImage={playerImage}
-                setPlayerImage={setPlayerImage} 
-                handicap={handicap} 
-                setHandicap={setHandicap} 
-                handleSubmit={handleSubmit}
-                title="Edit Player Info"
-            />
+        <div>
+            <ButtonBack location={`/players/${id}`} />
+            <div className="flex flex-col items-center text-gray-100">
+                <h2 className="text-center mb-5 text-4xl">Edit Player Info</h2>
+                <FormPlayer
+                    playerName={playerName} 
+                    setPlayerName={setPlayerName} 
+                    playerImage={playerImage}
+                    setPlayerImage={setPlayerImage} 
+                    handicap={handicap} 
+                    setHandicap={setHandicap} 
+                    handleSubmit={handleSubmit}
+                    title="Submit"
+                />
+            </div>
         </div>
     )
 }

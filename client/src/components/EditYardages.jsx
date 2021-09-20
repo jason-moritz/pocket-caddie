@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchPlayerDetails, editPlayer } from "../services";
-import FormYardages from "./FormYardages";
-import ButtonBack from "./ButtonBack";
+import FormYardages from "../forms/FormYardages";
+import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -80,44 +80,45 @@ export default function EditYardages() {
 
     return (
         <div>
-            <ButtonBack />
+            <ButtonBack location={`/players/${id}`} />
             <div>
-            <FormYardages
-                lw={lw}
-                setLw={setLw}
-                sw={sw}
-                setSw={setSw}
-                aw={aw}
-                setAw={setAw}
-                pw={pw}
-                setPw={setPw}
-                nineir={nineir}
-                setNineir={setNineir}
-                eightir={eightir}
-                setEightir={setEightir}
-                sevenir={sevenir}
-                setSevenir={setSevenir}
-                sixir={sixir}
-                setSixir={setSixir}
-                fiveir={fiveir}
-                setFiveir={setFiveir}
-                fourir={fourir}
-                setFourir={setFourir}
-                threeir={threeir}
-                setThreeir={setThreeir}
-                twoir={twoir}
-                setTwoir={setTwoir}
-                fivewd={fivewd}
-                setFivewd={setFivewd}
-                threewd={threewd}
-                setThreewd={setThreewd}
-                hybrid={hybrid}
-                setHybrid={setHybrid}
-                driver={driver}
-                setDriver={setDriver}
-                handleSubmit={handleSubmit}
-                title="Edit Yardages"
-            />
+                <h2 className="text-center mb-5 text-4xl text-gray-100">Edit Yardages</h2>
+                <FormYardages
+                    lw={lw}
+                    setLw={setLw}
+                    sw={sw}
+                    setSw={setSw}
+                    aw={aw}
+                    setAw={setAw}
+                    pw={pw}
+                    setPw={setPw}
+                    nineir={nineir}
+                    setNineir={setNineir}
+                    eightir={eightir}
+                    setEightir={setEightir}
+                    sevenir={sevenir}
+                    setSevenir={setSevenir}
+                    sixir={sixir}
+                    setSixir={setSixir}
+                    fiveir={fiveir}
+                    setFiveir={setFiveir}
+                    fourir={fourir}
+                    setFourir={setFourir}
+                    threeir={threeir}
+                    setThreeir={setThreeir}
+                    twoir={twoir}
+                    setTwoir={setTwoir}
+                    fivewd={fivewd}
+                    setFivewd={setFivewd}
+                    threewd={threewd}
+                    setThreewd={setThreewd}
+                    hybrid={hybrid}
+                    setHybrid={setHybrid}
+                    driver={driver}
+                    setDriver={setDriver}
+                    handleSubmit={handleSubmit}
+                    title="Submit"
+                />
             </div>
         </div>
     )

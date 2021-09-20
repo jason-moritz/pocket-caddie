@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import DisplayYardages from "./DisplayYardages";
-import ButtonDelete from "./ButtonDelete";
-import ButtonBack from "./ButtonBack";
-import ButtonEdit from "./ButtonEdit";
+import ButtonDelete from "../buttons/ButtonDelete";
+import ButtonBack from "../buttons/ButtonBack";
+import ButtonEdit from "../buttons/ButtonEdit";
 import { fetchPlayerDetails } from "../services";
 
 
@@ -30,7 +30,7 @@ export default function PlayerDetail() {
 
     return (
         <div>
-            <ButtonBack />
+            <ButtonBack location="/players" />
             <div className="flex flex-col-wrap">
                 <div className="p-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />

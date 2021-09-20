@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { fetchCourseDetails } from "../services";
-import ButtonDelete from "./ButtonDelete";
-import ButtonBack from "./ButtonBack";
-import ButtonEdit from "./ButtonEdit";
+import ButtonDelete from "../buttons/ButtonDelete";
+import ButtonBack from "../buttons/ButtonBack";
+import ButtonEdit from "../buttons/ButtonEdit";
+import ButtonZoom from "../buttons/ButtonZoom";
 
 
 export default function CourseDetail() {
@@ -28,7 +29,7 @@ export default function CourseDetail() {
 
     return (
         <div>
-            <ButtonBack />
+            <ButtonBack location="/courses" />
             <div className="flex flex-col text-gray-100 p-4">
                 <div className="text-center">
                     <h2 className="text-xl">{courseDetails?.courseName}</h2>
@@ -60,6 +61,11 @@ export default function CourseDetail() {
                 </div>
                 <div className="flex w-full border-b-4 border-gray-100 rounded-md">
                     <div className="flex w-2/4 max-w-xs justify-center">
+                        <div className="mr-2 mb-2">
+                            <Link key={id} to={`/courses/${id}/score-card`}>
+                                <ButtonZoom />
+                            </Link>
+                        </div>
                         <div className="mr-2 mb-2">
                             <Link key={id} to={`/courses/${id}/edit`}>
                                 <ButtonEdit />

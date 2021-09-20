@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getPlayers } from "../services";
 import { Link } from "react-router-dom";
-import ButtonBack from "./ButtonBack";
+import ButtonBack from "../buttons/ButtonBack";
 
 
 export default function Players() {
@@ -19,7 +19,7 @@ export default function Players() {
 
     return (
         <div>
-            <ButtonBack />
+            <ButtonBack location="/" />
             <div className="object-center text-center text-gray-100 mt-5">
                 <h1 className="text-4xl">Players</h1>
                 <div className="flex flex-col place-items-center md:flex-row md:justify-center">
@@ -37,9 +37,6 @@ export default function Players() {
                             </Link>
                         </div>
                     ))}
-                </div>
-                <div className="bottom-0 mt-5 hover:text-gray-300 transform hover:scale-125">
-                    <Link to="/">Go Back</Link>
                 </div>
             </div>
         </div>

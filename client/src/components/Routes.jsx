@@ -6,6 +6,7 @@ import AddPlayer from "./AddPlayer";
 import AddCourse from "./AddCourse";
 import DetailPlayer from "./DetailPlayer";
 import DetailCourse from "./DetailCourse";
+import DetailScorecard from "./DetailScorecard";
 import EditPlayer from "./EditPlayer";
 import EditCourse from "./EditCourse";
 import EditYardages from "./EditYardages";
@@ -30,6 +31,9 @@ export default function Routes() {
             
             <Route exact path="/courses/:id">
                 <DetailCourse />
+            </Route>
+            <Route exact path="/courses/:id/score-card">
+                <DetailScorecard />
             </Route>
             <Route exact path="/addplayer">
                 <AddPlayer />
