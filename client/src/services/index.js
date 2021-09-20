@@ -88,7 +88,6 @@ export const editCourse = async(id, fields) => {
 export const deleteItem = async(group, id) => {
     try {
         const res = await axios.delete(`${baseURL}${group}/${id}`, config);
-        console.log(`${baseURL}${group}/{${id}`)
         return res.data.fields;
     } catch(error) {
         console.log(error);

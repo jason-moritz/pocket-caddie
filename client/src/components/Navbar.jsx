@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 export default function Navbar() {
     const [toggle, setToggle] = useState(false);
 
     const handleClick = () => {
         setToggle((prevToggle) => !prevToggle);
-    }
+    };
 
     return (
         <header className="text-green-lt"> 

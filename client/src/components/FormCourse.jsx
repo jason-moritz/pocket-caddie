@@ -7,7 +7,6 @@ export default function CourseForm(props) {
     const [toggle2, setToggle2] = useState(0);
     const [toggle3, setToggle3] = useState(0);
 
-
     const handleToggle = (e) => {
         e.preventDefault();
 

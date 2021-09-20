@@ -7,11 +7,13 @@ export default function PlayerForm(props) {
 
     const handleToggle = (e) => {
         e.preventDefault();
+
         if (playerName === "") {
             setToggle((prevToggle) => prevToggle + 1);
+
         } else if (playerName) {
             setToggle(0)
-        }
+        };
     };
 
     const twoCalls = (e) => {

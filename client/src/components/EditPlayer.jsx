@@ -5,6 +5,7 @@ import FormPlayer from "./FormPlayer";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 export default function EditPlayer() {
     const [playerName, setPlayerName] = useState("");
     const [playerImage, setPlayerImage] = useState("");
@@ -34,7 +35,8 @@ export default function EditPlayer() {
         await editPlayer(id, fields);
         toast(`You have editted ${playerName}'s info!`);
         history.push(`/players/${id}`);
-    }
+    };
+    
     return (
         <div className="flex flex-col items-center text-gray-100">
         <h2 className="text-center mb-5 text-4xl">Edit {playerName}'s Info</h2>

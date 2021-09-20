@@ -13,9 +13,6 @@ import { ToastContainer } from "react-toastify";
 
 
 export default function Routes() {
-
-
-
     return (
         <div>
             <Route exact path="/">

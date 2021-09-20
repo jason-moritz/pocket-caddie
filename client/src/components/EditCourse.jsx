@@ -19,7 +19,7 @@ export default function EditCourse() {
         courseImage,
         rating,
         slope,
-    }
+    };
 
     useEffect(() => {
         const getDetails = async() => {
@@ -39,7 +39,6 @@ export default function EditCourse() {
         toast(`You have editted ${courseName}'s info!`);
         history.push(`/courses/${id}`);
     }
-
 
     return (
         <div className="flex flex-col items-center text-gray-100">

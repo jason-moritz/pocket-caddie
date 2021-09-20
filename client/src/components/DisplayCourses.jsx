@@ -22,12 +22,12 @@ export default function Courses() {
                 {courses.map((course) => (
                     <div className="mt-5">
                         <Link class="flex flex-col items-center pt-2" to={`/courses/${course.id}`}>
-                            <div className="block transform hover:scale-125">
+                            <div className="block transform hover text-gray-300 transform transition-transform hover:scale-125">
                             {/* <img src={course.fields?.courseImage} key={course.id} alt="course-scorecard"/>
                             </div>
                             <div> */}
-                                <h3 className="text-2xl hover:text-gray-300 transform hover:scale-125 transition-transform">{course.fields?.courseName}</h3>
-                                <h3 className="text-sm hover:text-gray-300 transform hover:scale-125 transition-transform">{course.fields?.location}</h3>
+                                <h3 className="text-2xl">{course.fields?.courseName}</h3>
+                                <h3 className="text-sm">{course.fields?.location}</h3>
                             </div>
                         </Link>
                     </div>

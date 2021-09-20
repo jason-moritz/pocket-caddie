@@ -21,8 +21,7 @@ export default function AddPlayer() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const res = await addPlayer(fields);
-        console.log(res);
+        await addPlayer(fields);
         toast(`You have added ${playerName}!`);
         history.push("/");
     }

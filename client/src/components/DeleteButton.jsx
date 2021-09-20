@@ -3,16 +3,16 @@ import { deleteItem } from "../services";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 export default function DeleteButton(props) {
     const { group, title, id } = props;
     const history = useHistory();
 
-    console.log(group)
     const handleDelete = async() => {
         await deleteItem(group, id);
         toast(`${title} has been deleted!`);
         history.push(`/${group}`);
-        }
+        };
 
     return (
             <button class="h-8 w-8 fill-current transform hover:scale-125  text-green-lt hover:text-green-dk  focus:text-green-dk focus:outline-none" onClick={handleDelete}>
