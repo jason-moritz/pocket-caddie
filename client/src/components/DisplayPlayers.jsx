@@ -35,7 +35,7 @@ export default function Players() {
                     </>
                 ))}
             </div>
-            <div className="bottom-0 mt-5">
+            <div className="bottom-0 mt-5 hover:text-indigo-200 transform hover:scale-125">
                 <Link to="/">Go Back</Link>
             </div>
         </div>

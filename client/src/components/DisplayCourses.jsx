@@ -17,17 +17,24 @@ export default function Courses() {
 
     return (
         <div className="object-center text-center">
-        <h1>Courses</h1>
-        <div className="grid grid-cols-2">
-            {courses.map((course) => (
-                <div className="grid grid-cols-1 justify-items-center">
-                    <Link to={`/courses/${course.id}`}>
-                    <img className="max-h-20" src={course.fields?.courseImage} key={course.id} alt="course-scorecard"/>
-                    <h3>{course.fields?.courseName}</h3>
-                    </Link>
-                </div>
-            ))}
+            <h1 className="text-4xl">Courses</h1>
+            <div className="flex flex-col flex-wrap">
+                {courses.map((course) => (
+                    <>
+                        <Link class="flex flex-col items-center pt-2" to={`/courses/${course.id}`}>
+                            <div className="block h-20 w-20 overflow-hidden transform hover:scale-125">
+                                <img src={course.fields?.courseImage} key={course.id} alt="course-scorecard"/>
+                            </div>
+                            <div>
+                                <h3 className="text-2xl hover:text-indigo-200 transform hover:scale-125">{course.fields?.courseName}</h3>
+                            </div>
+                        </Link>
+                    </>
+                ))}
+            </div>
+            <div className="bottom-0 mt-5 hover:text-indigo-200 transform hover:scale-125">
+                <Link to="/">Go Back</Link>
+            </div>
         </div>
-    </div>
     )
 }
