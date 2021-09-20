@@ -17,7 +17,8 @@ export default function DisplayYardages() {
     if (!yardages) return <h2>Loading</h2>
 
     return (
-        <div>
+        <div className="grid grid-cols-2 justify-items-center text-xl">
+            <div>
             <h4>L Wedge: {yardages?.lw}</h4>
             <h4>S Wedge: {yardages?.sw}</h4>
             <h4>A Wedge: {yardages?.aw}</h4>
@@ -26,6 +27,8 @@ export default function DisplayYardages() {
             <h4>8 Iron: {yardages?.eightir}</h4>
             <h4>7 Iron: {yardages?.sevenir}</h4>
             <h4>6 Iron: {yardages?.sixir}</h4>
+            </div>
+            <div>
             <h4>5 Iron: {yardages?.fiveir}</h4>
             <h4>4 Iron: {yardages?.fourir}</h4>
             <h4>3 Iron: {yardages?.threeir}</h4>
@@ -34,6 +37,7 @@ export default function DisplayYardages() {
             <h4>5 Wood: {yardages?.fivewd}</h4>
             <h4>3 Wood: {yardages?.threewd}</h4>
             <h4>Driver: {yardages?.driver}</h4>
+            </div>
         </div>
     )
 }
