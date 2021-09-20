@@ -23,7 +23,7 @@ export default function AddCourse() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const res = await addCourse(fields);
+        await addCourse(fields);
         toast(`You have added ${courseName}!`);
         history.push("/");
     }

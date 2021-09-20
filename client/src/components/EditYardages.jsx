@@ -71,7 +71,7 @@ export default function EditYardages() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const res = await editPlayer(id, fields);
+        await editPlayer(id, fields);
         toast(`You have editted ${playerName}'s yardages!`);
         history.push(`/players/${id}`);
     };

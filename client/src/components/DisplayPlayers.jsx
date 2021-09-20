@@ -20,20 +20,23 @@ export default function Players() {
 
     return (
         <div className="object-center text-center">
-            <h1>Players</h1>
-            <div className="grid grid-cols-2">
+            <h1 className="text-4xl">Players</h1>
+            <div className="flex flex-col flex-wrap">
                 {players.map((player) => (
                     <>
                         <Link class="flex flex-col items-center pt-2" to={`/players/${player.id}`}>
-                            <div className="block h-14 w-14 rounded-full overflow-hidden">
+                            <div className="block h-20   w-20 rounded-full overflow-hidden transform hover:scale-125">
                                 <img className="h-full w-full object-cover object-center" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
                             </div>
                             <div>
-                                <h3>{player.fields?.playerName}</h3>
+                                <h3 className="text-2xl hover:text-indigo-200 transform hover:scale-125 ">{player.fields?.playerName}</h3>
                             </div>
                         </Link>
                     </>
                 ))}
+            </div>
+            <div className="bottom-0 mt-5">
+                <Link to="/">Go Back</Link>
             </div>
         </div>
     )

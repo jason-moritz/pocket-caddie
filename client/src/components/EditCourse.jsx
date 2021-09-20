@@ -35,7 +35,7 @@ export default function EditCourse() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const res = await editCourse(id, fields);
+        await editCourse(id, fields);
         toast(`You have editted ${courseName}'s info!`);
         history.push(`/courses/${id}`);
     }
