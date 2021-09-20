@@ -36,7 +36,8 @@ export default function EditPlayer() {
         history.push(`/players/${id}`);
     }
     return (
-        <div>
+        <div className="flex flex-col items-center text-gray-100">
+        <h2 className="text-center mb-5 text-4xl">Edit {playerName}'s Info</h2>
             <FormPlayer
                 playerName={playerName} 
                 setPlayerName={setPlayerName} 

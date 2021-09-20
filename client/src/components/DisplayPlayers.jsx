@@ -19,7 +19,7 @@ export default function Players() {
     if (!players) return <h1>Loading</h1>
 
     return (
-        <div className="object-center text-center">
+        <div className="object-center text-center text-gray-100">
             <h1 className="text-4xl">Players</h1>
             <div className="flex flex-col flex-wrap">
                 {players.map((player) => (
@@ -29,13 +29,13 @@ export default function Players() {
                                 <img className="h-full w-full object-cover object-center" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
                             </div>
                             <div>
-                                <h3 className="text-2xl hover:text-indigo-200 transform hover:scale-125 ">{player.fields?.playerName}</h3>
+                                <h3 className="text-2xl  hover:text-indigo-200 transform hover:scale-125 ">{player.fields?.playerName}</h3>
                             </div>
                         </Link>
                     </>
                 ))}
             </div>
-            <div className="bottom-0 mt-5 hover:text-indigo-200 transform hover:scale-125">
+            <div className="bottom-0 mt-5 hover:text-gray-300 transform hover:scale-125">
                 <Link to="/">Go Back</Link>
             </div>
         </div>

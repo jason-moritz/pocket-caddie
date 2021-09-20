@@ -42,7 +42,8 @@ export default function EditCourse() {
 
 
     return (
-        <div>
+        <div className="flex flex-col items-center text-gray-100">
+            <h2 className="text-center mb-5 text-4xl">Edit {courseName}</h2>
             <FormCourse 
                 courseName={courseName} 
                 setCourseName={setCourseName} 

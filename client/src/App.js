@@ -6,15 +6,17 @@ import Routes from "./components/Routes";
 function App() {
   return (
 
-    <div className="App   text-gray-100 flex-col font-nerko">
+    <div className="App flex-col bg-gray-dk font-kanit">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet" />
-      <div className="bg-gray-900 border-b-8 border-gray-100">
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
+      <div className="border-b-8 border-green-lt">
         <Navbar />
       </div>
-      <div className="h-screen bg-indigo-300">
-      <Routes />
+      <div className="h-screen">
+        <div className="mt-5">
+          <Routes />
+        </div>
       </div>
     </div>
   );

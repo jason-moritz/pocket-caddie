@@ -9,13 +9,13 @@ export default function Navbar() {
     }
 
     return (
-        <header> 
+        <header className="text-green-lt"> 
             <div className="flex place-content-between content-center px-4 py-3 ">
                 <Link className="flex items-center" to="/">
-                    <div className="hover:text-gray-300 text-xl">Pocket Caddie</div>
+                    <div className="hover:text-green-dk text-xl">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end">
-                    <button onClick={handleClick} class="h-8 w-8 fill-current hover: text-gray-300 focus:text-gray-100 focus:outline-none">
+                    <button onClick={handleClick} class="h-8 w-8 fill-current transform hover:scale-125 text-green-lt hover: text-geen-dk  focus:outline-none">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {toggle === false ?
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -27,12 +27,12 @@ export default function Navbar() {
                 </div>
             </div>
             {toggle === true ?  
-                <div className="px-2 pt-2 pb-4">
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-800 rounded" to="/">Home</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-800 rounded" to="/players">Players</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-800 rounded" to="/courses">Courses</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-800 rounded" to="/addplayer">Add Player</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-800 rounded" to="/addcourse">Add Course</Link>
+                <div className="px-2 pt-2 pb-4 text-green-lt">
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/">Home</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/players">Players</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/courses">Courses</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addplayer">Add Player</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addcourse">Add Course</Link>
                 </div>
             :
                 null}
