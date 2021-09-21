@@ -63,6 +63,7 @@ export default function EditYardages() {
             setFourir(res.fourir);
             setThreeir(res.threeir);
             setTwoir(res.twoir);
+            setHybrid(res.hybrid);
             setFivewd(res.fivewd);
             setThreewd(res.threewd);
             setDriver(res.driver);

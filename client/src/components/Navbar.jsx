@@ -13,7 +13,7 @@ export default function Navbar() {
         <header className="text-green-lt"> 
             <div className="flex place-content-between content-center px-4 py-3 ">
                 <Link className="flex items-center" to="/">
-                    <div className="hover:text-green-dk text-xl">Pocket Caddie</div>
+                    <div className="hover:text-green-dk text-xl text-transparent bg-clip-text bg-gradient-to-br from-green-900 to-green-lt">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end">
                     <button onClick={handleClick} class="h-8 w-8 fill-current transform hover:scale-125 transition duration-400 text-green-lt hover: text-geen-dk  focus:outline-none">
