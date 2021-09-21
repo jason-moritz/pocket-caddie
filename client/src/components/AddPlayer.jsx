@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { addPlayer } from "../services";
+import { addNew } from "../services";
 import { toast } from "react-toastify";
 import FormPlayer from "../forms/FormPlayer";
 import ButtonBack from "../buttons/ButtonBack";
@@ -22,7 +22,7 @@ export default function AddPlayer() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        await addPlayer(fields);
+        await addNew("players", fields);
         toast(`You have added ${playerName}!`);
         history.push("/");
     }

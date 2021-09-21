@@ -6,11 +6,12 @@ import AddPlayer from "./AddPlayer";
 import AddCourse from "./AddCourse";
 import DetailPlayer from "./DetailPlayer";
 import DetailCourse from "./DetailCourse";
-import DetailScorecard from "./DetailScorecard";
+import DetailCourseImage from "./DetailCourseImage";
 import EditPlayer from "./EditPlayer";
 import EditCourse from "./EditCourse";
 import EditYardages from "./EditYardages";
 import Caddie from "./Caddie";
+import PlayRound from "./PlayRound";
 import { ToastContainer } from "react-toastify";
 
 
@@ -33,8 +34,8 @@ export default function Routes() {
             <Route exact path="/courses/:id">
                 <DetailCourse />
             </Route>
-            <Route exact path="/courses/:id/score-card">
-                <DetailScorecard />
+            <Route exact path="/courses/:id/image">
+                <DetailCourseImage />
             </Route>
             <Route exact path="/addplayer">
                 <AddPlayer />
@@ -53,6 +54,9 @@ export default function Routes() {
             </Route>
             <Route exact path="/caddie">
                 <Caddie />
+            </Route>
+            <Route exact path="/scorecard">
+                <PlayRound />
             </Route>
             <ToastContainer />
         </div>

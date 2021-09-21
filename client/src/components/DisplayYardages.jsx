@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchPlayerDetails } from "../services";
+import { fetchDetails } from "../services";
 
 
 export default function DisplayYardages() {
@@ -9,7 +9,7 @@ export default function DisplayYardages() {
 
     useEffect(() => {
         const getYardages = async() => {
-            setYardages(await fetchPlayerDetails(id));
+            setYardages(await fetchDetails("players", id));
         };
         getYardages();
     }, [id]);

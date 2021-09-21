@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { addCourse } from "../services";
+import { addNew } from "../services";
 import { toast } from "react-toastify";
 import FormCourse from "../forms/FormCourse";
 import ButtonBack from "../buttons/ButtonBack";
@@ -24,7 +24,7 @@ export default function AddCourse() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        await addCourse(fields);
+        await addNew("courses", fields);
         toast(`You have added ${courseName}!`);
         history.push("/");
     }

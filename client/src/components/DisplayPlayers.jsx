@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchPlayers } from "../services";
+import { fetchList } from "../services";
 import { Link } from "react-router-dom";
 import ButtonBack from "../buttons/ButtonBack";
 
@@ -9,7 +9,7 @@ export default function Players() {
 
     useEffect(() => {
         const listPlayers = async() => {
-            setPlayers(await fetchPlayers());
+            setPlayers(await fetchList("players"));
 
         };
         listPlayers();

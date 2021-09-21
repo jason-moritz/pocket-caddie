@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { fetchCourseDetails } from "../services";
+import { fetchDetails } from "../services";
 import ButtonDelete from "../buttons/ButtonDelete";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";
@@ -20,7 +20,7 @@ export default function CourseDetail() {
 
     useEffect(() => {
         const getDetails = async() => {
-            setCourseDetails(await fetchCourseDetails(id));
+            setCourseDetails(await fetchDetails("courses", id));
         };
         getDetails();
     }, [id]);
@@ -62,11 +62,11 @@ export default function CourseDetail() {
                 <div className="flex w-full border-b-4 border-gray-100 rounded-md">
                     <div className="flex w-2/4 max-w-xs justify-center">
                         <div className="mr-2 mb-2">
-                            <Link key={id} to={`/courses/${id}/score-card`}>
+                            <Link key={id} to={`/courses/${id}/image`}>
                                 <ButtonZoom />
                             </Link>
                         </div>
-                        <div className="mr-2 mb-2">
+                        <div className="ml-2 mr-2 mb-2">
                             <Link key={id} to={`/courses/${id}/edit`}>
                                 <ButtonEdit />
                             </Link>

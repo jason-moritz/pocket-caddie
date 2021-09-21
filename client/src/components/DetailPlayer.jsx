@@ -4,7 +4,7 @@ import DisplayYardages from "./DisplayYardages";
 import ButtonDelete from "../buttons/ButtonDelete";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";
-import { fetchPlayerDetails } from "../services";
+import { fetchDetails } from "../services";
 
 
 export default function PlayerDetail() {
@@ -14,7 +14,7 @@ export default function PlayerDetail() {
 
     useEffect(() => {
         const getDetails = async() => {
-            setPlayerDetails(await fetchPlayerDetails(id));
+            setPlayerDetails(await fetchDetails("players", id));
         };
         getDetails();
     }, [id]);

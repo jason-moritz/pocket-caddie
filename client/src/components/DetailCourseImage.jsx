@@ -1,26 +1,26 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchCourseDetails } from "../services";
+import { fetchDetails } from "../services";
 import ButtonBack from "../buttons/ButtonBack";
 
 export default function DetailScorecard() {
-    const [scorecard, setScorecard] = useState({});
+    const [courseImage, setCourseImage] = useState({});
     const { id } = useParams();
 
     useEffect(() => {
-        const getScorecard = async() => {
-            setScorecard(await fetchCourseDetails(id));
+        const getCourseImage = async() => {
+            setCourseImage(await fetchDetails("courses", id));
         };
-        getScorecard();
+        getCourseImage();
     },[id]);
 
-    if (!scorecard) return <h2>Loading</h2>
+    if (!courseImage) return <h2>Loading</h2>
 
     return (
         <div className="text-gray-100">
             <ButtonBack location={`/courses/${id}`} />
             <div className="flex place-content-center rounded-sm p-4">
-                <img className="flex-shrink-0" src={scorecard?.courseImage} alt="scorecard"></img>
+                <img className="flex-shrink-0" src={courseImage?.courseImage} alt="scorecard"></img>
             </div>
         </div>
     )

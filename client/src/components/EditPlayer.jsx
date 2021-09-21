@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { fetchPlayerDetails, editPlayer } from "../services";
+import { fetchDetails, editDetails } from "../services";
 import FormPlayer from "../forms/FormPlayer";
 import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";
@@ -22,7 +22,7 @@ export default function EditPlayer() {
 
     useEffect(() => {
         const getDetails = async() => {
-            let res = await fetchPlayerDetails(id);
+            let res = await fetchDetails("players", id);
             setPlayerName(res.playerName);
             setPlayerImage(res.playerImage);
             setHandicap(res.handicap);
@@ -33,7 +33,7 @@ export default function EditPlayer() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        await editPlayer(id, fields);
+        await editDetails("players", id, fields);
         toast(`You have editted ${playerName}'s info!`);
         history.push(`/players/${id}`);
     };

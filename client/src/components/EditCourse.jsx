@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { fetchCourseDetails, editCourse } from "../services";
+import { fetchDetails, editDetails } from "../services";
 import FormCourse from "../forms/FormCourse";
 import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";
@@ -24,7 +24,7 @@ export default function EditCourse() {
 
     useEffect(() => {
         const getDetails = async() => {
-            let res = await fetchCourseDetails(id);
+            let res = await fetchDetails("courses", id);
             setCourseName(res.courseName);
             setCourseImage(res.courseImage);
             setRating(res.rating);
@@ -36,7 +36,7 @@ export default function EditCourse() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        await editCourse(id, fields);
+        await editDetails("courses", id, fields);
         toast(`You have editted ${courseName}'s info!`);
         history.push(`/courses/${id}`);
     }

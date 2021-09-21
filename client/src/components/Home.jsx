@@ -15,7 +15,10 @@ export default function Home() {
                         <button className=" w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Add Course</button>
                     </Link>
                     <Link to="/caddie">
-                        <button className=" w-full border-4 rounded-2xl p-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Caddie</button>
+                        <button className=" w-full border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Caddie</button>
+                    </Link>
+                    <Link to="/scorecard">
+                        <button className=" w-full border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Play Round</button>
                     </Link>
                 </div>
             </div>
