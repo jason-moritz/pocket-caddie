@@ -151,7 +151,13 @@ Airtable is returning data for an array of players.
 | Component CSS pg 8        |    H     |      2hrs      |      1hr      |    26hrs    |
 | Component CSS pg 9        |    H     |      2hrs      |      1hr      |    27hrs    |
 | Component CSS pg 10       |    H     |      2hrs      |      1hr      |    28hrs    |
-| Total                     |    H     |    52hrs     |          |    28hrs     |
+| PMVP Caddie logic         |    H     |      3hrs      |      2hrs     |    31hrs    |
+| Caddie creation pg 11     |    H     |      2hrs      |      1hr      |    32hrs    |
+| Component CSS pg 11       |    H     |      2hrs      |      1hr      |    33hrs    |
+| Airtable associations     |    H     |      4hrs      |      hr      |    hrs    |
+| Previous rds logic pg 11  |    H     |      2hrs      |      hr      |    hrs    |
+| Previous rds logic pg 11  |    H     |      2hrs      |      hr      |    hrs    |
+| Total                     |    H     |    67hrs       |          |    hrs     |
 
 ## SWOT Analysis
 
