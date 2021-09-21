@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import DropDownPlayer from "../dropdownmenu/DropDownPlayer";
-import Scorecard from "./Scorecard";
+import DisplayScorecard from "./DisplayScorecard";
 
 export default function PlayRound() {
     const [playerID, setPlayerID] = useState("");

@@ -1,5 +1,5 @@
 import ButtonBack from "../buttons/ButtonBack";
-import CaddieDisplay from "./CaddieDisplay";
+import DetailCaddie from "./DetailCaddie";
 
 
 export default function ClubSelector() {
@@ -7,7 +7,7 @@ export default function ClubSelector() {
         <div>
             <ButtonBack location="/" />
             <div className="text-gray-100">
-                <CaddieDisplay />
+                <DetailCaddie />
             </div>
         </div>
     )

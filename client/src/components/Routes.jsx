@@ -10,7 +10,7 @@ import DetailCourseImage from "./DetailCourseImage";
 import EditPlayer from "./EditPlayer";
 import EditCourse from "./EditCourse";
 import EditYardages from "./EditYardages";
-import Caddie from "./Caddie";
+import DisplayCaddie from "./DisplayCaddie";
 import PlayRound from "./PlayRound";
 import { ToastContainer } from "react-toastify";
 
@@ -53,7 +53,7 @@ export default function Routes() {
                 <EditYardages />
             </Route>
             <Route exact path="/caddie">
-                <Caddie />
+                <DisplayCaddie />
             </Route>
             <Route exact path="/scorecard">
                 <PlayRound />
