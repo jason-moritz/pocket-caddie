@@ -10,6 +10,7 @@ export default function PlayRound() {
         <div className="text-gray-100">
             <DropDownMenu setID={setPlayerID} group="players" />
             <DropDownMenu setID={setCourseID} group="courses" />
+            <DetailScorecard />
         </div>
     )
 }

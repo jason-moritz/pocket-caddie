@@ -24,6 +24,7 @@ export default function PlayerDropDown() {
         console.log(yardageIndex);
         let clubYardage = sortedArr[yardageIndex + 1];
         setClub(findClub(res, clubYardage));
+        setYardage("");
     };
 
     return (
