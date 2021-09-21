@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getCourses } from "../services";
+import { fetchCourses } from "../services";
 import { Link } from "react-router-dom";
 import ButtonBack from "../buttons/ButtonBack";
 
@@ -9,7 +9,7 @@ export default function Courses() {
 
     useEffect(() => {
         const listCourses = async() => {
-            setCourses(await getCourses());
+            setCourses(await fetchCourses());
         };
         listCourses();
     },[]);

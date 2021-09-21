@@ -9,13 +9,13 @@ export default function Home() {
             <div className="flex mt-10 justify-center">
                 <div className="w-3/4 flex-col text-green-lt">
                     <Link to="/addplayer">
-                        <button className="w-full border-4 rounded-2xl py-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition-transform" >Add Player</button>
+                        <button className="w-full border-4 rounded-2xl py-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400" >Add Player</button>
                     </Link>
                     <Link to="/addcourse">
-                        <button className=" w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition-transform">Add Course</button>
+                        <button className=" w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Add Course</button>
                     </Link>
-                    <Link to="/clubselector">
-                        <button className=" w-full border-4 rounded-2xl p-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition-transform">Caddie</button>
+                    <Link to="/caddie">
+                        <button className=" w-full border-4 rounded-2xl p-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Caddie</button>
                     </Link>
                 </div>
             </div>

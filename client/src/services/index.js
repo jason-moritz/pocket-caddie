@@ -31,7 +31,7 @@ export const addCourse = async(fields) => {
     };
 };
 
-export const getPlayers = async() => {
+export const fetchPlayers = async() => {
     try {
         const res = await axios.get(playerURL, config);
         return res.data.records;
@@ -40,7 +40,7 @@ export const getPlayers = async() => {
     };
 };
 
-export const getCourses = async() => {
+export const fetchCourses = async() => {
     try {
         const res = await axios.get(courseURL, config);
         return res.data.records;

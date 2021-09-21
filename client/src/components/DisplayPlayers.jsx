@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getPlayers } from "../services";
+import { fetchPlayers } from "../services";
 import { Link } from "react-router-dom";
 import ButtonBack from "../buttons/ButtonBack";
 
@@ -9,7 +9,7 @@ export default function Players() {
 
     useEffect(() => {
         const listPlayers = async() => {
-            setPlayers(await getPlayers());
+            setPlayers(await fetchPlayers());
 
         };
         listPlayers();
@@ -28,7 +28,7 @@ export default function Players() {
                             <Link class="pt-2" to={`/players/${player.id}`}>
                                 <div className="flex flex-col place-items-center h-40 w-40 hover text-gray-300 transform transition-transform hover:scale-125">
                                     <div className="h-32  w-32 rounded-full overflow-hidden">
-                                        <img className="h-full w-full object-cover object-center" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
+                                        <img className="h-full w-full object-cover object-center shadow-md mix-blend-lighten" src={player.fields?.playerImage} key={player.id} alt="player-profile"/>
                                     </div>
                                     <div>
                                         <h3 className="text-2xl">{player.fields?.playerName}</h3>

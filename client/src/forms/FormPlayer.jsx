@@ -26,7 +26,7 @@ export default function PlayerForm(props) {
             <div className="flex justify-center">
                 <div className="w-3/4 max-w-2xl">
                     <label>Player Name</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 hover:scale-50 focus:outline-none focus:shadow-outline" value={playerName} onChange={twoCalls} />
+                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={playerName} onChange={twoCalls} />
                     {toggle > 0 ? <p className="text-sm text-red-500">Please enter a player name</p> : null} 
                     <label>Photo</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={playerImage} onChange={e => setPlayerImage(e.target.value)} />
