@@ -10,7 +10,7 @@ import DetailScorecard from "./DetailScorecard";
 import EditPlayer from "./EditPlayer";
 import EditCourse from "./EditCourse";
 import EditYardages from "./EditYardages";
-import ClubSelector from "./ClubSelector";
+import Caddie from "./Caddie";
 import { ToastContainer } from "react-toastify";
 
 
@@ -52,7 +52,7 @@ export default function Routes() {
                 <EditYardages />
             </Route>
             <Route exact path="/caddie">
-                <ClubSelector />
+                <Caddie />
             </Route>
             <ToastContainer />
         </div>
