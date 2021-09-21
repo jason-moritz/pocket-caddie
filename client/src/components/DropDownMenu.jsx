@@ -3,7 +3,7 @@ import { fetchList } from "../services";
 
 export default function DropDownPlayer(props) {
     const [details, setDetails] = useState("");
-    const { group, groupName, setID } = props;
+    const { group, setID } = props;
 
     useEffect(() => {
         const getDetails = async() => {
@@ -11,7 +11,7 @@ export default function DropDownPlayer(props) {
         };
         getDetails();
 
-    },[]);
+    },[group]);
 
     if (!details) return <h2>Loading</h2>
 

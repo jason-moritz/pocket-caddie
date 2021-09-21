@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { fetchDetails } from "../services";
-import DropDownPlayer from "../dropdownmenu/DropDownPlayer";
+import DropDownMenu from "./DropDownMenu";
 import FormCaddie from "../forms/FormCaddie";
 
 
@@ -29,7 +29,7 @@ export default function PlayerDropDown() {
     return (
         <div className="w-screen  text-gray-100">
             <div className="flex flex-col place-items-center">
-                <DropDownPlayer setID={setPlayerID} group="players" groupName="playerName" />
+                <DropDownMenu setID={setPlayerID} group="players" />
                 <label className="mt-4">Yardage Out</label>
                 <FormCaddie handleSubmit={handleSubmit} yardage={yardage} setYardage={setYardage} />
                 {club !== "" ? 
