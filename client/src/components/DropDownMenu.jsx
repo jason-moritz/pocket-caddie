@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchList } from "../services";
 
-export default function DropDownPlayer(props) {
+export default function DropDownMenuCaddie(props) {
     const [details, setDetails] = useState("");
     const { group, setID } = props;
 
@@ -27,7 +27,7 @@ export default function DropDownPlayer(props) {
                         group === "players" ? 
                             <option key={detail.id} value={detail.id} className="bg-gray-100 text-gray-md leading-6 hover:bg-gray-200 focus:outline-none focus:shadow-outline rounded-md">{detail.fields?.playerName}</option>
                         :
-                            <option key={detail.id} value={detail.id} className="bg-gray-100 text-gray-md leading-6 hover:bg-gray-200 focus:outline-none focus:shadow-outline rounded-md">{detail.fields?.courseName}</option>
+                            <option key={detail.id} value={detail.courseName} className="bg-gray-100 text-gray-md leading-6 hover:bg-gray-200 focus:outline-none focus:shadow-outline rounded-md">{detail.fields?.courseName}</option>
                     ))}
                 </select>
         </div>

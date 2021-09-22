@@ -34,9 +34,19 @@ export default function Navbar() {
                     <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/courses">Courses</Link>
                     <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addplayer">Add Player</Link>
                     <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addcourse">Add Course</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/caddie">Caddie</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/scorecard">Play Round</Link>
                 </div>
             :
-                null}
+                <div className="px-2 pt-2 pb-4 text-green-lt hidden">
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/">Home</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/players">Players</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/courses">Courses</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addplayer">Add Player</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addcourse">Add Course</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/caddie">Caddie</Link>
+                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/scorecard">Play Round</Link>
+                </div>}
         </header>
     )
 }

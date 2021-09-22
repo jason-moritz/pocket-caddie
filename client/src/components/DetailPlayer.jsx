@@ -4,6 +4,7 @@ import DisplayYardages from "./DisplayYardages";
 import ButtonDelete from "../buttons/ButtonDelete";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";
+import DisplayPrevRounds from "./DisplayPrevRounds";
 import { fetchDetails } from "../services";
 
 
@@ -35,9 +36,10 @@ export default function PlayerDetail() {
                 <div className="p-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />
                 </div>
-                <div className="flex flex-col mt-8 pl-4 items-center  text-gray-100">
+                <div className="flex flex-col mt-8 pl-4 items-center text-center text-gray-100">
                     <h2 className="text-5xl">{playerDetails?.playerName}</h2>
                     <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
+                    <DisplayPrevRounds playerID={playerDetails.id}/>
                 </div>
             </div>
             <div className="flex w-full border-b-4 border-gray-100 rounded-md">
