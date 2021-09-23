@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { fetchList } from "../services";
 
 
@@ -20,15 +20,19 @@ export default function DisplayPrevRounds() {
 
     return (
         <div>
-            <div>Previous Rounds</div>
+            <div className="text-lg md:text-xl">Previous Rounds</div>
+            <div className="max-h-24 overflow-scroll">
             {prevRounds.map((prevRound) => (
                 prevRound.fields?.playerID === id ?
-                    <div>
+                    <Link key={id} to={`/rounds/${prevRound.id}`}>
+                    <div className="md:text-lg">
                         <h2>{prevRound.fields?.courseName}: {prevRound.fields?.total}</h2>
                     </div>
+                    </Link>
                 :
                 null
             ))}
+            </div>
         </div>
     )
 }

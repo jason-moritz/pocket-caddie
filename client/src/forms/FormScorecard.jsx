@@ -118,7 +118,7 @@ export default function FormScorecard(props) {
                     </div>
                     </div>
                 </div>
-                <div className="flex justify-center mb-4">
+                <div className="flex justify-center mb-4 text-xl">
                         <button className=" hover:text-gray-300 click:text-gray-300">Finish Round</button>
                 </div>
             </div>

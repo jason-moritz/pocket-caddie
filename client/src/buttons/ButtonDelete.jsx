@@ -11,7 +11,7 @@ export default function ButtonDelete(props) {
     const handleDelete = async() => {
         await deleteItem(group, id);
         toast(`${title} has been deleted!`);
-        history.push(`/${group}`);
+        history.back();
         };
 
     return (

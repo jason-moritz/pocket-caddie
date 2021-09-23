@@ -29,7 +29,7 @@ export default function PlayerDropDown() {
 
     return (
         <div className="w-screen  text-gray-100">
-            <div className="flex flex-col place-items-center">
+            <div className="flex flex-col place-items-center text-lg">
                 <DropDownMenu setID={setPlayerID} group="players" />
                 <label className="mt-4">Yardage Out</label>
                 <FormCaddie handleSubmit={handleSubmit} yardage={yardage} setYardage={setYardage} />

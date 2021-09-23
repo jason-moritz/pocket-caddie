@@ -32,29 +32,30 @@ export default function PlayerDetail() {
     return (
         <div>
             <ButtonBack location="/players" />
-            <div className="flex flex-col-wrap">
-                <div className="p-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
+            <div className="flex flex-row justify-center items-end border-b-4 border-gray-100">
+                <div className="pt-4 px-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />
-                </div>
-                <div className="flex flex-col mt-8 pl-4 items-center text-center text-gray-100">
-                    <h2 className="text-5xl">{playerDetails?.playerName}</h2>
-                    <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
-                    <DisplayPrevRounds />
-                </div>
-            </div>
-            <div className="flex w-full border-b-4 border-gray-100 rounded-md">
-                <div className="flex w-2/4 max-w-xs justify-center">
-                    <div className="mr-2 mb-2">
-                        <Link key={id} to={`/players/${id}/edit`}>
-                            <ButtonEdit />
-                        </Link>
-                    </div>
-                    <div className="ml-2 mb-2">
-                        <ButtonDelete id={id} group="players" title={playerDetails?.playerName} />
+                    <div className="flex mt-2 justify-center">
+                        <div className="mr-2 mb-2">
+                            <Link key={id} to={`/players/${id}/edit`}>
+                                <ButtonEdit />
+                            </Link>
+                        </div>
+                        <div className="ml-2 mb-2">
+                            <ButtonDelete id={id} group="players" title={playerDetails?.playerName} />
+                        </div>
                     </div>
                 </div>
+                <div className="flex flex-col pt-4 pr-4 max-h-1/3 text-center text-gray-100">
+                    <div className="flex flex-col items-center mb-2">
+                        <h2 className="text-5xl">{playerDetails?.playerName}</h2>
+                        <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
+                    </div>
+                    <div className="pb-4 overflow-hidden">
+                        <DisplayPrevRounds />
+                    </div>
+                </div>
             </div>
-            
             <div className="flex place-content-center">
                 <button className="h-8 w-8 transform hover:scale-125  text-green-lt hover:text-green-dk  focus:text-green-dk focus:outline-none" onClick={handleToggle}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

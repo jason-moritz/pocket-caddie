@@ -12,6 +12,7 @@ import EditCourse from "./EditCourse";
 import EditYardages from "./EditYardages";
 import DisplayCaddie from "./DisplayCaddie";
 import DisplayScorecard from "./DisplayScorecard";
+import DetailPrevRound from "./DetailPrevRound";
 import { ToastContainer } from "react-toastify";
 
 
@@ -57,6 +58,9 @@ export default function Routes() {
             </Route>
             <Route exact path="/scorecard">
                 <DisplayScorecard />
+            </Route>
+            <Route exact path="/rounds/:id">
+                <DetailPrevRound />
             </Route>
             <ToastContainer />
         </div>
