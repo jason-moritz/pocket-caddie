@@ -24,8 +24,6 @@ export default function DisplayPrevRounds(props) {
                 prevRound.fields?.playerName === playerID ?
                     <div>
                         <h2>{prevRound.fields?.courseName}</h2>
-                        <h2>{prevRound.fields?.courseName}</h2>
-                        <h2>{prevRound.fields?.courseName}</h2>
                     </div>
                 :
                 null
