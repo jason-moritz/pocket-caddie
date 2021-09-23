@@ -29,7 +29,7 @@ export default function AddPlayer() {
 
     return (
         <div className="text-gray-100">
-            <ButtonBack location="/" />
+            <ButtonBack />
             <div className="flex flex-col items-center">
                 <h2 className="text-center mb-5 text-4xl">Add a new player!</h2>
                 <FormPlayer

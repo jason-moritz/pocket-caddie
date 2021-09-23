@@ -1,10 +1,10 @@
 export default function FormScorecard(props) {
-    const { h1, setH1, h2, setH2, h3, setH3, h4, setH4, h5, setH5, h6, setH6, h7, setH7, h8, setH8, h9, setH9, h10, setH10, h11, setH11, h12, setH12, h13, setH13, h14, setH14, h15, setH15, h16, setH16, h17, setH17, h18, setH18, handleSubmit } = props;
+    const { h1, setH1, h2, setH2, h3, setH3, h4, setH4, h5, setH5, h6, setH6, h7, setH7, h8, setH8, h9, setH9, h10, setH10, h11, setH11, h12, setH12, h13, setH13, h14, setH14, h15, setH15, h16, setH16, h17, setH17, h18, setH18, title, handleSubmit } = props;
 
     return (
         <form className="text-gray-100 w-screen mt-5" onSubmit={handleSubmit}>
             <div className="flex justify-center flex-col items-center">
-                <div className="w-3/4 max-w-3xl text-center flex flex-col items-center">                    
+                <div className="w-3/4 max-w-lg text-center flex flex-col items-center">                    
                     <div className="md:flex md:flex-row">
                     <div>
                         <label>Hole 1</label>
@@ -119,7 +119,7 @@ export default function FormScorecard(props) {
                     </div>
                 </div>
                 <div className="flex justify-center mb-4 text-xl">
-                        <button className=" hover:text-gray-300 click:text-gray-300">Finish Round</button>
+                        <button className=" hover:text-gray-300 click:text-gray-300">{title}</button>
                 </div>
             </div>
         </form>

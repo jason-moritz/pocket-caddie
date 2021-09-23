@@ -18,7 +18,7 @@ export default function Courses() {
 
     return (
         <div>
-            <ButtonBack location="/" />
+            <ButtonBack />
             <div className="object-center text-center text-gray-100 mt-5">
                 <h1 className="text-4xl">Courses</h1>
                 <div className="flex flex-col flex-wrap">

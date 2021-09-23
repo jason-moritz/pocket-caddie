@@ -81,7 +81,7 @@ export default function EditYardages() {
 
     return (
         <div>
-            <ButtonBack location={`/players/${id}`} />
+            <ButtonBack />
             <div>
                 <h2 className="text-center mb-5 text-4xl text-gray-100">Edit Yardages</h2>
                 <FormYardages

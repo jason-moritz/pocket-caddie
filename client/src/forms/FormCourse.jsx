@@ -53,7 +53,7 @@ export default function CourseForm(props) {
     return (
         <form className="text-gray-100 w-screen mt-5" onSubmit={courseName && rating && slope ? handleSubmit : handleToggle}>
             <div className="flex justify-center">
-                <div className="w-3/4 max-w-2xl">
+                <div className="w-3/4 max-w-lg text-xl">
                     <label>Course Name</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={courseName} onChange={twoCallsCourse} />
                     {toggle1 > 0 ? <p className="text-sm text-red-500">Please enter a course name</p> : null}

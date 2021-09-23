@@ -1,9 +1,9 @@
-import DetailScorecard from "./DetailScorecard";
+import AddRound from "./AddRound";
 
 export default function PlayRound() {
     return (
         <div className="text-gray-100">
-            <DetailScorecard />
+            <AddRound />
         </div>
     )
 }

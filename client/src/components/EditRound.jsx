@@ -1,14 +1,15 @@
-import { useState, useEffect } from "react"
-import { useHistory } from "react-router-dom";
-import FormScorecard from "../forms/FormScorecard";
-import DropDownMenu from "./DropDownMenu";
-import { addNew } from "../services";
+import { useState, useEffect } from "react";
+import { useParams, useHistory } from "react-router-dom";
+import { fetchDetails, editDetails } from "../services";
+import ButtonBack from "../buttons/ButtonBack";
+import FormRound from "../forms/FormRound";
 import { toast } from "react-toastify";
 
 
-export default function Scorecard() {
-    const [playerID, setPlayerID] = useState("rec16GtjMew2ERJKe");
-    const [courseName, setCourseName] = useState("Fresh Meadows");
+export default function EditRound() {
+    const [round, setRound] = useState({});
+    const { id } = useParams();
+    const history = useHistory();
     const [h1, setH1] = useState("");
     const [h2, setH2] = useState("");
     const [h3, setH3] = useState("");
@@ -30,11 +31,8 @@ export default function Scorecard() {
     const [front9, setFront9] = useState("");
     const [back9, setBack9] = useState("");
     const [total, setTotal] = useState("");
-    const history = useHistory();
 
     const fields = {
-        playerID,
-        courseName,
         h1,
         h2,
         h3,
@@ -57,6 +55,32 @@ export default function Scorecard() {
         back9,
         total,
     };
+
+
+    useEffect(() => {
+        const getRound = async() => {
+        let res = await fetchDetails("scores", id)
+        setH1(res.h1);
+        setH2(res.h2);
+        setH3(res.h3);
+        setH4(res.h4);
+        setH5(res.h5);
+        setH6(res.h6);
+        setH7(res.h7);
+        setH8(res.h8);
+        setH9(res.h9);
+        setH10(res.h10);
+        setH11(res.h11);
+        setH12(res.h12);
+        setH13(res.h13);
+        setH14(res.h14);
+        setH15(res.h15);
+        setH16(res.h16);
+        setH17(res.h17);
+        setH18(res.h18);
+        };
+        getRound();
+    },[id]);
 
     const roundTotal = () => {
         const front9String = [h1, h2, h3, h4, h5, h6, h7, h8, h9];
@@ -86,28 +110,29 @@ export default function Scorecard() {
         setBack9(`${sumBack9}`);
         setTotal(`${totalScore}`);
     };
-
     useEffect(() => {
         roundTotal();
-    },[h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h13, h14, h15, h16, h17, h18]);
+    },[h1, h2, h3, h4, h5, h6, h7, h8,h9, h10, h11, h12, h13, h14, h15,h16, h17, h18])
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        
-        roundTotal();
 
-        await addNew("scores", fields);
-        toast(`You have added a new round!`);
-        history.push("/");
-    };
+        roundTotal();
+        await editDetails("scores", id, fields);
+        toast(`You have editted the round scores!`)
+        history.goBack();
+    }
+
+
+    if (!round) return <h2>Loading</h2>
 
     return (
-        <div>
-            <div className="pb-4 border-b-4 border-gray-100 rounded-md">
-            <DropDownMenu setID={setPlayerID} group="players" />
-            <DropDownMenu setID={setCourseName} group="courses" />
+        <div className="text-gray-100">
+            <ButtonBack />
+            <div>
+                <h2 className="text-center mb-5 text-4xl text-gray-100">Edit Round</h2>
             </div>
-            <FormScorecard h1={h1} setH1={setH1} h2={h2} setH2={setH2} h3={h3} setH3={setH3} h4={h4} setH4={setH4} h5={h5} setH5={setH5} h6={h6} setH6={setH6} h7={h7} setH7={setH7} h8={h8} setH8={setH8} h9={h9} setH9={setH9} h10={h10} setH10={setH10} h11={h11} setH11={setH11} h12={h12} setH12={setH12} h13={h13} setH13={setH13} h14={h14} setH14={setH14} h15={h15} setH15={setH15} h16={h16} setH16={setH16} h17={h17} setH17={setH17} h18={h18} setH18={setH18} handleSubmit={handleSubmit} front9={front9} setFront9={setFront9} back9={back9} setBack9={setBack9} total={total} setTotal={setTotal} />
+            <FormRound h1={h1} setH1={setH1} h2={h2} setH2={setH2} h3={h3} setH3={setH3} h4={h4} setH4={setH4} h5={h5} setH5={setH5} h6={h6} setH6={setH6} h7={h7} setH7={setH7} h8={h8} setH8={setH8} h9={h9} setH9={setH9} h10={h10} setH10={setH10} h11={h11} setH11={setH11} h12={h12} setH12={setH12} h13={h13} setH13={setH13} h14={h14} setH14={setH14} h15={h15} setH15={setH15} h16={h16} setH16={setH16} h17={h17} setH17={setH17} h18={h18} setH18={setH18} handleSubmit={handleSubmit} front9={front9} setFront9={setFront9} back9={back9} setBack9={setBack9} total={total} setTotal={setTotal} title="Edit Round" />
         </div>
     )
 }

@@ -29,7 +29,7 @@ export default function CourseDetail() {
 
     return (
         <div>
-            <ButtonBack location="/courses" />
+            <ButtonBack />
             <div className="flex flex-col text-gray-100 p-4">
                 <div className="text-center">
                     <h2 className="text-xl">{courseDetails?.courseName}</h2>

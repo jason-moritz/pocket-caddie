@@ -11,8 +11,9 @@ import EditPlayer from "./EditPlayer";
 import EditCourse from "./EditCourse";
 import EditYardages from "./EditYardages";
 import DisplayCaddie from "./DisplayCaddie";
-import DisplayScorecard from "./DisplayScorecard";
+import DisplayRound from "./DisplayRound";
 import DetailPrevRound from "./DetailPrevRound";
+import EditRound from "./EditRound";
 import { ToastContainer } from "react-toastify";
 
 
@@ -57,10 +58,13 @@ export default function Routes() {
                 <DisplayCaddie />
             </Route>
             <Route exact path="/scorecard">
-                <DisplayScorecard />
+                <DisplayRound />
             </Route>
             <Route exact path="/rounds/:id">
                 <DetailPrevRound />
+            </Route>
+            <Route exact path="/rounds/:id/edit">
+                <EditRound />
             </Route>
             <ToastContainer />
         </div>

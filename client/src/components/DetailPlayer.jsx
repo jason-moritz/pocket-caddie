@@ -31,7 +31,7 @@ export default function PlayerDetail() {
 
     return (
         <div>
-            <ButtonBack location="/players" />
+            <ButtonBack />
             <div className="flex flex-row justify-center items-end border-b-4 border-gray-100">
                 <div className="pt-4 px-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />

@@ -21,17 +21,19 @@ export default function DisplayPrevRounds() {
     return (
         <div>
             <div className="text-lg md:text-xl">Previous Rounds</div>
-            <div className="max-h-24 overflow-scroll">
-            {prevRounds.map((prevRound) => (
-                prevRound.fields?.playerID === id ?
-                    <Link key={id} to={`/rounds/${prevRound.id}`}>
-                    <div className="md:text-lg">
-                        <h2>{prevRound.fields?.courseName}: {prevRound.fields?.total}</h2>
-                    </div>
-                    </Link>
-                :
-                null
-            ))}
+            <div className="overflow-hidden w-full ">
+                <div className="h-24 w-full overflow-scroll">
+                {prevRounds.map((prevRound) => (
+                    prevRound.fields?.playerID === id ?
+                        <Link key={id} to={`/rounds/${prevRound.id}`}>
+                        <div className="md:text-lg">
+                            <h2>{prevRound.fields?.courseName}: {prevRound.fields?.total}</h2>
+                        </div>
+                        </Link>
+                    :
+                    null
+                ))}
+                </div>
             </div>
         </div>
     )

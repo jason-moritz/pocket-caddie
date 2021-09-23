@@ -18,7 +18,7 @@ export default function DetailScorecard() {
 
     return (
         <div className="text-gray-100">
-            <ButtonBack location={`/courses/${id}`} />
+            <ButtonBack />
             <div className="flex place-content-center rounded-sm p-4">
                 <img className="flex-shrink-0" src={courseImage?.courseImage} alt="scorecard"></img>
             </div>
