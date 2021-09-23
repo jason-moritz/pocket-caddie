@@ -21,6 +21,9 @@ module.exports = {
           'gray-lt': '#6b6e70',
           'gray-dk': '#222629',
       },
+      screens: {
+        'md-down': {'max': '768px'},
+      }
     }
   },
   variants: {},
