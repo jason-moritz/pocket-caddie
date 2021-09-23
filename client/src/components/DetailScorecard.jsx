@@ -60,27 +60,27 @@ export default function Scorecard() {
 
     const roundTotal = () => {
         const front9String = [h1, h2, h3, h4, h5, h6, h7, h8, h9];
-    const back9String = [h10, h11, h12, h13, h14, h15, h16, h17, h18];
+        const back9String = [h10, h11, h12, h13, h14, h15, h16, h17, h18];
 
-    const front9Arr = front9String.map(number => (
+        const front9Arr = front9String.map(number => (
         parseInt(number)
-    ));
+        ));
 
-    const back9Arr = back9String.map(number => (
+        const back9Arr = back9String.map(number => (
         parseInt(number)
-    ));
+        ));
     
-    const sumArr = (arr) => {
-        let total = 0;
-        for (let i = 0; i < arr.length; i++) {
-            total += arr[i]
+        const sumArr = (arr) => {
+            let total = 0;
+            for (let i = 0; i < arr.length; i++) {
+                total += arr[i]
+            }
+            return total;
         }
-        return total;
-    }
 
-    const sumFront9 = sumArr(front9Arr);
-    const sumBack9 = sumArr(back9Arr);
-    const totalScore = sumFront9 + sumBack9;
+        const sumFront9 = sumArr(front9Arr);
+        const sumBack9 = sumArr(back9Arr);
+        const totalScore = sumFront9 + sumBack9;
 
         setFront9(`${sumFront9}`);
         setBack9(`${sumBack9}`);
@@ -89,12 +89,12 @@ export default function Scorecard() {
 
     useEffect(() => {
         roundTotal();
-    },[handleSubmit]);
+    },[h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h13, h14, h15, h16, h17, h18]);
 
     const handleSubmit = async(e) => {
         e.preventDefault();
         
-        // roundTotal();
+        roundTotal();
 
         await addNew("scores", fields);
         toast(`You have added a new round!`);
