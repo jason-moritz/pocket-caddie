@@ -16,13 +16,13 @@ export default function DropDownMenuCaddie(props) {
     if (!details) return <h2>Loading</h2>
 
     return (
-        <div className="flex flex-col w-screen place-items-center">
+        <div className="flex flex-col w-screen items-center">
             {group === "players" ? 
                 <label className="mt-5">Select Player</label>
                 :
                 <label className="mt-5">Select Course</label>
             }
-                <select className="bg-gray-100 rounded-md text-gray-md w-2/3 max-w-2xl" onChange={e => setID(e.target.value)}>
+                <select className="bg-gray-100 rounded-md text-gray-md w-2/3 max-w-lg text-center text-xl" onChange={e => setID(e.target.value)}>
                     {details.map((detail) => (
                         group === "players" ? 
                             <option key={detail.id} value={detail.id} className="bg-gray-100 text-gray-md leading-6 hover:bg-gray-200 focus:outline-none focus:shadow-outline rounded-md">{detail.fields?.playerName}</option>

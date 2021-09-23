@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
 import { fetchDetails } from "../services";
 import DropDownMenu from "./DropDownMenu";
 import FormCaddie from "../forms/FormCaddie";
@@ -9,7 +8,6 @@ export default function PlayerDropDown() {
     const [playerID, setPlayerID] = useState("rec16GtjMew2ERJKe");
     const [yardage, setYardage] = useState("");
     const [club, setClub] = useState("");
-    const { id } = useParams();
 
     const findClub = (object, value) => {
         return Object.keys(object).find(key => object[key] === value);

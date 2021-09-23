@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { fetchList } from "../services";
 
 
-export default function DisplayPrevRounds(props) {
-    const { playerID } = props;
+export default function DisplayPrevRounds() {
     const [prevRounds, setPrevRounds] = useState("");
+    const { id } = useParams();
     
     useEffect(() => {
         const getPrevRounds = async() => {
@@ -21,9 +22,9 @@ export default function DisplayPrevRounds(props) {
         <div>
             <div>Previous Rounds</div>
             {prevRounds.map((prevRound) => (
-                prevRound.fields?.playerName === playerID ?
+                prevRound.fields?.playerID === id ?
                     <div>
-                        <h2>{prevRound.fields?.courseName}</h2>
+                        <h2>{prevRound.fields?.courseName}: {prevRound.fields?.total}</h2>
                     </div>
                 :
                 null

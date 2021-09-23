@@ -103,8 +103,10 @@ export default function Scorecard() {
 
     return (
         <div>
+            <div className="pb-4 border-b-4 border-gray-100 rounded-md">
             <DropDownMenu setID={setPlayerID} group="players" />
             <DropDownMenu setID={setCourseName} group="courses" />
+            </div>
             <FormScorecard h1={h1} setH1={setH1} h2={h2} setH2={setH2} h3={h3} setH3={setH3} h4={h4} setH4={setH4} h5={h5} setH5={setH5} h6={h6} setH6={setH6} h7={h7} setH7={setH7} h8={h8} setH8={setH8} h9={h9} setH9={setH9} h10={h10} setH10={setH10} h11={h11} setH11={setH11} h12={h12} setH12={setH12} h13={h13} setH13={setH13} h14={h14} setH14={setH14} h15={h15} setH15={setH15} h16={h16} setH16={setH16} h17={h17} setH17={setH17} h18={h18} setH18={setH18} handleSubmit={handleSubmit} front9={front9} setFront9={setFront9} back9={back9} setBack9={setBack9} total={total} setTotal={setTotal} />
         </div>
     )

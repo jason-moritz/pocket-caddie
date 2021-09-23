@@ -39,7 +39,7 @@ export default function PlayerDetail() {
                 <div className="flex flex-col mt-8 pl-4 items-center text-center text-gray-100">
                     <h2 className="text-5xl">{playerDetails?.playerName}</h2>
                     <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
-                    <DisplayPrevRounds playerID={playerDetails.id}/>
+                    <DisplayPrevRounds />
                 </div>
             </div>
             <div className="flex w-full border-b-4 border-gray-100 rounded-md">
