@@ -1,7 +1,6 @@
 # Pocket Caddie
 
-<!-- Link for deployed site -->
-
+[Deployed Site](https://focused-boyd-b43c15.netlify.app "Deployed site")
 ## Project Description
 
 Pocket Caddie is an Airtable and React build where the user is able to add multiple players and edit their golf scores, yardages, and courses. From the homepage, the user is able navigate via navbar to add a player, add a course, see a list of courses, and a list of players. From the course list, the user can select a course to display and/or edit information. From the player list, the user can select a specific player to display and/or edit information, including club yardages. The user will be able to delete courses and players from the respective list pages.
@@ -10,11 +9,11 @@ Pocket Caddie is an Airtable and React build where the user is able to add multi
 
 Desktop View
 
-![Desktop wireframe for mainpage, player/course, details, and edit pages](https://i.imgur.com/yJIXh6X.png "Desktop wireframe for mainpage, player/course, details, and edit pages.")
+[Desktop wireframe for mainpage, player/course, details, and edit pages](https://i.imgur.com/yJIXh6X.png "Desktop wireframe for mainpage, player/course, details, and edit pages.")
 
 Mobile View
 
-![Mobile wireframe for mainpage, player/course, details, and edit pages](https://i.imgur.com/m3J6Ipn.png "Mobile wireframe for mainpage, player/course, details, and edit pages.")
+[Mobile wireframe for mainpage, player/course, details, and edit pages](https://i.imgur.com/m3J6Ipn.png "Mobile wireframe for mainpage, player/course, details, and edit pages.")
 
 ## Component Hierarchy
 
@@ -130,14 +129,14 @@ Airtable is returning data for an array of players.
 | App.js and Routes logic   |    H     |      1hr       |      .5hrs    |    5.5hrs   |
 | Navbar pg 1               |    H     |      1hr       |      .5hrs    |    6hrs     |
 | Axios POST logic          |    H     |      2hrs      |      .5hrs    |    6.5hrs   |
-| Form creation pg 2        |    H     |      2hrs      |      .5hrs    |    7hrs     |
-| Form creation pg 3        |    H     |      2hrs      |      .5hrs    |    7.5hrs   |
+| Add player pg 2           |    H     |      2hrs      |      .5hrs    |    7hrs     |
+| Add course pg 3           |    H     |      2hrs      |      .5hrs    |    7.5hrs   |
 | Axios GET logic           |    H     |      2hrs      |      .5hrs    |    8hrs     |
-| List creation pg  4 & 5   |    H     |      3hrs      |      1hr      |    9hrs     |
-| Details creation pg 6 & 7 |    H     |      3hrs      |      1hr      |    10hrs    |
-| Axios PUT logic           |    H     |      2hrs      |      .5hrs    |    10.5hrs  |
-| Edit creation pg 8 & 9    |    H     |      2hrs      |      1hr      |    11.5hrs  |
-| Edit creation pg 10       |    H     |      3hrs      |      1hr      |    12.5hrs  |
+| Display pgs 4 & 5         |    H     |      3hrs      |      1hr      |    9hrs     |
+| Details pgS 6 & 7         |    H     |      3hrs      |      1hr      |    10hrs    |
+| Axios PATCH logic         |    H     |      2hrs      |      .5hrs    |    10.5hrs  |
+| Edit players pg 8 & 9     |    H     |      2hrs      |      1hr      |    11.5hrs  |
+| Edit yardages pg 10       |    H     |      3hrs      |      1hr      |    12.5hrs  |
 | Axios DELETE logic        |    H     |      2hrs      |      .5hrs    |    13hrs    |
 | Data deletion pg 4 & 5    |    H     |      2hrs      |      .5hrs    |    13.5hrs  |
 | Data deletion pg 6 & 7    |    H     |      2hrs      |      .5hrs    |    14hrs    |
@@ -151,13 +150,18 @@ Airtable is returning data for an array of players.
 | Component CSS pg 8        |    H     |      2hrs      |      1hr      |    26hrs    |
 | Component CSS pg 9        |    H     |      2hrs      |      1hr      |    27hrs    |
 | Component CSS pg 10       |    H     |      2hrs      |      1hr      |    28hrs    |
-| PMVP Caddie logic         |    H     |      3hrs      |      2hrs     |    31hrs    |
-| Caddie creation pg 11     |    H     |      2hrs      |      1hr      |    32hrs    |
-| Component CSS pg 11       |    H     |      2hrs      |      1hr      |    33hrs    |
-| Airtable associations     |    H     |      4hrs      |      hr      |    hrs    |
-| Previous rds logic pg 11  |    H     |      2hrs      |      hr      |    hrs    |
-| Previous rds logic pg 11  |    H     |      2hrs      |      hr      |    hrs    |
-| Total                     |    H     |    67hrs       |          |    hrs     |
+| Post MVP                  |          |                |               |             |
+| Caddie logic              |    M     |      3hrs      |      2hrs     |    30hrs    |
+| Caddie creation pg 11     |    M     |      2hrs      |      1hr      |    31hrs    |
+| Add round pg 12           |    M     |      4hrs      |      5hrs     |    36hrs    |
+| Previous rds pg 13        |    M     |      3hrs      |      3hr      |    39hrs    |
+| Edit round pg 14          |    M     |      3hrs      |      1hr      |    40hrs    |
+| Component CSS pg 11       |    M     |      2hrs      |      1hr      |    41hrs    |
+| Component CSS pg 12       |    M     |      2hrs      |      1hr      |    42hrs    |
+| Component CSS pg 13       |    M     |      2hrs      |      1hr      |    43hrs    |
+| Component CSS pg 14       |    M     |      2hrs      |      1hr      |    44hrs    |
+| Advanced CSS styling      |    M     |      2hrs      |      hr      |    hrs    |
+| Total                     |          |    67hrs       |          |    hrs     |
 
 ## SWOT Analysis
 
