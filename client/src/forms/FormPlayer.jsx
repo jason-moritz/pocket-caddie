@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AddImage from "../components/AddImage";
 
 
 export default function PlayerForm(props) {
@@ -28,10 +29,12 @@ export default function PlayerForm(props) {
                     <label>Player Name</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={playerName} onChange={twoCalls} />
                     {toggle > 0 ? <p className="text-sm text-red-500">Please enter a player name</p> : null} 
-                    <label>Photo</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={playerImage} onChange={e => setPlayerImage(e.target.value)} />
+                    {/* <label>Photo</label>
+                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={playerImage} onChange={e => setPlayerImage(e.target.value)} /> */}
                     <label>Handicap</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={handicap} onChange={e => setHandicap(e.target.value)} />
+                    <AddImage />
+                    
                     <div className="flex justify-center mb-4 ">
                         <button className=" hover:text-gray-300 click:text-gray-300">{title}</button>
                     </div>

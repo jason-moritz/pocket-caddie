@@ -14,6 +14,7 @@ import DisplayCaddie from "./DisplayCaddie";
 import DisplayRound from "./DisplayRound";
 import DetailPrevRound from "./DetailPrevRound";
 import EditRound from "./EditRound";
+import AddImage from "./AddImage";
 import { ToastContainer } from "react-toastify";
 
 
@@ -65,6 +66,9 @@ export default function Routes() {
             </Route>
             <Route exact path="/rounds/:id/edit">
                 <EditRound />
+            </Route>
+            <Route exact path="/img">
+                <AddImage />
             </Route>
             <ToastContainer />
         </div>

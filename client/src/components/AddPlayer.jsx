@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { addNew } from "../services";
 import { toast } from "react-toastify";
+import AddImage from "./AddImage";
 import FormPlayer from "../forms/FormPlayer";
 import ButtonBack from "../buttons/ButtonBack";
 import "react-toastify/dist/ReactToastify.css";

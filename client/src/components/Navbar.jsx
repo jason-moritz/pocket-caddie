@@ -13,7 +13,7 @@ export default function Navbar() {
         <header className="text-green-lt"> 
             <div className="flex place-content-between content-center px-4 py-3 ">
                 <Link className="flex items-center" to="/">
-                    <div className="hover:text-green-dk text-xl text-transparent bg-clip-text bg-gradient-to-tr  from-gray-100 to-green-lt">Pocket Caddie</div>
+                    <div className="hover:text-green-dk text-xl text-transparent font-semibold bg-clip-text bg-gradient-to-tr  from-gray-100 to-green-lt">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end md:place-content-start">
                     <div className="flex flex-row-reverse p-2 text-green-lt text-xl md-down:hidden">
