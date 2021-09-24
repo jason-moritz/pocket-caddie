@@ -12,6 +12,7 @@ export default function AddCourse() {
     const [courseImage, setCourseImage] = useState("");
     const [rating, setRating] = useState("");
     const [slope, setSlope] = useState("");
+    const [location, setLocation] = useState("");
     const history = useHistory();
 
     const fields = {
@@ -19,6 +20,7 @@ export default function AddCourse() {
         courseImage,
         rating,
         slope,
+        location,
     }
 
     const handleSubmit = async(e) => {
@@ -43,6 +45,8 @@ export default function AddCourse() {
                     setRating={setRating} 
                     slope={slope} 
                     setSlope={setSlope}
+                    location={location}
+                    setLocation={setLocation}
                     handleSubmit={handleSubmit}
                     title="Add Course"
                 /> 

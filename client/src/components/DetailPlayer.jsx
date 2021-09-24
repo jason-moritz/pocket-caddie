@@ -32,7 +32,7 @@ export default function PlayerDetail() {
     return (
         <div>
             <ButtonBack />
-            <div className="flex flex-row justify-center items-end border-b-4 border-gray-100">
+            <div className="flex flex-row justify-center max-h-2/4 items-center border-b-4 border-gray-100">
                 <div className="pt-4 px-4 h-2/4 w-2/4 max-h-1/4  max-w-xs overflow-hidden">
                     <img className="h-full w-full rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />
                     <div className="flex mt-2 justify-center">
@@ -46,7 +46,7 @@ export default function PlayerDetail() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col pt-4 pr-4 max-h-1/3 text-center text-gray-100">
+                <div className="flex flex-col pt-4 pr-4 text-center  text-gray-100">
                     <div className="flex flex-col items-center mb-2">
                         <h2 className="text-5xl">{playerDetails?.playerName}</h2>
                         <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>

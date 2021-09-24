@@ -29,8 +29,8 @@ export default function DetailPrevRound() {
                 <div>Course</div>
                 <div>{roundDetails?.courseName}</div>
             </div>
-            <div className="flex flex-row justify-center">
-                <div className="flex flex-col items-center px-4 md:flex flex-row">
+            <div className="flex flex-row justify-center md:flex-col">
+                <div className="flex flex-col items-center px-4 md:flex md:flex-row justify-center">
                     <DisplayHole title="Hole 1" score={h1} />
                     <DisplayHole title="Hole 2" score={h2} />
                     <DisplayHole title="Hole 3" score={h3} />
@@ -42,7 +42,7 @@ export default function DetailPrevRound() {
                     <DisplayHole title="Hole 9" score={h9} />
                     <DisplayHole title="Front 9" score={front9} />
                 </div>
-                <div className="flex flex-col items-center px-4 md:flex flex-row">
+                <div className="flex flex-col items-center px-4 md:flex-row md:justify-center">
                     <DisplayHole title="Hole 10" score={h10} />
                     <DisplayHole title="Hole 11" score={h11} />
                     <DisplayHole title="Hole 12" score={h12} />

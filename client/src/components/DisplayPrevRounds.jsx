@@ -12,7 +12,7 @@ export default function DisplayPrevRounds() {
             setPrevRounds(await fetchList("scores"));
         };
         getPrevRounds();
-    }, []);
+    }, [id]);
 
     console.log(prevRounds)
 
@@ -21,8 +21,8 @@ export default function DisplayPrevRounds() {
     return (
         <div>
             <div className="text-lg md:text-xl">Previous Rounds</div>
-            <div className="overflow-hidden w-full ">
-                <div className="h-24 w-full overflow-scroll">
+            <div className="overflow-hidden w-full h-1/3">
+                <div className="h-full w-full overflow-y-scroll">
                 {prevRounds.map((prevRound) => (
                     prevRound.fields?.playerID === id ?
                         <Link key={id} to={`/rounds/${prevRound.id}`}>

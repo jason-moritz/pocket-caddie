@@ -16,7 +16,7 @@ export default function Navbar() {
                     <div className="hover:text-green-dk text-xl text-transparent font-semibold bg-clip-text bg-gradient-to-tr  from-gray-100 to-green-lt">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end md:place-content-start">
-                    <div className="flex flex-row-reverse p-2 text-green-lt text-xl md-down:hidden">
+                    <div className="flex flex-row-reverse p-2 text-green-lt text-lg md-down:hidden">
                         <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:text-green-dk rounded" to="/">Home</Link>
                         <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:text-green-dk rounded" to="/players">Players</Link>
                         <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:text-green-dk rounded" to="/courses">Courses</Link>

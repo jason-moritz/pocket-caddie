@@ -3,7 +3,7 @@ import AddImage from "../components/AddImage";
 
 
 export default function PlayerForm(props) {
-    const { playerName, setPlayerName, playerImage, setPlayerImage, handicap, setHandicap, handleSubmit, title } = props;
+    const { playerName, setPlayerName, setPlayerImage, handicap, setHandicap, handleSubmit, title } = props;
     const [toggle, setToggle] = useState(0);
 
     const handleToggle = (e) => {
@@ -33,7 +33,7 @@ export default function PlayerForm(props) {
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={playerImage} onChange={e => setPlayerImage(e.target.value)} /> */}
                     <label>Handicap</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={handicap} onChange={e => setHandicap(e.target.value)} />
-                    <AddImage />
+                    <AddImage setImage={setPlayerImage} title="Selfie" />
                     
                     <div className="flex justify-center mb-4 ">
                         <button className=" hover:text-gray-300 click:text-gray-300">{title}</button>

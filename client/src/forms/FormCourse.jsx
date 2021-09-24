@@ -1,8 +1,9 @@
 import { useState } from "react";
+import AddImage from "../components/AddImage";
 
 
 export default function CourseForm(props) {
-    const { courseName, setCourseName, courseImage, setCourseImage, rating, setRating, slope, setSlope, handleSubmit, title } = props;
+    const { courseName, setCourseName, setCourseImage, rating, setRating, slope, setSlope, location, setLocation, handleSubmit, title } = props;
     const [toggle1, setToggle1] = useState(0);
     const [toggle2, setToggle2] = useState(0);
     const [toggle3, setToggle3] = useState(0);
@@ -57,8 +58,10 @@ export default function CourseForm(props) {
                     <label>Course Name</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={courseName} onChange={twoCallsCourse} />
                     {toggle1 > 0 ? <p className="text-sm text-red-500">Please enter a course name</p> : null}
-                    <label>Photo</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={courseImage} onChange={e => setCourseImage(e.target.value)} />
+                    
+                    <label>Location (city, State)</label>
+                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={location} onChange={e => setLocation(e.target.value)} />
+                    
                     <label>Rating</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={rating} onChange={twoCallsRating} />
                     {toggle2 > 0 ? <p className="text-sm text-red-500">Please enter a rating</p> : null}
@@ -66,7 +69,9 @@ export default function CourseForm(props) {
                     <label>Slope</label>
                     <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={slope} onChange={twoCallsSlope} />
                     {toggle3 > 0 ? <p className="text-sm text-red-500">Please enter a slope</p> : null}
-
+                    
+                    <AddImage setImage={setCourseImage} title="Scorecard" />
+                    
                     <div className="flex justify-center">
                         <button className="  hover:text-gray-300 click:text-gray-300">{title}</button>
                     </div>

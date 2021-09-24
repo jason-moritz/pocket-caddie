@@ -12,6 +12,7 @@ export default function EditCourse() {
     const [courseImage, setCourseImage] = useState("");
     const [rating, setRating] = useState("");
     const [slope, setSlope] = useState("");
+    const [location, setLocation] = useState("");
     const history = useHistory();
     const { id } = useParams();
 
@@ -20,6 +21,7 @@ export default function EditCourse() {
         courseImage,
         rating,
         slope,
+        location,
     };
 
     useEffect(() => {
@@ -29,6 +31,7 @@ export default function EditCourse() {
             setCourseImage(res.courseImage);
             setRating(res.rating);
             setSlope(res.slope);
+            setLocation(res.location);
         };
         getDetails();
     }, [id]);
@@ -49,12 +52,13 @@ export default function EditCourse() {
                 <FormCourse 
                     courseName={courseName} 
                     setCourseName={setCourseName} 
-                    courseImage={courseImage} 
                     setCourseImage={setCourseImage} 
                     rating={rating} 
                     setRating={setRating} 
                     slope={slope} 
                     setSlope={setSlope}
+                    location={location}
+                    setLocation={setLocation}
                     handleSubmit={handleSubmit}
                     title="Submit"
                 /> 

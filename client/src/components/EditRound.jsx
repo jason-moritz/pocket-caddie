@@ -7,7 +7,6 @@ import { toast } from "react-toastify";
 
 
 export default function EditRound() {
-    const [round, setRound] = useState({});
     const { id } = useParams();
     const history = useHistory();
     const [h1, setH1] = useState("");
@@ -124,7 +123,7 @@ export default function EditRound() {
     }
 
 
-    if (!round) return <h2>Loading</h2>
+    // if (!round) return <h2>Loading</h2>
 
     return (
         <div className="text-gray-100">
