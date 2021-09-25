@@ -54,7 +54,7 @@ export default function CourseForm(props) {
     return (
         <form className="text-gray-100 w-screen mt-5" onSubmit={courseName && rating && slope ? handleSubmit : handleToggle}>
             <div className="flex justify-center">
-                <div className="w-3/4 max-w-lg text-xl">
+                <div className="w-3/4 max-w-lg text-xl flex flex-col items-center md:text-2xl">
                     <AddImage setImage={setCourseImage} title="Scorecard" />
                     <div className="mt-16">
                         <label>Course Name</label>
