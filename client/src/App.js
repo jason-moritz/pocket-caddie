@@ -1,10 +1,15 @@
 import './App.css';
 import "./index.css";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Routes from "./components/Routes";
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Pocket Caddie";
+  },[]);
+  
   return (
 
     <div className="App flex-col  font-kanit h-screen w-screen min-h-screen">
