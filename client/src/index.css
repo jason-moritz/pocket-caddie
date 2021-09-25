@@ -12,13 +12,20 @@ body {
 }
 
 .input::-webkit-outer-spin-button,
-.input::-webkit-inner-spin-button {
+.input::-webkit-inner-spin-button,
+.round::-webkit-outer-spin-button,
+.round::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.input[type=number] {
+.input[type=number],
+.round[type=number] {
     -moz-appearance: textfield;
+}
+
+.round {
+    @apply w-full h-full text-center shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 focus:outline-none
 }
 
 .btn {

@@ -82,8 +82,9 @@ export default function EditYardages() {
     return (
         <div>
             <ButtonBack />
-            <div>
+            <div className="text-gray-100">
                 <h2 className="text-center mb-5 text-4xl text-gray-100">Edit Yardages</h2>
+                <div className="text-lg text-center">Please enter average distances for each club in yards</div>
                 <FormYardages
                     lw={lw}
                     setLw={setLw}

@@ -17,7 +17,7 @@ export default function DropDownMenuCaddie(props) {
 
     const twoCalls = (e) => {
         setID(e.target.value);
-        setToggle(0)
+        setToggle(0);
     }
 
 

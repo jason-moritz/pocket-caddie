@@ -32,7 +32,8 @@ export default function PlayerForm(props) {
                         <input className="input" value={playerName} onChange={twoCalls} />
                         {toggle > 0 ? <p className="text-sm text-red-500">Please enter a player name</p> : null} 
 
-                        <label>Handicap</label>
+                        <label>Handicap (Please enter a number)</label>
+                        <a className="block text-sm text-center text-green-lt" rel="noreferrer" target="_blank" href="https://www.usga.org/course-handicap-calculator.html">Click here to learn more about golf handicaps</a>
                         <input className="input" type="number" value={handicap} onChange={e => setHandicap(e.target.value)} />
 
 

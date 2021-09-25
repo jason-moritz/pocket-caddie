@@ -7,8 +7,8 @@ import { toast } from "react-toastify";
 
 
 export default function Scorecard() {
-    const [playerID, setPlayerID] = useState("rec16GtjMew2ERJKe");
-    const [courseName, setCourseName] = useState("Fresh Meadows");
+    const [playerID, setPlayerID] = useState("");
+    const [courseName, setCourseName] = useState("");
     const [h1, setH1] = useState("");
     const [h2, setH2] = useState("");
     const [h3, setH3] = useState("");
@@ -30,6 +30,8 @@ export default function Scorecard() {
     const [front9, setFront9] = useState("");
     const [back9, setBack9] = useState("");
     const [total, setTotal] = useState("");
+    const [toggle, setToggle] = useState("");
+    const [toggle2, setToggle2] = useState("");
     const history = useHistory();
 
     const fields = {
@@ -91,6 +93,21 @@ export default function Scorecard() {
         roundTotal();
     });
 
+    const handleToggle = (e) => {
+        e.preventDefault();
+
+        if (playerID === "" && courseName === "") {
+        setToggle((prevToggle) => prevToggle + 1);
+        setToggle2((prevToggle2) => prevToggle2 + 1);
+        
+        } else if (playerID === "") {
+            setToggle((prevToggle) => prevToggle + 1);
+
+        } else if (courseName === "") {
+            setToggle2((prevToggle2) => prevToggle2 + 1);
+        } 
+    };
+
     const handleSubmit = async(e) => {
         e.preventDefault();
 
@@ -102,10 +119,13 @@ export default function Scorecard() {
     return (
         <div>
             <div className="pb-4 border-b-4 border-gray-100 rounded-md">
-            <DropDownMenu setID={setPlayerID} group="players" />
-            <DropDownMenu setID={setCourseName} group="courses" />
+            <DropDownMenu setID={setPlayerID} group="players" setToggle={setToggle} />
+            {toggle > 0 ? <div className="text-base text-center text-red-600 mb-2">Please select a player</div> : null}
+            <DropDownMenu setID={setCourseName} group="courses" setToggle={setToggle2} />
+            {toggle2 > 0 ? <div className="text-base text-center text-red-600 mb-2">Please select a course</div> : null}
             </div>
-            <FormRound h1={h1} setH1={setH1} h2={h2} setH2={setH2} h3={h3} setH3={setH3} h4={h4} setH4={setH4} h5={h5} setH5={setH5} h6={h6} setH6={setH6} h7={h7} setH7={setH7} h8={h8} setH8={setH8} h9={h9} setH9={setH9} h10={h10} setH10={setH10} h11={h11} setH11={setH11} h12={h12} setH12={setH12} h13={h13} setH13={setH13} h14={h14} setH14={setH14} h15={h15} setH15={setH15} h16={h16} setH16={setH16} h17={h17} setH17={setH17} h18={h18} setH18={setH18} handleSubmit={handleSubmit} front9={front9} setFront9={setFront9} back9={back9} setBack9={setBack9} total={total} setTotal={setTotal} title="Add Round"/>
+
+            <FormRound handleToggle={handleToggle} playerID={playerID} courseName={courseName} h1={h1} setH1={setH1} h2={h2} setH2={setH2} h3={h3} setH3={setH3} h4={h4} setH4={setH4} h5={h5} setH5={setH5} h6={h6} setH6={setH6} h7={h7} setH7={setH7} h8={h8} setH8={setH8} h9={h9} setH9={setH9} h10={h10} setH10={setH10} h11={h11} setH11={setH11} h12={h12} setH12={setH12} h13={h13} setH13={setH13} h14={h14} setH14={setH14} h15={h15} setH15={setH15} h16={h16} setH16={setH16} h17={h17} setH17={setH17} h18={h18} setH18={setH18} handleSubmit={handleSubmit} front9={front9} setFront9={setFront9} back9={back9} setBack9={setBack9} total={total} setTotal={setTotal} title="Add Round"/>
         </div>
     )
 }
