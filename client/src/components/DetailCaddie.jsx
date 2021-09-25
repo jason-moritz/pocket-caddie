@@ -19,10 +19,12 @@ export default function PlayerDropDown() {
         const res = await fetchDetails("players", playerID);
         const arr = Object.values(res);
         arr.push(yardage);
-        const sortedArr = arr.sort((a, b) => a - b);
+        const sortedArr = arr.sort((a, b) => a - b).filter(arrItem => isNaN(arrItem) === false);
         const yardageIndex = sortedArr.indexOf(yardage);
-        console.log(yardageIndex);
-        let clubYardage = sortedArr[yardageIndex + 1];
+        console.log(sortedArr)
+        console.log(yardageIndex)
+        let clubYardage = 0
+        yardageIndex === 17 ? clubYardage = sortedArr[yardageIndex - 1] : clubYardage = sortedArr[yardageIndex + 1];
         setClub(findClub(res, clubYardage));
         setYardage("");
     };
@@ -140,7 +142,7 @@ export default function PlayerDropDown() {
                 }
                 {club === "driver" ?
                     <div className="text-2xl text-center mt-5">
-                            <h1>You really should be teeing off with your hybrid, but let's try and smash driver. Don't forget to swing extra hard.</h1>
+                            <h1>You really should be hitting your hybrid, but let's try and smash driver. Don't forget to swing extra hard.</h1>
                         </div>
                         :
                         null    
