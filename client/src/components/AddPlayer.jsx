@@ -35,6 +35,7 @@ export default function AddPlayer() {
                 <FormPlayer
                     playerName={playerName} 
                     setPlayerName={setPlayerName} 
+                    image={playerImage}
                     setPlayerImage={setPlayerImage} 
                     handicap={handicap} 
                     setHandicap={setHandicap} 

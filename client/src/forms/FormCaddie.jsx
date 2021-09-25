@@ -3,7 +3,7 @@ export default function FormCaddie(props) {
     
     return (
         <form className="w-3/4 max-w-lg text-xl text-center" onSubmit={handleSubmit}>
-            <input className="h-full block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={yardage} onChange={e => setYardage(e.target.value)}></input>
+            <input className="input" value={yardage} onChange={e => setYardage(e.target.value)}></input>
             <button className="hover:text-gray-300 click:text-gray-300">Submit</button>
         </form>
     )

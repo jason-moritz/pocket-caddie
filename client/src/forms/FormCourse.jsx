@@ -55,25 +55,42 @@ export default function CourseForm(props) {
         <form className="text-gray-100 w-screen mt-5" onSubmit={courseName && rating && slope ? handleSubmit : handleToggle}>
             <div className="flex justify-center">
                 <div className="w-3/4 max-w-lg text-xl">
-                    <label>Course Name</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={courseName} onChange={twoCallsCourse} />
-                    {toggle1 > 0 ? <p className="text-sm text-red-500">Please enter a course name</p> : null}
-                    
-                    <label>Location (city, State)</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={location} onChange={e => setLocation(e.target.value)} />
-                    
-                    <label>Rating</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={rating} onChange={twoCallsRating} />
-                    {toggle2 > 0 ? <p className="text-sm text-red-500">Please enter a rating</p> : null}
-
-                    <label>Slope</label>
-                    <input className="block shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 w-full leading-6 focus:outline-none focus:shadow-outline" value={slope} onChange={twoCallsSlope} />
-                    {toggle3 > 0 ? <p className="text-sm text-red-500">Please enter a slope</p> : null}
-                    
                     <AddImage setImage={setCourseImage} title="Scorecard" />
-                    
-                    <div className="flex justify-center">
-                        <button className="  hover:text-gray-300 click:text-gray-300">{title}</button>
+                    <div className="mt-16">
+                        <label>Course Name</label>
+                        <input 
+                            className="input" 
+                            value={courseName} 
+                            onChange={twoCallsCourse} 
+                        />
+                        {toggle1 > 0 ? <p className="text-sm text-red-500">Please enter a course name</p> : null}
+
+                        <label>Location (city, State)</label>
+                        <input 
+                            className="input" 
+                            value={location} 
+                            onChange={e => setLocation(e.target.value)} 
+                        />
+
+                        <label>Rating</label>
+                        <input 
+                            className="input" 
+                            value={rating} 
+                            onChange={twoCallsRating} 
+                        />
+                        {toggle2 > 0 ? <p className="text-sm text-red-500">Please enter a rating</p> : null}
+
+                        <label>Slope</label>
+                        <input 
+                            className="input" 
+                            value={slope} 
+                            onChange={twoCallsSlope} 
+                        />
+                        {toggle3 > 0 ? <p className="text-sm text-red-500">Please enter a slope</p> : null}
+
+                        <div className="flex justify-center">
+                            <button className="btn">{title}</button>
+                        </div>
                     </div>
                 </div>
             </div>

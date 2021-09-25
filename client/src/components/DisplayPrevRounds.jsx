@@ -19,9 +19,11 @@ export default function DisplayPrevRounds() {
     if (!prevRounds) return <h2>Loading</h2>
 
     return (
-        <div>
-            <div className="text-lg md:text-xl">Previous Rounds</div>
-            <div className="overflow-hidden w-full h-1/3">
+        <div className="h-1/2">
+            <div className="text-lg md:text-xl">
+                Previous Rounds
+            </div>
+            <div className="overflow-hidden w-full h-1/2">
                 <div className="h-full w-full overflow-y-scroll">
                 {prevRounds.map((prevRound) => (
                     prevRound.fields?.playerID === id ?

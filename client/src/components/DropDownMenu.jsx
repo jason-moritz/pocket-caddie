@@ -22,12 +22,17 @@ export default function DropDownMenuCaddie(props) {
                 :
                 <label className="mt-5">Select Course</label>
             }
-            <select className="bg-gray-100 rounded-md text-gray-md w-3/4 max-w-lg text-xl hover:bg-gray-200" onChange={e => setID(e.target.value)}>
+            <select className="relative inline-block bg-gray-dk border-none hover:blue-500" onChange={e => setID(e.target.value)}>
+                {group === "players" ?
+                <option key="default" className="absolute   bg-gray-dk hover:blue-200 text-gray-100 shadow-none">Players</option>
+                :
+                <option key="default">Courses</option>
+                }
                 {details.map((detail) => (
                     group === "players" ? 
-                        <option key={detail.id} value={detail.id} className=" bg-gray-100     text-gray-md focus:outline-none rounded-md">{detail.fields?.playerName}</option>
+                        <option key={detail.id} value={detail.id} className="  bg-gray-dk hover:bg-blue-100 text-gray-100 focus:outline-none rounded-md">{detail.fields?.playerName}</option>
                     :
-                        <option key={detail.id} value={detail.courseName} className="bg-gray-100 text-gray-md hover:bg-gray-200 focus:outline-none focus:shadow-outline rounded-md">{detail.fields?.courseName}</option>
+                        <option key={detail.id} value={detail.courseName} className="bg-gray-dk text-gray-md hover:bg-gray-200 focus:outline-none focus:shadow-outline rounded-md">{detail.fields?.courseName}</option>
                 ))}
             </select>
         </div>

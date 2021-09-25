@@ -5,3 +5,11 @@
 body {
     background-color: #222629;
 }
+
+.input {
+    @apply block mt-2 mb-4 px-4 text-gray-200 bg-gray-dk border-b-2 border-gray-200 w-full h-8 focus:outline-none
+}
+
+.btn {
+    @apply bg-green-lt text-gray-dk rounded-md p-2 hover:bg-green-dk
+}

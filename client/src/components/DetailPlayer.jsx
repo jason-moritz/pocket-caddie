@@ -51,7 +51,7 @@ export default function PlayerDetail() {
                         <h2 className="text-5xl">{playerDetails?.playerName}</h2>
                         <h4 className="text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
                     </div>
-                    <div className="pb-4 overflow-hidden">
+                    <div className="pb-4 h-full overflow-hidden">
                         <DisplayPrevRounds />
                     </div>
                 </div>
