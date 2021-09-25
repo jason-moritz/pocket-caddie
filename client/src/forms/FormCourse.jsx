@@ -72,17 +72,19 @@ export default function CourseForm(props) {
                             onChange={e => setLocation(e.target.value)} 
                         />
 
-                        <label>Rating</label>
+                        <label>Rating <span className="text-base">(*needs to be a number)</span></label>
                         <input 
                             className="input" 
+                            type="number"
                             value={rating} 
                             onChange={twoCallsRating} 
                         />
                         {toggle2 > 0 ? <p className="text-sm text-red-500">Please enter a rating</p> : null}
 
-                        <label>Slope</label>
+                        <label>Slope <span className="text-base">(*needs to be a number)</span></label>
                         <input 
                             className="input" 
+                            type="number"
                             value={slope} 
                             onChange={twoCallsSlope} 
                         />

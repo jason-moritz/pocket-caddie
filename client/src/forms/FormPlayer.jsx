@@ -33,7 +33,7 @@ export default function PlayerForm(props) {
                         {toggle > 0 ? <p className="text-sm text-red-500">Please enter a player name</p> : null} 
 
                         <label>Handicap</label>
-                        <input className="input" value={handicap} onChange={e => setHandicap(e.target.value)} />
+                        <input className="input" type="number" value={handicap} onChange={e => setHandicap(e.target.value)} />
 
 
                         <div className="flex justify-center mb-4 mt-4">

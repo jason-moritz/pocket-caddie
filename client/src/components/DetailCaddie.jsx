@@ -5,9 +5,11 @@ import FormCaddie from "../forms/FormCaddie";
 
 
 export default function PlayerDropDown() {
-    const [playerID, setPlayerID] = useState("rec16GtjMew2ERJKe");
+    const [playerID, setPlayerID] = useState("");
     const [yardage, setYardage] = useState("");
     const [club, setClub] = useState("");
+    const [toggle, setToggle] = useState(0);
+    const [toggle2, setToggle2] = useState(0);
 
     const findClub = (object, value) => {
         return Object.keys(object).find(key => object[key] === value);
@@ -32,9 +34,9 @@ export default function PlayerDropDown() {
     return (
         <div className="w-screen  text-gray-100">
             <div className="flex flex-col place-items-center text-xl">
-                <DropDownMenu setID={setPlayerID} group="players" />
-                <label className="mt-4">Yardage Out</label>
-                <FormCaddie handleSubmit={handleSubmit} yardage={yardage} setYardage={setYardage} />
+                <DropDownMenu setToggle={setToggle} setID={setPlayerID} group="players" />
+                
+                <FormCaddie toggle={toggle} setToggle={setToggle} toggle2={toggle2} setToggle2={setToggle2} handleSubmit={handleSubmit} playerID={playerID} yardage={yardage} setYardage={setYardage} />
                 {club === "lw" ? 
                     <div className="text-2xl text-center mt-5">
                         <h1>Hit your lob wedge and pray you don't chunk it.</h1>
