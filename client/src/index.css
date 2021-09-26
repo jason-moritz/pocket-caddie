@@ -37,5 +37,9 @@ body {
 }
 
 .club {
-    @apply text-xl sm:text-3xl text-center mt-5
+    @apply text-xl sm:text-3xl text-center mt-5;
+}
+
+.title {
+    @apply text-4xl sm:text-5xl font-semibold mb-6;
 }

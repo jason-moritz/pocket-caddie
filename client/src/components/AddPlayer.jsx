@@ -4,6 +4,7 @@ import { addNew } from "../services";
 import { toast } from "react-toastify";
 import FormPlayer from "../forms/FormPlayer";
 import ButtonBack from "../buttons/ButtonBack";
+
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -31,7 +32,7 @@ export default function AddPlayer() {
         <div className="text-gray-100">
             <ButtonBack />
             <div className="flex flex-col items-center">
-                <h2 className="text-center mb-5 text-4xl sm:text-5xl">Add a new player!</h2>
+                <h2 className="title">Add a new player!</h2>
                 <FormPlayer
                     playerName={playerName} 
                     setPlayerName={setPlayerName} 
@@ -42,6 +43,7 @@ export default function AddPlayer() {
                     handleSubmit={handleSubmit} 
                     title="Add Player"
                 />
+
             </div>
         </div>
     )
