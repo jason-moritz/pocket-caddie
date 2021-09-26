@@ -35,7 +35,7 @@ export default function AddCourse() {
         <div className="text-gray-100">
             <ButtonBack />
             <div className="flex flex-col items-center">
-                <h2 className="text-center mb-5 text-4xl">Add a new course!</h2>
+                <h2 className="text-center mb-5 text-4xl sm:text-5xl">Add a new course!</h2>
                 <FormCourse 
                     courseName={courseName} 
                     setCourseName={setCourseName} 

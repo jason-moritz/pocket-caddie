@@ -5,15 +5,15 @@ export default function FormCaddie(props) {
         e.preventDefault();
 
         if (playerID === "" && yardage === "") {
-        setToggle((prevToggle) => prevToggle + 1);
-        setToggle2((prevToggle2) => prevToggle2 + 1);
+            setToggle((prevToggle) => prevToggle + 1);
+            setToggle2((prevToggle2) => prevToggle2 + 1);
         
         } else if (playerID === "") {
             setToggle((prevToggle) => prevToggle + 1);
 
         } else if (yardage === "") {
             setToggle2((prevToggle2) => prevToggle2 + 1);
-        } 
+        };
     };
 
     const twoCalls = (e) => {
@@ -23,29 +23,39 @@ export default function FormCaddie(props) {
 
     return (
         <div>
-            <div className="text-base text-center text-red-600">
-                {toggle > 0 ? <div>Please select a player from the menu</div> : null}
+            <div className="error">
+                {toggle > 0 ?
+                    <div>Please select a player from the menu</div> 
+                : 
+                    null
+                }
             </div>
             <form 
-            className="text-gray-100 w-screen mt-5"
-            onSubmit={playerID !== "" && yardage !== "" ? handleSubmit : handleToggle}
-        >
+                className="text-gray-100 w-screen mt-5"
+                onSubmit={playerID !== "" && yardage !== "" ?
+                    handleSubmit 
+                : 
+                    handleToggle
+                }
+            >
             <div className="flex justify-center">
-                <div className="w-3/4 max-w-lg text-xl text-center flex flex-col items-center md:text-2xl">
-                    <div className="mt-4">
-                        
-                        <label className="mt-4">Yardage Out  <span className="text-base">(*needs to be a number in yards)</span></label>
-                        <input 
-                        className="input" 
-                        type="number"
-                        value={yardage} 
-                        onChange={twoCalls}
-                        />
-                        {toggle2 > 0 ? <div className="text-base text-center text-red-600 mb-2">Please enter a yardage</div> : null}
-                        <button 
-                            className="hover:text-gray-300 click:text-gray-300"
-                        >
-                            Get Club Suggestion
+                <div className="w-3/4 max-w-lg text-xl text-center flex flex-col items-center sm:text-3xl">
+                    <div className="mt-4 flex flex-col items-center">
+                        <label className="mt-4">Yardage Out</label>
+                        <h2 className="text-base sm:text-lg">(*needs to be a number in yards)</h2>
+                        <div className="w-1/3 mb-4">
+                            <input 
+                                className="input text-center" 
+                                type="number"
+                                min="1"
+                                max="700"
+                                value={yardage} 
+                                onChange={twoCalls}
+                            />
+                        </div>
+                        {toggle2 > 0 ? <div className="error">Please enter a yardage</div> : null}
+                        <button className="btn">
+                            Get Club
                         </button>
                     </div>
                 </div>

@@ -25,9 +25,17 @@ body {
 }
 
 .round {
-    @apply w-full h-full text-center shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 focus:outline-none
+    @apply w-full h-full text-center shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 focus:outline-none;
 }
 
 .btn {
-    @apply bg-green-lt text-gray-dk rounded-md p-2 hover:bg-green-dk
+    @apply bg-green-lt text-gray-dk rounded-md p-2 hover:bg-green-dk;
+}
+
+.error {
+    @apply text-base text-center text-red-500 mb-2 sm:text-lg;
+}
+
+.club {
+    @apply text-xl sm:text-3xl text-center mt-5
 }
