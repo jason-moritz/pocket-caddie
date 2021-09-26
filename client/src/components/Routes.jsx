@@ -58,7 +58,7 @@ export default function Routes() {
             <Route exact path="/caddie">
                 <DisplayCaddie />
             </Route>
-            <Route exact path="/scorecard">
+            <Route exact path="/round">
                 <DisplayRound />
             </Route>
             <Route exact path="/rounds/:id">

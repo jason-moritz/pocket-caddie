@@ -76,6 +76,8 @@ export default function CourseForm(props) {
                         <input 
                             className="input" 
                             type="number"
+                            min="0"
+                            max="100"
                             value={rating} 
                             onChange={twoCallsRating} 
                         />
@@ -85,6 +87,8 @@ export default function CourseForm(props) {
                         <input 
                             className="input" 
                             type="number"
+                            min="0"
+                            max="200"
                             value={slope} 
                             onChange={twoCallsSlope} 
                         />

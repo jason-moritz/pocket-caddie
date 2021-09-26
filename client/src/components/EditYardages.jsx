@@ -25,6 +25,7 @@ export default function EditYardages() {
     const [threewd, setThreewd] = useState("");
     const [hybrid, setHybrid] = useState("");
     const [driver, setDriver] = useState("");
+    const [toggle, setToggle] = useState(0);
     const history = useHistory();
     const { id } = useParams();
 
@@ -74,6 +75,8 @@ export default function EditYardages() {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
+        setToggle(0);
+
         await editDetails("players", id, fields);
         toast(`You have editted ${playerName}'s yardages!`);
         history.push(`/players/${id}`);
@@ -84,8 +87,11 @@ export default function EditYardages() {
             <ButtonBack />
             <div className="text-gray-100">
                 <h2 className="text-center mb-5 text-4xl text-gray-100">Edit Yardages</h2>
-                <div className="text-lg text-center">Please enter average distances for each club in yards</div>
+                <div className="text-lg text-center mx-8">Please enter average distances (in yards) for each club.</div>
+                <a className="block text-sm text-center text-green-lt" href="https://golftips.golfweek.usatoday.com/golf-wedge-degrees-1298.html" rel="noreferrer" target="_blank">Click here if you are uncertain about wedge loft!</a>
                 <FormYardages
+                    toggle={toggle}
+                    setToggle={setToggle}
                     lw={lw}
                     setLw={setLw}
                     sw={sw}

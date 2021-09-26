@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 
 
-export default function ButtonBack() {
+export default function ButtonBack(props) {
     const history = useHistory();
 
     const handleClick = () => {
