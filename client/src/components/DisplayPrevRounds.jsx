@@ -19,16 +19,16 @@ export default function DisplayPrevRounds() {
     if (!prevRounds) return <h2>Loading</h2>
 
     return (
-        <div className="h-1/2">
-            <div className="text-lg md:text-xl">
+        <div className="flex flex-col text-gray-100 items-center w-full">
+            <div className="text-2xl sm:text-3xl">
                 Previous Rounds
             </div>
-            <div className="overflow-hidden w-full h-1/2">
-                <div className="h-full w-full overflow-y-scroll">
+            <div>
+                <div>
                 {prevRounds.map((prevRound) => (
                     prevRound.fields?.playerID === id ?
                         <Link key={id} to={`/rounds/${prevRound.id}`}>
-                        <div className="md:text-lg">
+                        <div className="text-xl my-2 hover: text-gray-300 sm:text-2xl">
                             <h2>{prevRound.fields?.courseName}: {prevRound.fields?.total}</h2>
                         </div>
                         </Link>
