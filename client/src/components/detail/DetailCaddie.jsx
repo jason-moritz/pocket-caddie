@@ -21,11 +21,11 @@ export default function PlayerDropDown() {
         const res = await fetchDetails("players", playerID);
         const arr = Object.values(res);
         arr.push(yardage);
+
         const sortedArr = arr.sort((a, b) => a - b).filter(arrItem => isNaN(arrItem) === false);
         const yardageIndex = sortedArr.indexOf(yardage);
-        console.log(sortedArr)
-        console.log(yardageIndex)
-        let clubYardage = 0
+        
+        let clubYardage = 0;
         yardageIndex === 17 ? clubYardage = sortedArr[yardageIndex - 1] : clubYardage = sortedArr[yardageIndex + 1];
         setClub(findClub(res, clubYardage));
         setYardage("");
@@ -34,10 +34,24 @@ export default function PlayerDropDown() {
     return (
         <div className="w-screen  text-gray-100">
             <div className="flex flex-col place-items-center text-xl">
-                <h2 className="text-center mb-5 text-4xl sm:text-5xl">Get a Club Suggestion!</h2>
-                <DropDownMenu setToggle={setToggle} setID={setPlayerID} group="players" />
-                
-                <FormCaddie toggle={toggle} setToggle={setToggle} toggle2={toggle2} setToggle2={setToggle2} handleSubmit={handleSubmit} playerID={playerID} yardage={yardage} setYardage={setYardage} />
+                <h2 className="text-center mb-5 text-4xl sm:text-5xl">
+                    Get a Club Suggestion!
+                </h2>
+                <DropDownMenu 
+                    setToggle={setToggle} 
+                    setID={setPlayerID} 
+                    group="players" 
+                />
+                <FormCaddie 
+                    toggle={toggle} 
+                    setToggle={setToggle} 
+                    toggle2={toggle2} 
+                    setToggle2={setToggle2} 
+                    handleSubmit={handleSubmit} 
+                    playerID={playerID} 
+                    yardage={yardage} 
+                    setYardage={setYardage} 
+                />
                 <div className="w-3/4 mb-4">
                     {club === "lw" ? 
                         <div className="club">

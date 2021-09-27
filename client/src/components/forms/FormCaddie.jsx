@@ -47,7 +47,7 @@ export default function FormCaddie(props) {
                             <input 
                                 className="input text-center sm:text-5xl sm:h-16" 
                                 type="number"
-                                min="1"
+                                min="55"
                                 max="700"
                                 value={yardage} 
                                 onChange={twoCalls}
