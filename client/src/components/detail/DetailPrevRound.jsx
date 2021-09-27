@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";
 import ButtonDelete from "../buttons/ButtonDelete";
-import DisplayHole from "./DisplayHole";
+import DisplayHole from "../display/DisplayHole";
 import { useParams, Link } from "react-router-dom";
-import { fetchDetails } from "../services";
+import { fetchDetails } from "../../services";
 
 
 export default function DetailPrevRound() {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { fetchDetails } from "../services";
+import { fetchDetails } from "../../services";
 import ButtonDelete from "../buttons/ButtonDelete";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";

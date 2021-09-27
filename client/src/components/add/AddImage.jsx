@@ -1,4 +1,4 @@
-import { uploadImage } from "../services";
+import { uploadImage } from "../../services";
 
 
 export default function AddImage(props) {

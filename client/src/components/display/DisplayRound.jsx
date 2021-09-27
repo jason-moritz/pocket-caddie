@@ -1,4 +1,4 @@
-import AddRound from "./AddRound";
+import AddRound from "../add/AddRound";
 import ButtonBack from "../buttons/ButtonBack";
 
 export default function PlayRound() {

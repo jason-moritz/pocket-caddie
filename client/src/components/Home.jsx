@@ -35,13 +35,13 @@ export default function Home() {
                         <Link className="sm:flex sm:justify-end" to="/addplayer">
                             <button className="w-full sm:w-1/2 border-4 rounded-2xl py-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400" >Add Player</button>
                         </Link>
-                        <Link className="sm:flex sm:justify-end" to="/round">
-                            <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Play Round</button>
+                        <Link className="sm:flex sm:justify-end" to="/addcourse">
+                            <button className=" w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Add Course</button>
                         </Link>
                     </div>
                     <div className="flex flex-col w-3/4 sm:w-1/2 md:mx-6">
-                        <Link className="sm:flex sm:justify-start" to="/addcourse">
-                            <button className=" w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Add Course</button>
+                        <Link className="sm:flex sm:justify-start" to="/round">
+                            <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Play Round</button>
                         </Link>
                         <Link className="sm:flex sm:justify-start" to="/caddie">
                             <button className=" w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Caddie</button>

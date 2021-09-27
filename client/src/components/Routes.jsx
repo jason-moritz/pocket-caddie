@@ -1,20 +1,20 @@
 import { Route } from "react-router-dom";
 import Home from "./Home";
-import DisplayPlayers from "./DisplayPlayers";
-import DisplayCourses from "./DisplayCourses";
-import AddPlayer from "./AddPlayer";
-import AddCourse from "./AddCourse";
-import DetailPlayer from "./DetailPlayer";
-import DetailCourse from "./DetailCourse";
-import DetailCourseImage from "./DetailCourseImage";
-import EditPlayer from "./EditPlayer";
-import EditCourse from "./EditCourse";
-import EditYardages from "./EditYardages";
-import DisplayCaddie from "./DisplayCaddie";
-import DisplayRound from "./DisplayRound";
-import DetailPrevRound from "./DetailPrevRound";
-import EditRound from "./EditRound";
-import AddImage from "./AddImage";
+import DisplayPlayers from "./display/DisplayPlayers";
+import DisplayCourses from "./display/DisplayCourses";
+import AddPlayer from "./add/AddPlayer";
+import AddCourse from "./add/AddCourse";
+import DetailPlayer from "./detail/DetailPlayer";
+import DetailCourse from "./detail/DetailCourse";
+import DetailCourseImage from "./detail/DetailCourseImage";
+import EditPlayer from "./edit/EditPlayer";
+import EditCourse from "./edit/EditCourse";
+import EditYardages from "./edit/EditYardages";
+import DisplayCaddie from "./display/DisplayCaddie";
+import DisplayRound from "./display/DisplayRound";
+import DetailPrevRound from "./detail/DetailPrevRound";
+import EditRound from "./edit/EditRound";
+import AddImage from "./add/AddImage";
 import { ToastContainer } from "react-toastify";
 
 

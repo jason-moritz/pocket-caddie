@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { useHistory } from "react-router-dom";
 import FormRound from "../forms/FormRound";
-import DropDownMenu from "./DropDownMenu";
-import { addNew } from "../services";
+import DropDownMenu from "../DropDownMenu";
+import { addNew } from "../../services";
 import { toast } from "react-toastify";
 
 

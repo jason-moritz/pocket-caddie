@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { fetchList } from "../services";
+import { fetchList } from "../../services";
 
 
 export default function DisplayPrevRounds() {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { fetchDetails, editDetails } from "../services";
+import { fetchDetails, editDetails } from "../../services";
 import FormPlayer from "../forms/FormPlayer";
 import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";

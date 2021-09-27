@@ -1,5 +1,5 @@
 import ButtonBack from "../buttons/ButtonBack";
-import DetailCaddie from "./DetailCaddie";
+import DetailCaddie from "../detail/DetailCaddie";
 
 
 export default function ClubSelector() {

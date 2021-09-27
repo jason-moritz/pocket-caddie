@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import DisplayYardages from "./DisplayYardages";
+import DisplayYardages from "../display/DisplayYardages";
 import ButtonDelete from "../buttons/ButtonDelete";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";
-import DisplayPrevRounds from "./DisplayPrevRounds";
-import { fetchDetails } from "../services";
+import DisplayPrevRounds from "../display/DisplayPrevRounds";
+import { fetchDetails } from "../../services";
 
 
 export default function PlayerDetail() {
@@ -55,7 +55,7 @@ export default function PlayerDetail() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col h-full w-1/2 pt-4 sm:pt-14 pr-4 text-center  text-gray-100">
+                    <div className="flex justify-items-center h-full w-1/2 pt-4 sm:pt-14 pr-4 text-center  text-gray-100">
                         <div className="flex flex-col h-full items-center mb-2">
                             <h2 className="text-2xl sm:text-5xl">{playerDetails?.playerName}</h2>
                             <h4 className="text-xl sm:text-2xl">Handicap: {playerDetails?.handicap}</h4>

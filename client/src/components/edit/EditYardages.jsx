@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { fetchDetails, editDetails } from "../services";
+import { fetchDetails, editDetails } from "../../services";
 import FormYardages from "../forms/FormYardages";
 import ButtonBack from "../buttons/ButtonBack";
 import { toast } from "react-toastify";
@@ -86,9 +86,9 @@ export default function EditYardages() {
         <div>
             <ButtonBack />
             <div className="text-gray-100">
-                <h2 className="text-center mb-5 text-4xl text-gray-100">Edit Yardages</h2>
-                <div className="text-lg text-center mx-8">Please enter average distances (in yards) for each club.</div>
-                <a className="block text-sm text-center text-green-lt" href="https://golftips.golfweek.usatoday.com/golf-wedge-degrees-1298.html" rel="noreferrer" target="_blank">Click here if you are uncertain about wedge loft!</a>
+                <h2 className="text-center mb-5 text-4xl sm:text-6xl text-gray-100">Edit Yardages</h2>
+                <div className="text-lg sm:text-3xl text-center mx-8">Please enter average distances (in yards) for each club.</div>
+                <a className="block text-sm sm:text-lg text-center text-green-lt" href="https://golftips.golfweek.usatoday.com/golf-wedge-degrees-1298.html" rel="noreferrer" target="_blank">Click here if you are uncertain about wedge loft!</a>
                 <FormYardages
                     toggle={toggle}
                     setToggle={setToggle}

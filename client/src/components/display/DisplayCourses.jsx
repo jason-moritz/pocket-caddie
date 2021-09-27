@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchList } from "../services";
+import { fetchList } from "../../services";
 import { Link } from "react-router-dom";
 import ButtonBack from "../buttons/ButtonBack";
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { fetchDetails } from "../services";
-import DropDownMenu from "./DropDownMenu";
+import { fetchDetails } from "../../services";
+import DropDownMenu from "../DropDownMenu";
 import FormCaddie from "../forms/FormCaddie";
 
 

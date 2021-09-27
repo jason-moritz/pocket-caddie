@@ -52,17 +52,17 @@ export default function FormYardages(props) {
             <div className="flex text-xl w-full max-w-lg justify-center text-center">
                 <div className="md:flex md:flex-col md:w-full md:items-center">     
                     {toggle > 0 ? 
-                        <div className="mx-4 text-center text-lg mb-6 text-red-600">
+                        <div className="error">
                             Please enter an average yardage for each club. If you do not have that club, please enter 0.
                         </div> 
                     : 
                         null
                     }               
-                    <div className="md:flex md:flex-row">
+                    <div className="md:flex md:flex-row text-lg sm:text-2xl">
                         <div>
                             <label>Lob Wedge</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -73,7 +73,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>Sand Wedge</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -84,7 +84,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>Gap Wedge</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -93,9 +93,9 @@ export default function FormYardages(props) {
                             />
                         </div>
                         <div>
-                            <label>Pitching Wedge</label>
+                            <label>P Wedge</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -106,7 +106,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>9 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -117,7 +117,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>8 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -128,7 +128,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>7 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -139,7 +139,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>6 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -148,11 +148,11 @@ export default function FormYardages(props) {
                             />
                         </div>
                     </div>
-                    <div className="md:flex md:flex-row">
+                    <div className="md:flex md:flex-row sm:text-2xl">
                         <div>
                             <label>5 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -163,7 +163,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>4 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -174,7 +174,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>3 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -185,7 +185,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>2 Iron</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -196,7 +196,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>Hybrid</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -207,7 +207,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>5 Wood</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -218,7 +218,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>3 Wood</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -229,7 +229,7 @@ export default function FormYardages(props) {
                         <div>
                             <label>Driver</label>
                             <input 
-                                className="input text-center md:w-36" 
+                                className="input text-center sm:text-5xl sm:w-40 sm:h-20" 
                                 type="number" 
                                 min="0" 
                                 max="500" 
@@ -238,8 +238,8 @@ export default function FormYardages(props) {
                             />
                         </div>
                     </div>
-                    <div className="flex justify-center">
-                        <button className=" hover:text-gray-300 click:text-gray-300">{title}</button>
+                    <div className="flex justify-center sm:text-3xl">
+                        <button className="btn">{title}</button>
                     </div>
                 </div>
             </div>  

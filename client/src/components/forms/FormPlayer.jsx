@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AddImage from "../components/AddImage";
+import AddImage from "../add/AddImage";
 
 
 export default function PlayerForm(props) {

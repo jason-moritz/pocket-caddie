@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { fetchDetails, editDetails } from "../services";
+import { fetchDetails, editDetails } from "../../services";
 import ButtonBack from "../buttons/ButtonBack";
 import FormRound from "../forms/FormRound";
 import { toast } from "react-toastify";
