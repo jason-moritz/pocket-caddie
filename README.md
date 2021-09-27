@@ -117,7 +117,7 @@ Airtable is returning data for an array of players.
 | Sept 17      | Proposal approval / Airtable Setup         | Complete |
 | Sept 18-19   | CRUD component logic / Route & Link logic  | Complete |
 | Sept 20-21   | CSS styling / Responsive design            | Complete |
-| Sept 22-23   | Post MVP                                   | Incomplete |
+| Sept 22-23   | Post MVP                                   | Complete |
 | Sept 24      | Presentations                              | Incomplete |
 
 ## Timeframes
@@ -154,14 +154,14 @@ Airtable is returning data for an array of players.
 | Caddie logic              |    M     |      3hrs      |      2hrs     |    30hrs    |
 | Caddie creation pg 11     |    M     |      2hrs      |      1hr      |    31hrs    |
 | Add round pg 12           |    M     |      4hrs      |      5hrs     |    36hrs    |
-| Previous rds pg 13        |    M     |      3hrs      |      3hr      |    39hrs    |
+| Previous rds pg 13        |    M     |      3hrs      |      3hrs     |    39hrs    |
 | Edit round pg 14          |    M     |      3hrs      |      1hr      |    40hrs    |
-| Component CSS pg 11       |    M     |      2hrs      |      1hr      |    41hrs    |
-| Component CSS pg 12       |    M     |      2hrs      |      1hr      |    42hrs    |
-| Component CSS pg 13       |    M     |      2hrs      |      1hr      |    43hrs    |
-| Component CSS pg 14       |    M     |      2hrs      |      1hr      |    44hrs    |
-| Advanced CSS styling      |    M     |      2hrs      |      hr      |    hrs    |
-| Total                     |          |    67hrs       |          |    hrs     |
+| Component CSS pg 11       |    M     |      2hrs      |      3hrs     |    43hrs    |
+| Component CSS pg 12       |    M     |      2hrs      |      3hrs     |    46hrs    |
+| Component CSS pg 13       |    M     |      2hrs      |      3hrs     |    49hrs    |
+| Component CSS pg 14       |    M     |      2hrs      |      3hrs     |    52hrs    |
+| Advanced CSS styling      |    M     |      2hrs      |      7hrs     |    59hrs    |
+| Total                     |          |      67hrs     |               |    59hrs    |
 
 ## SWOT Analysis
 
