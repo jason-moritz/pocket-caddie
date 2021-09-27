@@ -19,7 +19,7 @@ export default function Navbar() {
                     <div className="hover:text-green-dk text-3xl text-transparent font-semibold bg-clip-text bg-gradient-to-tr  from-gray-100 to-green-lt">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end justify-items-center md:place-content-start">
-                    <div className="flex flex-row-reverse p-2 text-green-lt text-2xl md-down:hidden">
+                    <div className="flex flex-row-reverse p-2 text-green-lt text-2xl lg-down:hidden">
                         <Link 
                             onClick={handleClick} 
                             className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
@@ -72,7 +72,7 @@ export default function Navbar() {
                         
                     </div>
                     <div className="flex items-center">
-                        <button onClick={handleClick} class="md:hidden h-7 w-7 fill-current transform hover:scale-125 transition duration-400 text-green-lt hover: text-geen-dk  focus:outline-none">
+                        <button onClick={handleClick} class="lg:hidden h-7 w-7 fill-current transform hover:scale-125 transition duration-400 text-green-lt hover: text-geen-dk  focus:outline-none">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 {toggle === false ?
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />

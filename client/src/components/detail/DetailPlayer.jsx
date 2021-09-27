@@ -39,17 +39,17 @@ export default function PlayerDetail() {
         <div>
             <ButtonBack />
             <div className="flex flex-col items-center h-screen w-screen">
-                <div className="flex flex-row justify-center w-3/4 h-1/3 sm:h-1/4 sm:w-1/3 rounded-md border-4 border-gray-100">
+                <div className="flex flex-row justify-center w-3/4 h-1/3 sm:h-1/4 sm:w-1/3 md:h-72 md:w-96 rounded-md border-4 border-gray-100">
                     <div className="flex flex-col items-center justify-items-center h-full w-1/2">
                         <div className="w-full h-3/4 flex justify-center items-center overflow-hidden">
                             <img 
-                                className="h-40 w-40 mt-4 rounded-md object-cover object-center" 
+                                className="h-40 w-40 rounded-md object-cover object-center" 
                                 src={playerDetails?.playerImage} 
                                 alt="profile-pic" 
                             />
                         </div>
-                        <div className="w-full h-1/4 flex mt-2 justify-center items-center">
-                            <div className="mr-2 mb-2">
+                        <div className="w-full h-1/4 md:h-10 flex mt-2 md:mt-0 justify-center items-center">
+                            <div className="mr-2 mb-2 md:mb-0">
                                 <Link 
                                     key={id} 
                                     to={`/players/${id}/edit`}
@@ -57,7 +57,7 @@ export default function PlayerDetail() {
                                     <ButtonEdit />
                                 </Link>
                             </div>
-                            <div className="ml-2 mb-2">
+                            <div className="ml-2 mb-2 md:mb-0">
                                 <ButtonDelete 
                                     id={id} 
                                     group="players" 
@@ -66,10 +66,10 @@ export default function PlayerDetail() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-items-center h-full w-1/2 pt-4 sm:pt-14 pr-4 text-center  text-gray-100">
-                        <div className="flex flex-col h-full items-center mb-2">
-                            <h2 className="text-2xl sm:text-5xl">{playerDetails?.playerName}</h2>
-                            <h4 className="text-xl sm:text-2xl">Handicap: {playerDetails?.handicap}</h4>
+                    <div className="flex justify-items-center justify-center h-full w-1/2 pt-4 sm:pt-14 px-2 text-center  text-gray-100">
+                        <div className="flex flex-col h-full items-center mb-2 md:mb-0">
+                            <h2 className="text-2xl sm:text-3xl">{playerDetails?.playerName}</h2>
+                            <h4 className="text-lg sm:text-xl">Handicap: {playerDetails?.handicap}</h4>
                         </div>
                     </div>
                 </div>

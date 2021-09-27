@@ -14,12 +14,12 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center w-screen">
-            <div className="flex flex-col items-center text-center w-full px-8 pt-10 text-xl text-gray-100 sm:text-4xl sm:w-full sm:px-40 sm:pb-10">
+            <div className="flex flex-col items-center text-center w-full px-8 pt-10 text-xl text-gray-100 sm:text-2xl sm:w-full md:px-6 sm:pb-10">
                 Hello. I'm the pocket caddie for you and your golfing buddies! Start by adding some players and courses and let's get hacking.. I mean playing better golf!
                 <div className="flex flex-col items-center">
-                    <div className="text-base text-center w-3/4 mt-4 text-green-lt sm:hidden">For information on the caddie function, click the info button below!</div>
+                    <div className="text-base text-center w-3/4 mt-4 text-green-lt md:hidden">For information on the caddie function, click the info button below!</div>
                     <button 
-                        className="h-8 w-8 block text-green-lt mt-4 sm:hidden" 
+                        className="h-8 w-8 block text-green-lt mt-4 md:hidden" 
                         onClick={handleToggle}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -29,17 +29,17 @@ export default function Home() {
                 </div>
             </div>
             {toggle === true ? 
-                <div className="text-gray-100 text-base text-green-lt text-center w-full px-8 sm:hidden mt-4">
+                <div className="text-gray-100 text-base text-green-lt text-center w-full px-8 md:hidden mt-4">
                     Note - You need to add player yardages before using the caddie function. These can be added by selecting a player and selecting edit yardages.
                 </div>
             :
                 null
             }
             <div className="mt-10 w-full flex justify-center">
-                <div className="flex w-3/4 flex-col items-center  text-green-lt text-xl font-semibold sm:text-3xl sm:flex-row">
-                    <div className="flex flex-col items-center sm:items-end w-full sm:w-1/2 sm:mx-6">
+                <div className="flex w-3/4 flex-col items-center  text-green-lt text-xl font-semibold md:w-full lg:text-3xl md:flex-row">
+                    <div className="flex flex-col items-center md:items-end w-full md:w-1/2 md:mx-6">
                         <Link 
-                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-end" 
+                            className="w-3/4 md:w-1/2 md:flex md:justify-end" 
                             to="/addplayer"
                         >
                             <button className="w-full border-4 rounded-2xl py-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
@@ -47,7 +47,7 @@ export default function Home() {
                             </button>
                         </Link>
                         <Link 
-                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-end" 
+                            className="w-3/4 md:w-1/2 md:flex md:justify-end" 
                             to="/addcourse"
                         >
                             <button className="w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
@@ -55,9 +55,9 @@ export default function Home() {
                             </button>
                         </Link>
                     </div>
-                    <div className="flex flex-col items-center sm:items-start w-full sm:w-1/2 sm:mx-6">
+                    <div className="flex flex-col items-center md:items-start w-full sm:w-full md:w-1/2 md:mx-6">
                         <Link 
-                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-start" 
+                            className="w-3/4 md:w-1/2 md:flex md:justify-start" 
                             to="/round"
                         >
                             <button className="w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
@@ -65,7 +65,7 @@ export default function Home() {
                             </button>
                         </Link>
                         <Link 
-                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-start" 
+                            className="w-3/4 md:w-1/2 md:flex md:justify-start" 
                             to="/caddie"
                         >
                             <button className="w-full border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
@@ -75,7 +75,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="text-gray-100 text-center text-base sm:text-2xl mt-16 md-down:hidden">
+            <div className="text-gray-100 text-center text-base text-xl text-green-lt px-6 pb-6 mt-16 md-down:hidden">
                 Note - You need to add player yardages before using the caddie function. These can be added by selecting a player and selecting edit yardages.
             </div>
         </div>

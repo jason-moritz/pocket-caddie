@@ -22,8 +22,9 @@ module.exports = {
           'gray-dk': '#222629',
       },
       screens: {
-        'md-down': {'max': '768px'},
-      }
+        'md-down': {'max': '767px'},
+        'lg-down': {'max': '1023px'},
+      },
     }
   },
   variants: {},
