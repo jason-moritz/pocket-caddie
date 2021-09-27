@@ -18,7 +18,7 @@ export default function DisplayYardages() {
 
     return (
         <div>
-            <div className="grid grid-cols-2 justify-items-center text-gray-100 text-xl sm:text-3xl">
+            <div className="grid grid-cols-2 justify-items-center text-gray-100 text-xl sm:text-2xl lg:text-3xl">
                 <div className="mr-4">
                     <h4>L Wedge: {yardages?.lw}</h4>
                     <h4>S Wedge: {yardages?.sw}</h4>

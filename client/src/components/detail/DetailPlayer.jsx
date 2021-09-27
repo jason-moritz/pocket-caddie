@@ -68,8 +68,8 @@ export default function PlayerDetail() {
                     </div>
                     <div className="flex justify-items-center justify-center h-full w-1/2 pt-4 sm:pt-14 px-2 text-center  text-gray-100">
                         <div className="flex flex-col h-full items-center mb-2 md:mb-0">
-                            <h2 className="text-2xl sm:text-3xl">{playerDetails?.playerName}</h2>
-                            <h4 className="text-lg sm:text-xl">Handicap: {playerDetails?.handicap}</h4>
+                            <h2 className="text-2xl sm:text-3xl md:text-5xl">{playerDetails?.playerName}</h2>
+                            <h4 className="text-lg sm:text-xl md:text-2xl">Handicap: {playerDetails?.handicap}</h4>
                         </div>
                     </div>
                 </div>

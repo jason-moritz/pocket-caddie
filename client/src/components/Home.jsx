@@ -12,6 +12,8 @@ export default function Home() {
         setToggle((prevToggle) => !prevToggle);
     };
 
+    console.log("Visit my linkedIn at", "https://www.linkedin.com/in/jason-moritz-a64950219/");
+
     return (
         <div className="flex flex-col items-center w-screen">
             <div className="flex flex-col items-center text-center w-full px-8 pt-10 text-xl text-gray-100 sm:text-2xl sm:w-full md:px-6 sm:pb-10">
