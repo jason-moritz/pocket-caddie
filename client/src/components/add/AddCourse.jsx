@@ -38,6 +38,7 @@ export default function AddCourse() {
                 <h2 className="text-center mb-5 text-4xl sm:text-5xl">Add a new course!</h2>
                 <FormCourse 
                     courseName={courseName} 
+                    image={courseImage}
                     setCourseName={setCourseName} 
                     courseImage={courseImage} 
                     setCourseImage={setCourseImage} 

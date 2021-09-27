@@ -4,6 +4,7 @@ import AddImage from "../add/AddImage";
 
 export default function CourseForm(props) {
     const { 
+        image,
         courseName, 
         setCourseName, 
         setCourseImage, 
@@ -70,7 +71,8 @@ export default function CourseForm(props) {
             <div className="flex justify-center">
                 <div className="w-3/4 max-w-lg text-xl flex flex-col items-center sm:text-2xl">
                     <AddImage 
-                        setImage={setCourseImage} 
+                        setImage={setCourseImage}
+                        image={image}
                         title="Scorecard" 
                     />
                     <div className="mt-16">
