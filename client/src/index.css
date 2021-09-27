@@ -25,7 +25,7 @@ body {
 }
 
 .round {
-    @apply w-full h-full text-center shadow-lg appearance-none rounded-md mb-4  text-gray-md bg-gray-100 focus:outline-none;
+    @apply w-full h-full text-center appearance-none rounded-md mb-4 border-4 focus:border-green-lt  text-gray-dk bg-gray-100 focus:outline-none;
 }
 
 .btn {
@@ -33,7 +33,7 @@ body {
 }
 
 .error {
-    @apply text-base text-center text-red-500 mb-2 sm:text-lg;
+    @apply text-base text-center text-red-500 mb-2 sm:text-xl;
 }
 
 .club {
