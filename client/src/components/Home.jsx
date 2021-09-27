@@ -16,7 +16,10 @@ export default function Home() {
         <div className="flex flex-col items-center w-screen">
             <div className="flex flex-col items-center text-center w-full px-8 pt-10 text-xl text-gray-100 sm:text-4xl sm:w-full sm:px-40 sm:pb-10">
                 Hello. I'm the pocket caddie for you and your golfing buddies! Start by adding some players and courses and let's get hacking.. I mean playing better golf!
-                <button className="h-8 w-8 block text-green-lt mt-4 sm:hidden" onClick={handleToggle}>
+                <button 
+                    className="h-8 w-8 block text-green-lt mt-4 sm:hidden" 
+                    onClick={handleToggle}
+                >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
