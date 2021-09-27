@@ -66,7 +66,7 @@ export default function PlayerForm(props) {
                             className="input" 
                             type="number" 
                             min="0" 
-                            max="100" 
+                            max="54" 
                             value={handicap} 
                             onChange={e => setHandicap(e.target.value)} 
                         />

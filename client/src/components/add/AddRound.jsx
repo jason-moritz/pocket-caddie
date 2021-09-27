@@ -67,11 +67,11 @@ export default function Scorecard() {
         const back9String = [h10, h11, h12, h13, h14, h15, h16, h17, h18];
 
         const front9Arr = front9String.map(number => (
-        parseInt(number)
+            parseInt(number)
         ));
 
         const back9Arr = back9String.map(number => (
-        parseInt(number)
+            parseInt(number)
         ));
     
         const sumArr = (arr) => {
