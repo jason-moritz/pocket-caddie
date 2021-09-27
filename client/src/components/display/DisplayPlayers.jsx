@@ -23,7 +23,7 @@ export default function Players() {
                 <h1 className="title">
                     Players
                 </h1>
-                <div className="flex flex-col place-items-center w-3/4 md:flex-row md:flex-wrap md:justify-around md:items-center">
+                <div className="flex flex-col place-items-center pb-6 w-3/4 sm:flex-row sm:flex-wrap sm:justify-around sm:items-center">
                     {players.map((player) => (
                         <div className="mt-5 sm:w-1/5">
                             <Link class="pt-2" to={`/players/${player.id}`}>
