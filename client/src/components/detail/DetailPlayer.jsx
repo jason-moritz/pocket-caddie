@@ -41,9 +41,9 @@ export default function PlayerDetail() {
             <div className="flex flex-col items-center h-screen w-screen">
                 <div className="flex flex-row justify-center w-3/4 h-1/3 sm:h-1/4 sm:w-1/3 md:h-72 md:w-96 rounded-md border-4 border-gray-100">
                     <div className="flex flex-col items-center justify-items-center h-full w-1/2">
-                        <div className="w-full h-3/4 flex justify-center items-center overflow-hidden">
+                        <div className="w-full h-3/4 flex justify-center sm-down:items-start sm:items-center overflow-hidden">
                             <img 
-                                className="h-40 w-40 rounded-md object-cover object-center" 
+                                className="h-40 w-40 object-cover object-center" 
                                 src={playerDetails?.playerImage} 
                                 alt="profile-pic" 
                             />
