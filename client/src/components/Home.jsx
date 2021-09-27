@@ -30,38 +30,46 @@ export default function Home() {
                 null
             }
             <div className="mt-10 w-full flex justify-center">
-                <div className="w-full flex flex-col items-center  text-green-lt text-xl font-semibold sm:text-3xl sm:flex-row">
-                    <div className="flex flex-col w-3/4 sm:w-1/2 sm:mx-6">
-                        <Link 
-                            className="sm:flex sm:justify-end" 
-                            to="/addplayer"
-                        >
-                            <button className="w-full sm:w-1/2 border-4 rounded-2xl py-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400" >Add Player</button>
-                        </Link>
-                        <Link 
-                            className="sm:flex sm:justify-end" 
-                            to="/addcourse"
-                        >
-                            <button className=" w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Add Course</button>
-                        </Link>
+                <div className="flex w-3/4 flex-col items-center  text-green-lt text-xl font-semibold sm:text-3xl sm:flex-row">
+                    <div className="flex flex-col items-end w-3/4 sm:w-1/2 sm:mx-6">
+                        <button className="w-full sm:w-1/2 border-4 rounded-2xl py-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400" >
+                            Add Player
+                            <Link 
+                                className="w-full sm:flex sm:justify-end" 
+                                to="/addplayer"
+                            >
+                            </Link>
+                        </button>
+                        <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                            Add Course
+                            <Link 
+                                className="w-full sm:flex sm:justify-end" 
+                                to="/addcourse"
+                            >
+                            </Link>
+                        </button>
                     </div>
-                    <div className="flex flex-col w-3/4 sm:w-1/2 md:mx-6">
-                        <Link 
-                            className="sm:flex sm:justify-start" 
-                            to="/round"
-                        >
-                            <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Play Round</button>
-                        </Link>
-                        <Link 
-                            className="sm:flex sm:justify-start" 
-                            to="/caddie"
-                        >
-                            <button className=" w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">Caddie</button>
-                        </Link>
+                    <div className="flex flex-col items-start w-3/4 sm:w-1/2 sm:mx-6">
+                        <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                            Play Round
+                            <Link 
+                                className="w-full sm:flex sm:justify-start" 
+                                to="/round"
+                            >
+                            </Link>
+                        </button>
+                        <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                            Caddie
+                            <Link 
+                                className="w-full sm:flex sm:justify-start" 
+                                to="/caddie"
+                            >
+                            </Link>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div className="text-gray-100 text-base sm:text-2xl mt-16 md-down:hidden">
+            <div className="text-gray-100 text-center text-base sm:text-2xl mt-16 md-down:hidden">
                 Note - You need to add player yardages before using the caddie function. These can be added by selecting a player and selecting edit yardages.
             </div>
         </div>
