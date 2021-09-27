@@ -64,7 +64,7 @@ export default function PlayerDetail() {
                 </div>
                 <div className="flex place-content-center text-lg sm:text-2xl">
                     <button 
-                        className=" text-green-lt hover:text-green-dk  focus:text-green-dk" 
+                        className=" text-green-lt  hover:text-green-dk  focus:text-green-dk" 
                         onClick={handleToggle}
                         disabled={toggle2 === true}
                     >

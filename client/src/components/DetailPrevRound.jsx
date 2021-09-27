@@ -25,9 +25,8 @@ export default function DetailPrevRound() {
     return (
         <div className="text-gray-100">
             <ButtonBack />
-            <div className="text-center text-xl my-4">
-                <div>Course</div>
-                <div>{roundDetails?.courseName}</div>
+            <div className="text-center text-2xl my-4 sm:text-4xl">
+                <div>Course: {roundDetails?.courseName}</div>
             </div>
             <div className="flex flex-row justify-center md:flex-col">
                 <div className="flex flex-col items-center px-4 md:flex md:flex-row justify-center">
@@ -40,7 +39,9 @@ export default function DetailPrevRound() {
                     <DisplayHole title="Hole 7" score={h7} />
                     <DisplayHole title="Hole 8" score={h8} />
                     <DisplayHole title="Hole 9" score={h9} />
-                    <DisplayHole title="Front 9" score={front9} />
+                    <div className="text-green-lt">
+                        <DisplayHole title="Front 9" score={front9} />
+                    </div>
                 </div>
                 <div className="flex flex-col items-center px-4 md:flex-row md:justify-center">
                     <DisplayHole title="Hole 10" score={h10} />
@@ -52,10 +53,12 @@ export default function DetailPrevRound() {
                     <DisplayHole title="Hole 16" score={h16} />
                     <DisplayHole title="Hole 17" score={h17} />
                     <DisplayHole title="Hole 18" score={h18} />
-                    <DisplayHole title="Back 9" score={back9} />
+                    <div className="text-green-lt">
+                        <DisplayHole title="Back 9" score={back9} />
+                    </div>
                 </div>
             </div>
-            <div className="flex justify-center p-4">
+            <div className="flex justify-center p-4 text-green-lt">
                 <DisplayHole title="Total" score={total} />
             </div>
             <div className="flex justify-center">
