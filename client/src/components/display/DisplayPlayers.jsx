@@ -43,10 +43,10 @@ export default function Players() {
                                                 alt="player-profile"
                                             />
                                         </div>
-                                        <div>
-                                            <h3 className="text-2xl sm:text-3xl">
+                                        <div className="max-h-9 w-36 overflow-ellipsis">
+                                            <div className="text-2xl max-h-9 w-36 overflow-ellipsis sm:text-3xl">
                                                 {player.fields?.playerName}
-                                            </h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </Link>
