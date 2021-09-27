@@ -34,41 +34,41 @@ export default function Home() {
             }
             <div className="mt-10 w-full flex justify-center">
                 <div className="flex w-3/4 flex-col items-center  text-green-lt text-xl font-semibold sm:text-3xl sm:flex-row">
-                    <div className="flex flex-col items-end w-3/4 sm:w-1/2 sm:mx-6">
-                        <button className="w-full sm:w-1/2 border-4 rounded-2xl py-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400" >
-                            Add Player
-                            <Link 
-                                className="w-full sm:flex sm:justify-end" 
-                                to="/addplayer"
-                            >
-                            </Link>
-                        </button>
-                        <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
-                            Add Course
-                            <Link 
-                                className="w-full sm:flex sm:justify-end" 
-                                to="/addcourse"
-                            >
-                            </Link>
-                        </button>
+                    <div className="flex flex-col items-center sm:items-end w-full sm:w-1/2 sm:mx-6">
+                        <Link 
+                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-end" 
+                            to="/addplayer"
+                        >
+                            <button className="w-full border-4 rounded-2xl py-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                                Add Player
+                            </button>
+                        </Link>
+                        <Link 
+                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-end" 
+                            to="/addcourse"
+                        >
+                            <button className="w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                                Add Course
+                            </button>
+                        </Link>
                     </div>
-                    <div className="flex flex-col items-start w-3/4 sm:w-1/2 sm:mx-6">
-                        <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
-                            Play Round
-                            <Link 
-                                className="w-full sm:flex sm:justify-start" 
-                                to="/round"
-                            >
-                            </Link>
-                        </button>
-                        <button className="w-full sm:w-1/2 border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
-                            Caddie
-                            <Link 
-                                className="w-full sm:flex sm:justify-start" 
-                                to="/caddie"
-                            >
-                            </Link>
-                        </button>
+                    <div className="flex flex-col items-center sm:items-start w-full sm:w-1/2 sm:mx-6">
+                        <Link 
+                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-start" 
+                            to="/round"
+                        >
+                            <button className="w-full border-4 rounded-2xl p-5 mb-5  border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                                Play Round
+                            </button>
+                        </Link>
+                        <Link 
+                            className="w-3/4 sm:w-1/2 md:w-1/2 sm:flex sm:justify-start" 
+                            to="/caddie"
+                        >
+                            <button className="w-full border-4 rounded-2xl p-5 mb-5 border-gray-md  hover:bg-gray-md transform hover:scale-105 transition duration-400">
+                                Caddie
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
