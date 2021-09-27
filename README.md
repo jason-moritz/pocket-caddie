@@ -118,7 +118,7 @@ Airtable is returning data for an array of players.
 | Sept 18-19   | CRUD component logic / Route & Link logic  | Complete |
 | Sept 20-21   | CSS styling / Responsive design            | Complete |
 | Sept 22-23   | Post MVP                                   | Complete |
-| Sept 24      | Presentations                              | Incomplete |
+| Sept 24      | Presentations                              | Complete |
 
 ## Timeframes
 
