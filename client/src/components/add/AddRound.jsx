@@ -80,7 +80,7 @@ export default function Scorecard() {
                 total += arr[i]
             };
             return total;
-        }
+        };
 
         const sumFront9 = sumArr(front9Arr);
         const sumBack9 = sumArr(back9Arr);
