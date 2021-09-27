@@ -27,7 +27,10 @@ export default function DisplayPrevRounds() {
                 <div>
                 {prevRounds.map((prevRound) => (
                     prevRound.fields?.playerID === id ?
-                        <Link key={id} to={`/rounds/${prevRound.id}`}>
+                        <Link 
+                            key={id} 
+                            to={`/rounds/${prevRound.id}`}
+                        >
                         <div className="text-xl my-2 hover: text-gray-300 sm:text-2xl">
                             <h2>{prevRound.fields?.courseName}: {prevRound.fields?.total}</h2>
                         </div>

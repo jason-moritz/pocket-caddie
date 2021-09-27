@@ -2,13 +2,11 @@ import { uploadImage } from "../../services";
 
 
 export default function AddImage(props) {
-    // const [loading, setLoading] = useState(false);
     const { image, setImage, title } = props;
 
     const handleSubmit = async(e) => {
         const res = await uploadImage(e);
         setImage(res.secure_url);
-        // setLoading((prevLoading) => !prevLoading);
     };
 
     return (

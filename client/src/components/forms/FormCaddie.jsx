@@ -1,5 +1,14 @@
 export default function FormCaddie(props) {
-    const { handleSubmit, playerID, yardage, setYardage, toggle, setToggle, toggle2, setToggle2 } = props;
+    const { 
+        handleSubmit, 
+        playerID, 
+        yardage, 
+        setYardage, 
+        toggle, 
+        setToggle, 
+        toggle2, 
+        setToggle2 
+    } = props;
 
     const handleToggle = (e) => {
         e.preventDefault();

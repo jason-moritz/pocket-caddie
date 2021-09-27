@@ -20,7 +20,11 @@ export default function DetailScorecard() {
         <div className="text-gray-100">
             <ButtonBack />
             <div className="flex place-content-center rounded-sm p-4">
-                <img className="flex-shrink-0" src={courseImage?.courseImage} alt="scorecard"></img>
+                <img 
+                    className="flex-shrink-0" 
+                    src={courseImage?.courseImage} 
+                    alt="scorecard" 
+                />
             </div>
         </div>
     )

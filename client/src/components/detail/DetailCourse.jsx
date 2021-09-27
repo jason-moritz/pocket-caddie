@@ -33,17 +33,27 @@ export default function CourseDetail() {
                         />
                         <div className="pt-4 flex w-full justify-center">
                             <div className="mr-2 mb-2">
-                                <Link key={id} to={`/courses/${id}/image`}>
+                                <Link 
+                                    key={id} 
+                                    to={`/courses/${id}/image`}
+                                >
                                     <ButtonZoom />
                                 </Link>
                             </div>
                             <div className="ml-2 mr-2 mb-2">
-                                <Link key={id} to={`/courses/${id}/edit`}>
+                                <Link 
+                                    key={id} 
+                                    to={`/courses/${id}/edit`}
+                                >
                                     <ButtonEdit />
                                 </Link>
                             </div>
                             <div className="ml-2 mb-2">
-                                <ButtonDelete id={id} group="courses" title={courseDetails?.courseName} />
+                                <ButtonDelete 
+                                    id={id} 
+                                    group="courses" 
+                                    title={courseDetails?.courseName} 
+                                />
                             </div>
                         </div>
                     </div>

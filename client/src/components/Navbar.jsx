@@ -12,18 +12,63 @@ export default function Navbar() {
     return (
         <header className="text-green-lt"> 
             <div className="flex place-content-between content-center px-4 py-3 ">
-                <Link className="flex items-center" to="/">
+                <Link 
+                    className="flex items-center" 
+                    to="/"
+                >
                     <div className="hover:text-green-dk text-3xl text-transparent font-semibold bg-clip-text bg-gradient-to-tr  from-gray-100 to-green-lt">Pocket Caddie</div>
                 </Link>        
                 <div className="flex place-content-end justify-items-center md:place-content-start">
                     <div className="flex flex-row-reverse p-2 text-green-lt text-2xl md-down:hidden">
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/">Home</Link>
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/caddie">Caddie</Link>
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/round">Play Round</Link>
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/players">Players</Link>
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/courses">Courses</Link>
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/addplayer">Add Player</Link>
-                        <Link onClick={handleClick} className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" to="/addcourse">Add Course</Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/"
+                        >
+                            Home
+                        </Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/caddie"
+                        >
+                            Caddie
+                        </Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/round"
+                        >
+                            Play Round
+                        </Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/players"
+                        >
+                            Players
+                        </Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/courses"
+                        >
+                            Courses
+                        </Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/addplayer"
+                        >
+                            Add Player
+                        </Link>
+                        <Link 
+                            onClick={handleClick} 
+                            className="block px-2 py-1 font-semibold  hover:text-green-dk rounded" 
+                            to="/addcourse"
+                        >
+                            Add Course
+                        </Link>
                         
                     </div>
                     <div className="flex items-center">
@@ -41,14 +86,55 @@ export default function Navbar() {
             </div>
             {toggle === true ?  
                 <div className="px-2 pt-2 pb-4 text-green-lt text-lg md:hidden">
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/">Home</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/caddie">Caddie</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/round">Play Round</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/players">Players</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/courses">Courses</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addplayer">Add Player</Link>
-                    <Link onClick={handleClick} className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" to="/addcourse">Add Course</Link>
-                   
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/"
+                    >
+                        Home
+                    </Link>
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/caddie"
+                    >
+                        Caddie
+                    </Link>
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/round"
+                    >
+                        Play Round
+                    </Link>
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/players"
+                    >
+                        Players
+                    </Link>
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/courses"
+                    >
+                        Courses
+                    </Link>
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/addplayer"
+                    >
+                        Add Player
+                    </Link>
+                    <Link 
+                        onClick={handleClick} 
+                        className="block px-2 py-1 font-semibold hover:bg-gray-lt rounded" 
+                        to="/addcourse"
+                    >
+                        Add Course
+                    </Link>  
                 </div>
             :
                 null

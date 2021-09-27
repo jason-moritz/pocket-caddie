@@ -3,7 +3,19 @@ import AddImage from "../add/AddImage";
 
 
 export default function CourseForm(props) {
-    const { courseName, setCourseName, setCourseImage, rating, setRating, slope, setSlope, location, setLocation, handleSubmit, title } = props;
+    const { 
+        courseName, 
+        setCourseName, 
+        setCourseImage, 
+        rating, 
+        setRating, 
+        slope, 
+        setSlope, 
+        location, 
+        setLocation, 
+        handleSubmit, 
+        title 
+    } = props;
     const [toggle1, setToggle1] = useState(0);
     const [toggle2, setToggle2] = useState(0);
     const [toggle3, setToggle3] = useState(0);
@@ -50,12 +62,17 @@ export default function CourseForm(props) {
         setToggle3(0);
     };
 
-
     return (
-        <form className="text-gray-100 w-screen mt-5" onSubmit={courseName && rating && slope ? handleSubmit : handleToggle}>
+        <form 
+            className="text-gray-100 w-screen mt-5" 
+            onSubmit={courseName && rating && slope ? handleSubmit : handleToggle}
+        >
             <div className="flex justify-center">
                 <div className="w-3/4 max-w-lg text-xl flex flex-col items-center sm:text-2xl">
-                    <AddImage setImage={setCourseImage} title="Scorecard" />
+                    <AddImage 
+                        setImage={setCourseImage} 
+                        title="Scorecard" 
+                    />
                     <div className="mt-16">
                         <label>Course Name</label>
                         <input 
@@ -63,8 +80,11 @@ export default function CourseForm(props) {
                             value={courseName} 
                             onChange={twoCallsCourse} 
                         />
-                        {toggle1 > 0 ? <p className="text-base sm:text-lg  text-red-500 mb-2">Please enter a course name</p> : null}
-
+                        {toggle1 > 0 ? 
+                            <p className="text-base sm:text-lg  text-red-500 mb-2">Please enter a course name</p> 
+                        : 
+                            null
+                        }
                         <label>Location (city, State)</label>
                         <input 
                             className="input" 
@@ -81,8 +101,11 @@ export default function CourseForm(props) {
                             value={rating} 
                             onChange={twoCallsRating} 
                         />
-                        {toggle2 > 0 ? <p className="text-base sm:text-lg  text-red-500 mb-2">Please enter a rating</p> : null}
-
+                        {toggle2 > 0 ? 
+                            <p className="text-base sm:text-lg  text-red-500 mb-2">Please enter a rating</p> 
+                        : 
+                            null
+                        }
                         <label>Slope <span className="text-base sm:text-lg">(*needs to be a number)</span></label>
                         <input 
                             className="input" 
@@ -92,8 +115,11 @@ export default function CourseForm(props) {
                             value={slope} 
                             onChange={twoCallsSlope} 
                         />
-                        {toggle3 > 0 ? <p className="text-base sm:text-lg text-red-500 mb-6">Please enter a slope</p> : null}
-
+                        {toggle3 > 0 ? 
+                            <p className="text-base sm:text-lg text-red-500 mb-6">Please enter a slope</p> 
+                        : 
+                            null
+                        }
                         <div className="flex justify-center">
                             <button className="btn mb-4">{title}</button>
                         </div>

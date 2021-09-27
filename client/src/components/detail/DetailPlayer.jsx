@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { fetchDetails } from "../../services";
 import DisplayYardages from "../display/DisplayYardages";
 import ButtonDelete from "../buttons/ButtonDelete";
 import ButtonBack from "../buttons/ButtonBack";
 import ButtonEdit from "../buttons/ButtonEdit";
 import DisplayPrevRounds from "../display/DisplayPrevRounds";
-import { fetchDetails } from "../../services";
 
 
 export default function PlayerDetail() {
@@ -42,16 +42,27 @@ export default function PlayerDetail() {
                 <div className="flex flex-row justify-center w-3/4 h-1/3 sm:h-1/4 sm:w-1/3 rounded-md border-4 border-gray-100">
                     <div className="flex flex-col items-center justify-items-center h-full w-1/2">
                         <div className="w-full h-3/4 flex justify-center items-center overflow-hidden">
-                            <img className="h-40 w-40 mt-4 rounded-md object-cover object-center" src={playerDetails?.playerImage} alt="profile-pic" />
+                            <img 
+                                className="h-40 w-40 mt-4 rounded-md object-cover object-center" 
+                                src={playerDetails?.playerImage} 
+                                alt="profile-pic" 
+                            />
                         </div>
                         <div className="w-full h-1/4 flex mt-2 justify-center items-center">
                             <div className="mr-2 mb-2">
-                                <Link key={id} to={`/players/${id}/edit`}>
+                                <Link 
+                                    key={id} 
+                                    to={`/players/${id}/edit`}
+                                >
                                     <ButtonEdit />
                                 </Link>
                             </div>
                             <div className="ml-2 mb-2">
-                                <ButtonDelete id={id} group="players" title={playerDetails?.playerName} />
+                                <ButtonDelete 
+                                    id={id} 
+                                    group="players" 
+                                    title={playerDetails?.playerName} 
+                                />
                             </div>
                         </div>
                     </div>

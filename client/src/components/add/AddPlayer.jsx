@@ -4,7 +4,6 @@ import { addNew } from "../../services";
 import { toast } from "react-toastify";
 import FormPlayer from "../forms/FormPlayer";
 import ButtonBack from "../buttons/ButtonBack";
-
 import "react-toastify/dist/ReactToastify.css";
 
 

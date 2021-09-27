@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
 import { fetchList } from "../services";
 
+
 export default function DropDownMenuCaddie(props) {
     const [details, setDetails] = useState("");
-    const { group, setID, setToggle } = props;
+    const { 
+        group, 
+        setID, 
+        setToggle 
+    } = props;
 
     useEffect(() => {
         const getDetails = async() => {
@@ -19,9 +24,6 @@ export default function DropDownMenuCaddie(props) {
     };
 
     if (!details) return <h2>Loading</h2>
-
-    
-
 
     return (
         <div className="flex flex-col w-screen text-center items-center">

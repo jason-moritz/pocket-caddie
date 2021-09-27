@@ -33,7 +33,6 @@ export default function Routes() {
             <Route exact path="/players/:id">
                 <DetailPlayer />
             </Route>
-            
             <Route exact path="/courses/:id">
                 <DetailCourse />
             </Route>

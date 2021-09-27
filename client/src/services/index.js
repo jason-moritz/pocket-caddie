@@ -3,7 +3,6 @@ import axios from "axios";
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 const baseURL = `https://api.airtable.com/v0/${airtableBase}/`
-
 const baseImageURL = "https://api.cloudinary.com/v1_1/dwhdm5z4a/";
 
 const config = {
@@ -64,4 +63,4 @@ export const uploadImage = async(e) => {
     data.append("upload_preset", "pocketcaddieimages");
     const res = await axios.post(`${baseImageURL}image/upload`, data);
     return res.data;
-}
+};

@@ -3,7 +3,16 @@ import AddImage from "../add/AddImage";
 
 
 export default function PlayerForm(props) {
-    const { playerName, setPlayerName, image, setPlayerImage, handicap, setHandicap, handleSubmit, title } = props;
+    const { 
+        playerName, 
+        setPlayerName, 
+        image, 
+        setPlayerImage, 
+        handicap, 
+        setHandicap, 
+        handleSubmit, 
+        title 
+    } = props;
     const [toggle, setToggle] = useState(0);
 
     const handleToggle = (e) => {
@@ -13,7 +22,7 @@ export default function PlayerForm(props) {
             setToggle((prevToggle) => prevToggle + 1);
 
         } else if (playerName) {
-            setToggle(0)
+            setToggle(0);
         };
     };
 
